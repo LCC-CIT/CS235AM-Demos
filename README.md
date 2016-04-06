@@ -5,7 +5,7 @@ Note, all these apps are in one repository, so you will
 need to download or clone the whole repository even if you
 only want code for one app.
 
-##Directory:
+##Directory
 
 * Apps with multiple screens using Intent objects
 ** AgeCalc
