@@ -17,14 +17,7 @@ namespace MathFlashCards
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Front);
 
-			// Display the two numbers to add
-			var firstNumberTextView = FindViewById<TextView> (Resource.Id.firstNumberTextView);
-			firstNumberTextView.Text = quiz.FirstNumber.ToString ();
-
-			var secondNumberTextView = FindViewById<TextView> (Resource.Id.secondNumberTextView);
-			secondNumberTextView.Text = quiz.SecondNumber.ToString ();
-
-			// Show the BackActivity and send it the answer
+			// Show the back of the card and send it the answer
 			Button button = FindViewById<Button> (Resource.Id.myButton);
 			
 			button.Click += delegate {
@@ -35,6 +28,22 @@ namespace MathFlashCards
 				StartActivity(back);
 			};
 		}
+
+
+		protected override void OnResume ()
+		{
+			base.OnResume ();
+
+			quiz.MakeRandomNumbers ();
+
+			// Display the two numbers to add
+			TextView firstNumberTextView = FindViewById<TextView> (Resource.Id.firstNumberTextView);
+			firstNumberTextView.Text = quiz.FirstNumber.ToString();
+
+			var secondNumberTextView = FindViewById<TextView> (Resource.Id.secondNumberTextView);
+			secondNumberTextView.Text = quiz.SecondNumber.ToString();
+		}
+
 	}
 }
 
