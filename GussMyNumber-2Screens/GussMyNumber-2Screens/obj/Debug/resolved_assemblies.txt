@@ -1,0 +1,8 @@
+/Users/admin/repos/CS235AM-Demos/GussMyNumber-2Screens/GussMyNumber-2Screens/obj/Debug/assemblies/GussMyNumber-2Screens.dll
+/Users/admin/repos/CS235AM-Demos/GussMyNumber-2Screens/GussMyNumber-2Screens/obj/Debug/assemblies/System.dll
+/Users/admin/repos/CS235AM-Demos/GussMyNumber-2Screens/GussMyNumber-2Screens/obj/Debug/assemblies/System.Xml.dll
+/Users/admin/repos/CS235AM-Demos/GussMyNumber-2Screens/GussMyNumber-2Screens/obj/Debug/assemblies/Mono.Android.dll
+/Users/admin/repos/CS235AM-Demos/GussMyNumber-2Screens/GussMyNumber-2Screens/obj/Debug/assemblies/System.Core.dll
+/Users/admin/repos/CS235AM-Demos/GussMyNumber-2Screens/GussMyNumber-2Screens/obj/Debug/assemblies/mscorlib.dll
+/Users/admin/repos/CS235AM-Demos/GussMyNumber-2Screens/GussMyNumber-2Screens/obj/Debug/assemblies/System.Runtime.Serialization.dll
+/Users/admin/repos/CS235AM-Demos/GussMyNumber-2Screens/GussMyNumber-2Screens/obj/Debug/assemblies/System.ServiceModel.Internals.dll

@@ -1,1 +1,15 @@
-﻿<Properties StartupItem="GussMyNumber-2Screens/GussMyNumber-2Screens.csproj" />
+﻿<Properties StartupItem="GussMyNumber-2Screens/GussMyNumber-2Screens.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 (Jelly Bean)" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="GussMyNumber-2Screens/MainActivity.cs">
+    <Files>
+      <File FileName="GussMyNumber-2Screens/MainActivity.cs" Line="19" Column="69" />
+      <File FileName="GussMyNumber-2Screens/SecondActivity.cs" Line="23" Column="6" />
+      <File FileName="GussMyNumber-2Screens/obj/Debug/resourcecache/F231C27036CC72294926C0C6FC908D53/res/layout/abc_screen_toolbar.xml" Line="28" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.GussMyNumber-2Screens AndroidDesignerPreferredDevice="Nexus 4" />
+</Properties>

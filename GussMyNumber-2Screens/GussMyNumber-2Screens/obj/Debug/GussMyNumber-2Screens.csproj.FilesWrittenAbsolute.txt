@@ -1,0 +1,17 @@
+/Users/admin/repos/CS235AM-Demos/GussMyNumber-2Screens/GussMyNumber-2Screens/obj/Debug/MonoAndroid,Version=v4.4.AssemblyAttribute.cs
+/Users/admin/repos/CS235AM-Demos/GussMyNumber-2Screens/GussMyNumber-2Screens/bin/Debug/GussMyNumber-2Screens.dll.mdb
+/Users/admin/repos/CS235AM-Demos/GussMyNumber-2Screens/GussMyNumber-2Screens/bin/Debug/GussMyNumber-2Screens.dll
+/Users/admin/repos/CS235AM-Demos/GussMyNumber-2Screens/GussMyNumber-2Screens/bin/Debug/edu.lanecc.birdb.gussmynumber_2screens.apk
+/Users/admin/repos/CS235AM-Demos/GussMyNumber-2Screens/GussMyNumber-2Screens/obj/Debug/android/bin/edu.lanecc.birdb.gussmynumber_2screens.apk
+/Users/admin/repos/CS235AM-Demos/GussMyNumber-2Screens/GussMyNumber-2Screens/obj/Debug/res/layout/main.xml
+/Users/admin/repos/CS235AM-Demos/GussMyNumber-2Screens/GussMyNumber-2Screens/obj/Debug/res/values/strings.xml
+/Users/admin/repos/CS235AM-Demos/GussMyNumber-2Screens/GussMyNumber-2Screens/obj/Debug/res/mipmap-hdpi/icon.png
+/Users/admin/repos/CS235AM-Demos/GussMyNumber-2Screens/GussMyNumber-2Screens/obj/Debug/res/mipmap-mdpi/icon.png
+/Users/admin/repos/CS235AM-Demos/GussMyNumber-2Screens/GussMyNumber-2Screens/obj/Debug/res/mipmap-xhdpi/icon.png
+/Users/admin/repos/CS235AM-Demos/GussMyNumber-2Screens/GussMyNumber-2Screens/obj/Debug/res/mipmap-xxhdpi/icon.png
+/Users/admin/repos/CS235AM-Demos/GussMyNumber-2Screens/GussMyNumber-2Screens/obj/Debug/res/mipmap-xxxhdpi/icon.png
+/Users/admin/repos/CS235AM-Demos/GussMyNumber-2Screens/GussMyNumber-2Screens/obj/Debug/R.cs.flag
+/Users/admin/repos/CS235AM-Demos/GussMyNumber-2Screens/GussMyNumber-2Screens/bin/Debug/edu.lanecc.birdb.gussmynumber_2screens-Signed.apk
+/Users/admin/repos/CS235AM-Demos/GussMyNumber-2Screens/GussMyNumber-2Screens/obj/Debug/uploadflags.txt
+/Users/admin/repos/CS235AM-Demos/GussMyNumber-2Screens/GussMyNumber-2Screens/obj/Debug/GussMyNumber-2Screens.dll
+/Users/admin/repos/CS235AM-Demos/GussMyNumber-2Screens/GussMyNumber-2Screens/obj/Debug/GussMyNumber-2Screens.dll.mdb

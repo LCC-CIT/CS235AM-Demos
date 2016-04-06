@@ -1,27 +1,29 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
+using Android.Content;
 
 namespace GussMyNumber2Screens
 {
-	[Activity (Label = "GussMyNumber-2Screens", MainLauncher = true, Icon = "@mipmap/icon")]
+	[Activity (Label = "Guss My Number Game", MainLauncher = true, Icon = "@mipmap/icon")]
 	public class MainActivity : Activity
 	{
-		int count = 1;
 
 		protected override void OnCreate (Bundle savedInstanceState)
 		{
 			base.OnCreate (savedInstanceState);
 
-			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
 
-			// Get our button from the layout resource,
-			// and attach an event to it
+			EditText guessEditText;
+			guessEditText = FindViewById<EditText> (Resource.Id.guessEditText);
 			Button button = FindViewById<Button> (Resource.Id.myButton);
-			
+
+			// Start second activity and send it the number guessed
 			button.Click += delegate {
-				button.Text = string.Format ("{0} clicks!", count++);
+				var second = new Intent(this, typeof(SecondActivity));
+				second.PutExtra("Guess", guessEditText.Text );
+				StartActivity(second);
 			};
 		}
 	}
