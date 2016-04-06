@@ -12,6 +12,7 @@ namespace MathFlashCards
 
 		protected override void OnCreate (Bundle savedInstanceState)
 		{
+			// This is only called when the activity is first created
 			base.OnCreate (savedInstanceState);
 
 			// Set our view from the "main" layout resource
@@ -34,6 +35,23 @@ namespace MathFlashCards
 				back.PutExtra("Answer", quiz.Sum);
 				StartActivity(back);
 			};
+		}
+
+
+		// This is called every time the "Show Front" button is clicked, or
+		// the system back button is clicked (when the BackActivity is running).
+		protected override void OnResume ()
+		{
+			base.OnResume ();
+
+			quiz.MakeRandomNumbers ();
+
+			TextView firstNumberTextView = FindViewById<TextView> (Resource.Id.firstNumberTextView);
+			firstNumberTextView.Text = quiz.FirstNumber.ToString();
+
+			var secondNumberTextView = FindViewById<TextView> (Resource.Id.secondNumberTextView);
+			secondNumberTextView.Text = quiz.SecondNumber.ToString();
+
 		}
 	}
 }
