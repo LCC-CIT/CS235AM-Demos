@@ -8,6 +8,6 @@ only want code for one app.
 ##Directory:
 
 - Apps with multiple screens using Intent objects:
--- AgeCalc
--- MathFlashCards
--- GuessMyNumber (not working yet)
+** AgeCalc
+** MathFlashCards
+** GuessMyNumber (not working yet)
