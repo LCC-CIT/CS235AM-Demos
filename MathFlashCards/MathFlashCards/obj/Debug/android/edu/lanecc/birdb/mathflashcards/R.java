@@ -1095,7 +1095,7 @@ containing a value of this type.
         public static final int end=0x7f0a0017;
         public static final int expand_activities_button=0x7f0a0026;
         public static final int expanded_menu=0x7f0a002c;
-        public static final int firstNumberTextView=0x7f0a003d;
+        public static final int firstNumberTextView=0x7f0a003e;
         public static final int home=0x7f0a0000;
         public static final int homeAsUp=0x7f0a000a;
         public static final int icon=0x7f0a002a;
@@ -1104,7 +1104,7 @@ containing a value of this type.
         public static final int listMode=0x7f0a0006;
         public static final int list_item=0x7f0a0029;
         public static final int middle=0x7f0a0018;
-        public static final int myButton=0x7f0a0040;
+        public static final int myButton=0x7f0a0041;
         public static final int never=0x7f0a0012;
         public static final int none=0x7f0a0019;
         public static final int normal=0x7f0a0007;
@@ -1121,15 +1121,16 @@ containing a value of this type.
         public static final int search_plate=0x7f0a0036;
         public static final int search_src_text=0x7f0a0037;
         public static final int search_voice_btn=0x7f0a003b;
-        public static final int secondNumberTextView=0x7f0a003f;
+        public static final int secondNumberTextView=0x7f0a0040;
         public static final int shortcut=0x7f0a002e;
         public static final int showCustom=0x7f0a000b;
+        public static final int showFrontButton=0x7f0a003d;
         public static final int showHome=0x7f0a000c;
         public static final int showTitle=0x7f0a000d;
         public static final int split_action_bar=0x7f0a001e;
         public static final int submit_area=0x7f0a0039;
         public static final int tabMode=0x7f0a0008;
-        public static final int textView2=0x7f0a003e;
+        public static final int textView2=0x7f0a003f;
         public static final int title=0x7f0a002b;
         public static final int top_action_bar=0x7f0a0020;
         public static final int up=0x7f0a0021;

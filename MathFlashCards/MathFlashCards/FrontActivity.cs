@@ -5,7 +5,7 @@ using Android.Content;
 
 namespace MathFlashCards
 {
-	[Activity (Label = "Front", MainLauncher = true, Icon = "@mipmap/icon")]
+	[Activity (Label = "Front", MainLauncher = true, Icon = "@mipmap/icon", LaunchMode = Android.Content.PM.LaunchMode.SingleInstance)]
 	public class FrontActivity : Activity
 	{
 		MathQuiz quiz = new MathQuiz();

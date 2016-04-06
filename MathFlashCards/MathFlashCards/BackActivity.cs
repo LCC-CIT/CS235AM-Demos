@@ -1,7 +1,5 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 
 using Android.App;
@@ -13,7 +11,7 @@ using Android.Widget;
 
 namespace MathFlashCards
 {
-	[Activity (Label = "Back")]			
+	[Activity (Label = "Back", LaunchMode = Android.Content.PM.LaunchMode.SingleInstance)]			
 	public class BackActivity : Activity
 	{
 		protected override void OnCreate (Bundle savedInstanceState)
@@ -21,9 +19,15 @@ namespace MathFlashCards
 			base.OnCreate (savedInstanceState);
 			SetContentView (Resource.Layout.Back);
 
-			int answer = Intent.Extras.GetInt("Answer");
+			int answer = Intent.Extras.GetInt ("Answer");
 			TextView answerTextView = FindViewById<TextView> (Resource.Id.answerTextView);
 			answerTextView.Text = answer.ToString ();
+
+			Button showFrontButton = FindViewById<Button> (Resource.Id.showFrontButton);
+			showFrontButton.Click += delegate {
+				var toFront = new Intent (this, typeof(FrontActivity));
+				StartActivity (toFront);
+			};
 		}
 	}
 }
