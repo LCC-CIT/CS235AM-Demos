@@ -886,8 +886,8 @@ namespace MathFlashCards
 			// aapt resource value: 0x7f0a002c
 			public const int expanded_menu = 2131361836;
 			
-			// aapt resource value: 0x7f0a003d
-			public const int firstNumberTextView = 2131361853;
+			// aapt resource value: 0x7f0a003e
+			public const int firstNumberTextView = 2131361854;
 			
 			// aapt resource value: 0x7f0a0000
 			public const int home = 2131361792;
@@ -913,8 +913,8 @@ namespace MathFlashCards
 			// aapt resource value: 0x7f0a0018
 			public const int middle = 2131361816;
 			
-			// aapt resource value: 0x7f0a0040
-			public const int myButton = 2131361856;
+			// aapt resource value: 0x7f0a0041
+			public const int myButton = 2131361857;
 			
 			// aapt resource value: 0x7f0a0012
 			public const int never = 2131361810;
@@ -964,14 +964,17 @@ namespace MathFlashCards
 			// aapt resource value: 0x7f0a003b
 			public const int search_voice_btn = 2131361851;
 			
-			// aapt resource value: 0x7f0a003f
-			public const int secondNumberTextView = 2131361855;
+			// aapt resource value: 0x7f0a0040
+			public const int secondNumberTextView = 2131361856;
 			
 			// aapt resource value: 0x7f0a002e
 			public const int shortcut = 2131361838;
 			
 			// aapt resource value: 0x7f0a000b
 			public const int showCustom = 2131361803;
+			
+			// aapt resource value: 0x7f0a003d
+			public const int showFrontButton = 2131361853;
 			
 			// aapt resource value: 0x7f0a000c
 			public const int showHome = 2131361804;
@@ -988,8 +991,8 @@ namespace MathFlashCards
 			// aapt resource value: 0x7f0a0008
 			public const int tabMode = 2131361800;
 			
-			// aapt resource value: 0x7f0a003e
-			public const int textView2 = 2131361854;
+			// aapt resource value: 0x7f0a003f
+			public const int textView2 = 2131361855;
 			
 			// aapt resource value: 0x7f0a002b
 			public const int title = 2131361835;
