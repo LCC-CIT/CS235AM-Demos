@@ -1,0 +1,11 @@
+/Volumes/Data/GitHub/CS235AM-Demos/MathFlashCards-2Screens/MathFlashCards.v0/obj/Debug/assemblies/MathFlashCards-v0.dll
+/Volumes/Data/GitHub/CS235AM-Demos/MathFlashCards-2Screens/MathFlashCards.v0/obj/Debug/assemblies/System.dll
+/Volumes/Data/GitHub/CS235AM-Demos/MathFlashCards-2Screens/MathFlashCards.v0/obj/Debug/assemblies/System.Xml.dll
+/Volumes/Data/GitHub/CS235AM-Demos/MathFlashCards-2Screens/MathFlashCards.v0/obj/Debug/assemblies/Mono.Android.dll
+/Volumes/Data/GitHub/CS235AM-Demos/MathFlashCards-2Screens/MathFlashCards.v0/obj/Debug/assemblies/Xamarin.Android.Support.v13.dll
+/Volumes/Data/GitHub/CS235AM-Demos/MathFlashCards-2Screens/MathFlashCards.v0/obj/Debug/assemblies/Xamarin.Android.Support.v4.dll
+/Volumes/Data/GitHub/CS235AM-Demos/MathFlashCards-2Screens/MathFlashCards.v0/obj/Debug/assemblies/Xamarin.Android.Support.v7.AppCompat.dll
+/Volumes/Data/GitHub/CS235AM-Demos/MathFlashCards-2Screens/MathFlashCards.v0/obj/Debug/assemblies/System.Core.dll
+/Volumes/Data/GitHub/CS235AM-Demos/MathFlashCards-2Screens/MathFlashCards.v0/obj/Debug/assemblies/mscorlib.dll
+/Volumes/Data/GitHub/CS235AM-Demos/MathFlashCards-2Screens/MathFlashCards.v0/obj/Debug/assemblies/System.Runtime.Serialization.dll
+/Volumes/Data/GitHub/CS235AM-Demos/MathFlashCards-2Screens/MathFlashCards.v0/obj/Debug/assemblies/System.ServiceModel.Internals.dll

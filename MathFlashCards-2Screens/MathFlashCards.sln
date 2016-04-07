@@ -1,7 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathFlashCards", "MathFlashCards\MathFlashCards.csproj", "{F326EF82-32C4-442D-A2BE-1F026DC6DE0C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathFlashCards.v0", "MathFlashCards.v0\MathFlashCards.v0.csproj", "{9F01858C-46BA-4562-A936-04E4DC6A3D59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathFlashCards.v1", "MathFlashCards.v1\MathFlashCards.v1.csproj", "{F326EF82-32C4-442D-A2BE-1F026DC6DE0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,6 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F01858C-46BA-4562-A936-04E4DC6A3D59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F01858C-46BA-4562-A936-04E4DC6A3D59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F01858C-46BA-4562-A936-04E4DC6A3D59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F01858C-46BA-4562-A936-04E4DC6A3D59}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F326EF82-32C4-442D-A2BE-1F026DC6DE0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F326EF82-32C4-442D-A2BE-1F026DC6DE0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F326EF82-32C4-442D-A2BE-1F026DC6DE0C}.Release|Any CPU.ActiveCfg = Release|Any CPU

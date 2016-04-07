@@ -11,9 +11,7 @@ using Android.Widget;
 
 namespace MathFlashCards
 {
-	// the LaunchMode is SingleInstance, so we will only ever get one instance 
-	// of this activity in the system back-stack
-	[Activity (Label = "Back", LaunchMode = Android.Content.PM.LaunchMode.SingleInstance)]			
+	[Activity (Label = "Back")]			
 	public class BackActivity : Activity
 	{
 		// This method is only called the first time this activity is launched
@@ -22,34 +20,9 @@ namespace MathFlashCards
 			base.OnCreate (savedInstanceState);
 			SetContentView (Resource.Layout.Back);
 
-			Button showFrontButton = FindViewById<Button> (Resource.Id.showFrontButton);
-			showFrontButton.Click += delegate {
-				var toFront = new Intent (this, typeof(FrontActivity));
-				StartActivity (toFront);
-			};
-		}
-
-		// this method is called when the activity is either:
-		// a) resumed by clicking the system's back button, or
-		// b) resumed by clicking the button on FrontActivity
-		protected override void OnResume ()
-		{
-			base.OnResume ();
-
 			int answer = Intent.Extras.GetInt ("Answer");
 			var answerTextView = FindViewById<TextView> (Resource.Id.answerTextView);
 			answerTextView.Text = answer.ToString ();
-		}
-
-		// The only instance of the Intent that gets stored in the Intent property is the first one
-		// (the first one is the one that initially started the activity)
-		// This method is called whenever a new intent is sent to this activity and 
-		// we are setting the activity's Intent property with that intent so that it will be
-		// available in OnResume
-		protected override void OnNewIntent (Intent intent)
-		{
-			base.OnNewIntent (intent);
-			Intent = intent;
 		}
 	}
 }

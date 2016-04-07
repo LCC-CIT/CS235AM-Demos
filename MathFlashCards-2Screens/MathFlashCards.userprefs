@@ -1,1 +1,16 @@
-﻿<Properties StartupItem="MathFlashCards/MathFlashCards.csproj" />
+﻿<Properties StartupItem="MathFlashCards.v1/MathFlashCards.v1.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 (KitKat)" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MathFlashCards.v0/FrontActivity.cs">
+    <Files>
+      <File FileName="MathFlashCards.v0/FrontActivity.cs" Line="46" Column="37" />
+      <File FileName="MathFlashCards.v0/Resources/Resource.designer.cs" Line="15" Column="2" />
+      <File FileName="MathFlashCards.v0/BackActivity.cs" Line="25" Column="45" />
+      <File FileName="MathFlashCards.v1/FrontActivity.cs" Line="19" Column="43" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.MathFlashCards.v0 AndroidDesignerPreferredDevice="Nexus 4" />
+</Properties>

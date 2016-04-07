@@ -5,25 +5,22 @@ using Android.Content;
 
 namespace MathFlashCards
 {
-	[Activity (Label = "Front", MainLauncher = true, Icon = "@mipmap/icon", LaunchMode = Android.Content.PM.LaunchMode.SingleInstance)]
+	// No launch mode is specified, but there is no other activity that starts this activity
+	// so duplicagte instances won't be created
+	[Activity (Label = "Front", MainLauncher = true, Icon = "@mipmap/icon")]
 	public class FrontActivity : Activity
 	{
 		MathQuiz quiz = new MathQuiz();
 
 		protected override void OnCreate (Bundle savedInstanceState)
 		{
-			// This is only called when the activity is first created
+			// This is called when the acivity is created - which will be once, when the app is started
 			base.OnCreate (savedInstanceState);
 
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Front);
 
-			// Display the two numbers to add
-			var firstNumberTextView = FindViewById<TextView> (Resource.Id.firstNumberTextView);
-			firstNumberTextView.Text = quiz.FirstNumber.ToString ();
-
-			var secondNumberTextView = FindViewById<TextView> (Resource.Id.secondNumberTextView);
-			secondNumberTextView.Text = quiz.SecondNumber.ToString ();
+			quiz.MakeRandomNumbers ();
 
 			// Show the BackActivity and send it the answer
 			Button button = FindViewById<Button> (Resource.Id.myButton);
@@ -38,14 +35,15 @@ namespace MathFlashCards
 		}
 
 
-		// This is called every time the "Show Front" button is clicked, or
-		// the system back button is clicked (when the BackActivity is running).
+		// This is called every time the system back button is clicked, and
+		// it is called after onCreate the first time the activity is launched
 		protected override void OnResume ()
 		{
 			base.OnResume ();
 
 			quiz.MakeRandomNumbers ();
 
+			// Display the two numbers to add
 			TextView firstNumberTextView = FindViewById<TextView> (Resource.Id.firstNumberTextView);
 			firstNumberTextView.Text = quiz.FirstNumber.ToString();
 
