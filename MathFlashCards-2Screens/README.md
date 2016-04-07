@@ -1,4 +1,4 @@
-This is an example of a Multi-screen app. The main concepts demonstrated are:
+This is an example of a multi-screen app. The main concepts demonstrated are:
 * Starting a new activity or resuming an existing activity using an intent
 * Managing activity launch mode
 * Sending information from one activity to another using an intent
