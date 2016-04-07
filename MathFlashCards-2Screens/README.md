@@ -4,7 +4,7 @@ This is an example of a multi-screen app. The main concepts demonstrated are:
 * Sending information from one activity to another using an intent
 * Using activity life-cycle events: onCreate, onResume, onNewIntent
 
-There are two versions of this app:
+There are two versions of this app:<br>
 v0 - has a button on the first activity that launches the second activity. To go back to the first activity use the system back button.<br>
 v1 - has buttons on both the first and second activities that launch the other activity. This app has activities with LaunchMode = SingleInstance.<br>
 
