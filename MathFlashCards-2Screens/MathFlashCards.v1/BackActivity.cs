@@ -49,7 +49,7 @@ namespace MathFlashCards
 		protected override void OnNewIntent (Intent intent)
 		{
 			base.OnNewIntent (intent);
-			Intent = intent;
+			//Intent = intent;
 		}
 	}
 }
