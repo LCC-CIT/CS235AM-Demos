@@ -1,6 +1,8 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
+using System.Xml.Serialization;
+using System.IO;
 
 namespace ToDo
 {
@@ -15,16 +17,37 @@ namespace ToDo
 
 			SetContentView (Resource.Layout.Main);
 
-			taskMaster = new TaskMaster ();
+			if (savedInstanceState == null) {
+				taskMaster = new TaskMaster ();
+			}
+			else {
+				XmlSerializer x = new XmlSerializer(typeof(TaskMaster));
+				taskMaster = (TaskMaster)x.Deserialize(
+					new StringReader(savedInstanceState.GetString("Tasks")));
+			}
 
 			var taskTextView = FindViewById<TextView> (Resource.Id.taskTextView);
 			taskTextView.Text = taskMaster.GetTaskDescriptions ();
 
 			Button enterButton = FindViewById<Button> (Resource.Id.enterButton);
-			
+			var taskEditText = FindViewById<EditText>(Resource.Id.taskEditText);
 			enterButton.Click += delegate {
-				// TODO write code to add task
+				taskMaster.AddTask(taskEditText.Text);
+				taskTextView.Text = taskMaster.GetTaskDescriptions ();
+				taskEditText.Text = "";
 			};
+		}
+
+		protected override void OnSaveInstanceState (Bundle outState)
+		{
+			StringWriter writer = new StringWriter ();
+
+			XmlSerializer taskMasterSerializer = new XmlSerializer(typeof(TaskMaster));
+			taskMasterSerializer.Serialize(writer, taskMaster);
+
+			string serialTasks = writer.ToString ();
+			outState.PutString ("Tasks", serialTasks );
+			base.OnSaveInstanceState (outState);
 		}
 	}
 }

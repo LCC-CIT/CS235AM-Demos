@@ -35,8 +35,12 @@ namespace ToDo
 			return descriptions;
 		}
 
-		// TODO Add code to add tasks to the list
-
+		// TODO Add more than just a description
+		public void AddTask(string description)
+		{
+			var task = new Task () { Description = description };
+			tasks.Add (task);
+		}
 
 	}
 }
