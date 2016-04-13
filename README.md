@@ -11,3 +11,5 @@ only want code for one app.
   * AgeCalc
   * MathFlashCards
   * GuessMyNumber (not working yet)
+* Apps that save activity state using OnSaveInstanceState
+ * ToDo-SaveInstanceState, uses XmlSerializer to save and restore object state
