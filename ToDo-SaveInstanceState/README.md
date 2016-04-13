@@ -1,4 +1,4 @@
-This is an example of a an activity that doesn't loose it's state when it is destroied and re-created. 
+This is an example of a an activity that doesn't loose it's state when it is destroyed and re-created. 
 
 The main concepts demonstrated are:
 *	Serializing and deserializing object state using the XmlSerializer class
