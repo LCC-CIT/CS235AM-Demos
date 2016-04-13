@@ -14,21 +14,24 @@ namespace ToDo
 		protected override void OnCreate (Bundle savedInstanceState)
 		{
 			base.OnCreate (savedInstanceState);
-
 			SetContentView (Resource.Layout.Main);
 
+			// Create a new taskMaster, or restore a saved one
 			if (savedInstanceState == null) {
-				taskMaster = new TaskMaster ();
+				taskMaster = new TaskMaster ("testing");
 			}
 			else {
+				// Deserialized the saved object state
+				string xmlTasks = savedInstanceState.GetString("Tasks");
 				XmlSerializer x = new XmlSerializer(typeof(TaskMaster));
-				taskMaster = (TaskMaster)x.Deserialize(
-					new StringReader(savedInstanceState.GetString("Tasks")));
+				taskMaster = (TaskMaster)x.Deserialize(new StringReader(xmlTasks));
 			}
 
+			// Display all the tasks
 			var taskTextView = FindViewById<TextView> (Resource.Id.taskTextView);
 			taskTextView.Text = taskMaster.GetTaskDescriptions ();
 
+			// Add a new task to the taskMaster list
 			Button enterButton = FindViewById<Button> (Resource.Id.enterButton);
 			var taskEditText = FindViewById<EditText>(Resource.Id.taskEditText);
 			enterButton.Click += delegate {
@@ -40,13 +43,17 @@ namespace ToDo
 
 		protected override void OnSaveInstanceState (Bundle outState)
 		{
+			// Use this to convert a stream to a string
 			StringWriter writer = new StringWriter ();
 
+			// Serialize the public state of taskMaster to XML
 			XmlSerializer taskMasterSerializer = new XmlSerializer(typeof(TaskMaster));
 			taskMasterSerializer.Serialize(writer, taskMaster);
 
-			string serialTasks = writer.ToString ();
-			outState.PutString ("Tasks", serialTasks );
+			// Save the serialized state
+			string xmlTasks = writer.ToString ();
+			outState.PutString ("Tasks", xmlTasks );
+
 			base.OnSaveInstanceState (outState);
 		}
 	}

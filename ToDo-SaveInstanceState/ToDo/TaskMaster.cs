@@ -17,8 +17,14 @@ namespace ToDo
 
 		public List<Task> Tasks {get { return tasks; } }
 
-		// Temporary, for testing
+		// default constructor
 		public TaskMaster()
+		{
+			// nothing to do
+		}
+
+		// Temporary, for testing. will be called if you pass any string
+		public TaskMaster(string dummy)
 		{
 			tasks.Add(new Task() {Description = "My first horrible task"});
 			tasks.Add(new Task() {Description = "A not so bad task"});
