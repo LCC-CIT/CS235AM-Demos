@@ -19,15 +19,15 @@ namespace IntentDemo
 			SetContentView (Resource.Layout.Age);
 
 			var tvName = FindViewById<TextView> (Resource.Id.tvName);
-			tvName.Text = Intent.GetStringExtra ("Name");
+			tvName.Text = Intent.GetStringExtra (MainActivity.EXTRA_NAME);
 
 			var tvBirthday = FindViewById<TextView> (Resource.Id.tvBirthday);
-			//tvBirthday.Text = Intent.GetStringExtra ("Birthday");
-			tvBirthday.Text = Intent.Extras.GetString("Birthday");
+			//tvBirthday.Text = Intent.GetStringExtra ("Birthday");  // either of these works
+			tvBirthday.Text = Intent.Extras.GetString(MainActivity.EXTRA_BIRTHDAY);   
 
 			var tvAge = FindViewById<TextView> (Resource.Id.tvAge);
-			tvAge.Text = Intent.GetIntExtra ("Age", 0).ToString();
-}
+			tvAge.Text = Intent.GetIntExtra (MainActivity.EXTRA_AGE, 0).ToString();
+		}
 	}
 }
 

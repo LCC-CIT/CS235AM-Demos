@@ -11,7 +11,9 @@ namespace IntentDemo
 	[Activity (Label = "IntentDemo", MainLauncher = true)]
 	public class MainActivity : Activity
 	{
-
+		public const string EXTRA_BIRTHDAY = "Birthday";
+		public const string EXTRA_NAME = "Name";
+		public const string EXTRA_AGE = "Age";
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -44,9 +46,9 @@ namespace IntentDemo
 					birthday = dpBirthday.DateTime;
 					age = (int)(DateTime.Now - birthday).TotalDays / 365;
 					Intent inAge = new Intent(this, typeof(AgeActivity) );
-					inAge.PutExtra("Name", name);
-					inAge.PutExtra("Age", age);
-					inAge.PutExtra("Birthday", birthday.ToShortDateString());
+					inAge.PutExtra(EXTRA_NAME, name);
+					inAge.PutExtra(EXTRA_AGE, age);
+					inAge.PutExtra(EXTRA_BIRTHDAY, birthday.ToShortDateString());
 					StartActivity(inAge);
 				}
 			};
