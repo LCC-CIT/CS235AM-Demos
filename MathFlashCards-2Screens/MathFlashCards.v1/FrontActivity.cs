@@ -8,6 +8,7 @@ namespace MathFlashCards
 	[Activity (Label = "Front", MainLauncher = true, Icon = "@mipmap/icon", LaunchMode = Android.Content.PM.LaunchMode.SingleInstance)]
 	public class FrontActivity : Activity
 	{
+		public const string EXTRA_ANSWER = "Answer";
 		MathQuiz quiz = new MathQuiz();
 
 		protected override void OnCreate (Bundle savedInstanceState)

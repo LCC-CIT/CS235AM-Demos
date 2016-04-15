@@ -36,7 +36,7 @@ namespace MathFlashCards
 		{
 			base.OnResume ();
 
-			int answer = Intent.Extras.GetInt ("Answer");
+			int answer = Intent.Extras.GetInt (FrontActivity.EXTRA_ANSWER);
 			var answerTextView = FindViewById<TextView> (Resource.Id.answerTextView);
 			answerTextView.Text = answer.ToString ();
 		}

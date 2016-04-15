@@ -10,6 +10,8 @@ namespace MathFlashCards
 	[Activity (Label = "Front", MainLauncher = true, Icon = "@mipmap/icon")]
 	public class FrontActivity : Activity
 	{
+		public const string EXTRA_ANSWER = "Answer";
+
 		MathQuiz quiz = new MathQuiz();
 
 		protected override void OnCreate (Bundle savedInstanceState)
@@ -29,7 +31,7 @@ namespace MathFlashCards
 				var back = new Intent(this, typeof(BackActivity));
 				// Note: Intent is both a class and a property name, be sure you have a using statement
 
-				back.PutExtra("Answer", quiz.Sum);
+				back.PutExtra(EXTRA_ANSWER, quiz.Sum);
 				StartActivity(back);
 			};
 		}
