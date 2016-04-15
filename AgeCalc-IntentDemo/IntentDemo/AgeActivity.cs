@@ -1,6 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using Android.App;
 using Android.Content;
@@ -24,7 +22,8 @@ namespace IntentDemo
 			tvName.Text = Intent.GetStringExtra ("Name");
 
 			var tvBirthday = FindViewById<TextView> (Resource.Id.tvBirthday);
-			tvBirthday.Text = Intent.GetStringExtra ("Birthday");
+			//tvBirthday.Text = Intent.GetStringExtra ("Birthday");
+			tvBirthday.Text = Intent.Extras.GetString("Birthday");
 
 			var tvAge = FindViewById<TextView> (Resource.Id.tvAge);
 			tvAge.Text = Intent.GetIntExtra ("Age", 0).ToString();

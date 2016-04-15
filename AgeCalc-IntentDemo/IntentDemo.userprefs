@@ -1,11 +1,18 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.015d456d39300811" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="IntentDemo\AgeActivity.cs">
+﻿<Properties StartupItem="IntentDemo/IntentDemo.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 (Jelly Bean)" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="IntentDemo/AgeActivity.cs">
     <Files>
-      <File FileName="IntentDemo\MainActivity.cs" Line="51" Column="51" />
-      <File FileName="IntentDemo\Resources\values\Strings.xml" Line="1" Column="1" />
-      <File FileName="IntentDemo\AgeActivity.cs" Line="4" Column="4" />
+      <File FileName="IntentDemo/AgeActivity.cs" Line="28" Column="58" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="IntentDemo" expanded="True">
+            <Node name="IntentDemo" expanded="True" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

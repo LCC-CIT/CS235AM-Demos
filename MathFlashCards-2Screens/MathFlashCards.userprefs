@@ -1,12 +1,24 @@
 ﻿<Properties StartupItem="MathFlashCards.v1/MathFlashCards.v1.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 (KitKat)" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MathFlashCards.v0/BackActivity.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 (Jelly Bean)" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MathFlashCards.v1/FrontActivity.cs">
     <Files>
-      <File FileName="MathFlashCards.v0/FrontActivity.cs" Line="24" Column="4" />
+      <File FileName="MathFlashCards.v0/FrontActivity.cs" Line="32" Column="13" />
       <File FileName="MathFlashCards.v0/Resources/Resource.designer.cs" Line="1" Column="1" />
-      <File FileName="MathFlashCards.v0/BackActivity.cs" Line="25" Column="45" />
-      <File FileName="MathFlashCards.v1/FrontActivity.cs" Line="1" Column="1" />
+      <File FileName="MathFlashCards.v1/FrontActivity.cs" Line="32" Column="3" />
+      <File FileName="MathFlashCards.v1/BackActivity.cs" Line="17" Column="1" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MathFlashCards" expanded="True">
+            <Node name="MathFlashCards.v0" expanded="True" />
+            <Node name="MathFlashCards.v1" expanded="True">
+              <Node name="FrontActivity.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

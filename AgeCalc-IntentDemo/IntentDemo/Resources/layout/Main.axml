@@ -23,6 +23,8 @@
     <DatePicker
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:spinnersShown="true"
+        android:calendarViewShown="false"
         android:id="@+id/dpBirthday" />
     <Button
         android:id="@+id/btnCalc"
