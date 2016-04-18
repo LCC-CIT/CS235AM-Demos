@@ -1,5 +1,5 @@
 #################
-## Visual Studio
+## Visual Studio and Xamarin Studio
 #################
 
 [Oo]bj
@@ -13,6 +13,7 @@
 [Tt]humbs.db 
 TipOfTheDay.Domain/Concrete/TipOfTheDayDatabase.dacpac
 *.mdf
+*.mdb
 *.ldf
 ListActivityDemo-VocabParseSecIndex/ListActivityDemo.userprefs
 *.userprefs
@@ -21,8 +22,9 @@ ListActivityDemo-VocabParseSecIndex/ListActivityDemo.userprefs
 
 *.dll
 
-*.userprefs
 
-ListActivityDemo-VocabParseSecIndex/ListActivityDemo.userprefs
+GussMyNumber-2Screens/GussMyNumber-2Screens.userprefs
 
-*.userprefs
+AgeCalc-IntentDemo/IntentDemo.userprefs
+
+GussMyNumber-2Screens/GussMyNumber-2Screens/bin/Debug/System.ServiceModel.Internals.dll.mdb
