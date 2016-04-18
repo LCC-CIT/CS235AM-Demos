@@ -11,5 +11,10 @@ only want code for one app.
   * AgeCalc
   * MathFlashCards
   * GuessMyNumber (not working yet)
-* Apps that save activity state using OnSaveInstanceState
+* App that saves activity state using OnSaveInstanceState
  * ToDo-SaveInstanceState, uses XmlSerializer to save and restore object state
+* Apps that use a ListActivity with fast scrolling
+  * ListActivityDemo-VocabularyParseSectionIndex, 3 projects:
+    * CustomAdapterDemo: Custom adapter class defined and used for string array
+    * ListActivityDemo: Uses pre-defined ArrayAdapter class for an array of Objects
+    * ListAndParser: Uses a custom adapter with a section indexer
