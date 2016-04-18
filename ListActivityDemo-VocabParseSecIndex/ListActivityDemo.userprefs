@@ -1,8 +1,9 @@
 ﻿<Properties StartupItem="ListAndParser\ListAndParser.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus_5_API_19" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ListAndParser/MainActivity.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 (Jelly Bean)" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ListAndParser\MainActivity.cs">
     <Files>
-      <File FileName="ListAndParser/MainActivity.cs" Line="1" Column="1" />
+      <File FileName="ListAndParser\MainActivity.cs" Line="110" Column="35" />
+      <File FileName="ListAndParser\TextParser.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -11,7 +12,7 @@
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.ListAndParser AndroidDeviceId-Debug="192.168.56.101:5555" />
-  <MonoDevelop.Ide.ItemProperties.CustomAdapterDemo AndroidDeviceId-Debug="192.168.56.101:5555" />
   <MonoDevelop.Ide.ItemProperties.ListActivityDemo AndroidDeviceId-Debug="192.168.56.101:5555" />
+  <MonoDevelop.Ide.ItemProperties.CustomAdapterDemo AndroidDeviceId-Debug="192.168.56.101:5555" />
+  <MonoDevelop.Ide.ItemProperties.ListAndParser AndroidDeviceId-Debug="192.168.56.101:5555" />
 </Properties>

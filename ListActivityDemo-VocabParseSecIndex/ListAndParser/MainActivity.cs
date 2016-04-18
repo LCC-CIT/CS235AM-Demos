@@ -130,8 +130,12 @@ namespace ListAndParser
 				} 
 			}
 
+			// Get the count of sections
 			sections = new string[alphaIndex.Keys.Count];
+			// Copy section names into the sections array
 			alphaIndex.Keys.CopyTo(sections, 0);
+
+			// Copy section names into a Java object array
 			sectionsObjects = new Java.Lang.Object[sections.Length];
 			for (var i = 0; i < sections.Length; i++)
 			{
