@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<vocab>
+    <word>
+    	<Spanish>mono</Spanish>
+		<English>monkey</English>
+		<PartOfSpeech>noun</PartOfSpeech>
+	</word>
+    <word>
+    	<Spanish>agua</Spanish>
+		<English>water</English>
+		<PartOfSpeech>noun</PartOfSpeech>
+	</word>
+    <word>
+    	<Spanish>saltar</Spanish>
+		<English>to jump</English>
+		<PartOfSpeech>verb</PartOfSpeech>
+	</word>
+    <word>
+    	<Spanish>risa</Spanish>
+		<English>laugh</English>
+		<PartOfSpeech>verb</PartOfSpeech>
+	</word>
+
+</vocab>
