@@ -17,12 +17,13 @@ namespace ListActivityDemo
 		{
 			base.OnCreate (bundle);
 
-			vocab = new VocabItem[3];
+			vocab = new VocabItem[4];
 			vocab[0] = new VocabItem("mono", "monkey");
 			vocab [1] = new VocabItem ("agua", "water");
 			vocab [2] = new VocabItem ("si", "yes");
+			vocab [3] = new VocabItem ("banyo", "bathroom");
 
-			ListAdapter = new ArrayAdapter (this, 
+			ListAdapter = new ArrayAdapter<VocabItem> (this, 
 			     Android.Resource.Layout.SimpleListItem1,
 			     vocab);
 		}

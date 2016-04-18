@@ -1,4 +1,4 @@
-﻿<Properties StartupItem="ListAndParser/ListAndParser.csproj">
+﻿<Properties StartupItem="ListAndParser\ListAndParser.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus_5_API_19" />
   <MonoDevelop.Ide.Workbench ActiveDocument="ListAndParser/MainActivity.cs">
     <Files>
@@ -11,7 +11,7 @@
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.ListActivityDemo AndroidDeviceId-Debug="192.168.56.101:5555" />
-  <MonoDevelop.Ide.ItemProperties.CustomAdapterDemo AndroidDeviceId-Debug="192.168.56.101:5555" />
   <MonoDevelop.Ide.ItemProperties.ListAndParser AndroidDeviceId-Debug="192.168.56.101:5555" />
+  <MonoDevelop.Ide.ItemProperties.CustomAdapterDemo AndroidDeviceId-Debug="192.168.56.101:5555" />
+  <MonoDevelop.Ide.ItemProperties.ListActivityDemo AndroidDeviceId-Debug="192.168.56.101:5555" />
 </Properties>
