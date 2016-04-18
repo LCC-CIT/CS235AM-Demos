@@ -16,3 +16,13 @@ TipOfTheDay.Domain/Concrete/TipOfTheDayDatabase.dacpac
 *.ldf
 ListActivityDemo-VocabParseSecIndex/ListActivityDemo.userprefs
 *.userprefs
+
+*.nupkg
+
+*.dll
+
+*.userprefs
+
+ListActivityDemo-VocabParseSecIndex/ListActivityDemo.userprefs
+
+*.userprefs
