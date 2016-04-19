@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Android.Runtime;
 using System.Xml;
+using System.IO;
 
 namespace ListActivitySimpleAdapterXmlFile
 {
@@ -11,7 +12,7 @@ namespace ListActivitySimpleAdapterXmlFile
 
 		public List<IDictionary<string, object>> VocabList { get { return vocabList; } }
 
-		public ReadXmlFile ()
+		public ReadXmlFile (Stream xmlStream)
 		{
 			// SimleAdapter requires a list of JavaDictionary<string,object> objects
 			vocabList = new List<IDictionary<string, object>>(); 
@@ -31,28 +32,25 @@ namespace ListActivitySimpleAdapterXmlFile
 			item3.Add ("English", "to jump");
 			item3.Add ("PartOfSpeech", "verb");
 			vocabList.Add(item3);
-		}
 
-		public void ReadFile()
-		{
-			using (XmlReader reader = XmlReader.Create ("perls.xml")) {
+			// The real thing
+			using (XmlReader reader = XmlReader.Create (xmlStream)) {
 				while (reader.Read ()) {
 					// Only detect start elements.
 					if (reader.IsStartElement ()) {
 						// Get element name and switch on it.
 						switch (reader.Name) {
-						case "perls":
+						case "vocab":
 						// Detect this element.
-							Console.WriteLine ("Start <perls> element.");
+							Console.WriteLine ("Start <vocab> element.");
 							break;
-						case "article":
+						case "word":
 						// Detect this article element.
-							Console.WriteLine ("Start <article> element.");
-						// Search for the attribute name on this current node.
-							string attribute = reader ["name"];
-							if (attribute != null) {
-								Console.WriteLine ("  Has attribute name: " + attribute);
-							}
+							Console.WriteLine ("Start <word> element.");
+							break;
+						case "Spanish":
+							// Detect this article element.
+							Console.WriteLine ("Start <Spanish> element.");
 						// Next read will contain text.
 							if (reader.Read ()) {
 								Console.WriteLine ("  Text node: " + reader.Value.Trim ());

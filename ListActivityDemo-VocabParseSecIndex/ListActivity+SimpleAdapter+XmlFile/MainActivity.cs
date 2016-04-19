@@ -16,7 +16,7 @@ namespace ListActivitySimpleAdapterXmlFile
 		{
 			base.OnCreate (bundle);
 
-			var reader = new ReadXmlFile();
+			var reader = new ReadXmlFile(Assets.Open(@"Vocab.xml"));
 			dataList = reader.VocabList;
 			ListAdapter = new SimpleAdapter (this, 
 				dataList,
