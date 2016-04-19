@@ -907,9 +907,6 @@ namespace ListActivitySimpleAdapterXmlFile
 			// aapt resource value: 0x7f0a0018
 			public const int middle = 2131361816;
 			
-			// aapt resource value: 0x7f0a003c
-			public const int myButton = 2131361852;
-			
 			// aapt resource value: 0x7f0a0012
 			public const int never = 2131361810;
 			
@@ -1096,10 +1093,7 @@ namespace ListActivitySimpleAdapterXmlFile
 			public const int abc_simple_decor = 2130968599;
 			
 			// aapt resource value: 0x7f040018
-			public const int Main = 2130968600;
-			
-			// aapt resource value: 0x7f040019
-			public const int support_simple_spinner_dropdown_item = 2130968601;
+			public const int support_simple_spinner_dropdown_item = 2130968600;
 			
 			static Layout()
 			{
@@ -1169,11 +1163,8 @@ namespace ListActivitySimpleAdapterXmlFile
 			// aapt resource value: 0x7f0b000b
 			public const int abc_shareactionprovider_share_with_application = 2131427339;
 			
-			// aapt resource value: 0x7f0b000e
-			public const int app_name = 2131427342;
-			
 			// aapt resource value: 0x7f0b000d
-			public const int hello = 2131427341;
+			public const int app_name = 2131427341;
 			
 			static String()
 			{

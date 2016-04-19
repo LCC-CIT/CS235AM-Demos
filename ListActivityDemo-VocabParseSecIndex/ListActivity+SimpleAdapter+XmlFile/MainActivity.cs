@@ -7,7 +7,7 @@ using Android.Runtime;
 
 namespace ListActivitySimpleAdapterXmlFile
 {
-	[Activity (Label = "ListActivity+SimpleAdapter+XmlFile", MainLauncher = true, Icon = "@mipmap/icon")]
+	[Activity (Label = "ListActivity SimpleAdapter XmlFile", MainLauncher = true, Icon = "@mipmap/icon")]
 	public class MainActivity : ListActivity
 	{
 		List<IDictionary<string, object>> dataList;
