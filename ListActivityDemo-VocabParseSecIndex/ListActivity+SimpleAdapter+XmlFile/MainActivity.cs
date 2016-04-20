@@ -14,6 +14,7 @@ namespace ListActivitySimpleAdapterXmlFile
 		{
 			base.OnCreate (bundle);
 
+			// Read and prase the vocabulary file and provide the adapter with the data
 			var reader = new XmlFileReader(Assets.Open(@"spanish-english.xml"));
 			var dataList = reader.VocabList;
 			ListAdapter = new VocabAdapter (this, 
@@ -28,7 +29,7 @@ namespace ListActivitySimpleAdapterXmlFile
 
 		}
 
-
+		// Event handler for clicking on a row in the list view 
 		protected override void OnListItemClick(ListView l,
 			View v,
 			int position,
