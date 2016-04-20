@@ -67,7 +67,7 @@
     <Folder Include="Resources\layout\" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\Vocabulary.csd" />
+    <AndroidAsset Include="Assets\spanish-english.csv" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

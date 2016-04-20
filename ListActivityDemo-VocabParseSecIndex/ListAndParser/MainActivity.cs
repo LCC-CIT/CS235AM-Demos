@@ -22,8 +22,8 @@ namespace ListAndParser
 			vocabItems = new List<VocabItem>();		// Lists are more convenient than arrays
 
 			const int NUMBER_OF_FIELDS = 3;	 // The text file will have 3 fields, English word, Spanish word, part of speech, per line
-			TextParser parser = new TextParser (", ", NUMBER_OF_FIELDS);	// We will use this to get all the vocab info from the file
-			var vocabList = parser.ParseText (Assets.Open(@"Vocabulary.csd"));		// Open the file as a stream and parse all the text
+			TextParser parser = new TextParser (",", NUMBER_OF_FIELDS);	// We will use this to get all the vocab info from the file
+			var vocabList = parser.ParseText (Assets.Open(@"spanish-english.csv"));		// Open the file as a stream and parse all the text
 			vocabList.Sort((x, y) => String.Compare(x[2], y[2],					// sort on part of speech so the section indexer will work.
 			                                        StringComparison.Ordinal));
 
