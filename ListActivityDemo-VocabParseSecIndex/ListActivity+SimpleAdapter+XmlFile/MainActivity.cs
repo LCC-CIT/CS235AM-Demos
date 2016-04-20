@@ -10,21 +10,24 @@ namespace ListActivitySimpleAdapterXmlFile
 	[Activity (Label = "ListActivity SimpleAdapter XmlFile", MainLauncher = true, Icon = "@mipmap/icon")]
 	public class MainActivity : ListActivity
 	{
-		List<IDictionary<string, object>> dataList;
-
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
 
 			var reader = new XmlFileReader(Assets.Open(@"spanish-english.xml"));
-			dataList = reader.VocabList;
-			ListAdapter = new SimpleAdapter (this, 
+			var dataList = reader.VocabList;
+			ListAdapter = new VocabAdapter (this, 
 				dataList,
 				Android.Resource.Layout.SimpleListItem1,
 				new string[] {"spanish"},
 				new int[] {Android.Resource.Id.Text1}
 			);
+
+			// This is all you need to do to enable fast scrolling
+			ListView.FastScrollEnabled = true;
+
 		}
+
 
 		protected override void OnListItemClick(ListView l,
 			View v,

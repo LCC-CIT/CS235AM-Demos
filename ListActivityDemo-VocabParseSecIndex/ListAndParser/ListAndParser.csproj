@@ -53,6 +53,7 @@
     <Compile Include="..\CustomAdapterDemo\VocabItem.cs">
       <Link>VocabItem.cs</Link>
     </Compile>
+    <Compile Include="VocabAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
