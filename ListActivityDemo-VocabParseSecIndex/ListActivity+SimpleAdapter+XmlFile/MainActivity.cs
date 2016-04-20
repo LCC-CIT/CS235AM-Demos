@@ -16,12 +16,12 @@ namespace ListActivitySimpleAdapterXmlFile
 		{
 			base.OnCreate (bundle);
 
-			var reader = new ReadXmlFile(Assets.Open(@"Vocab.xml"));
+			var reader = new XmlFileReader(Assets.Open(@"spanish-english.xml"));
 			dataList = reader.VocabList;
 			ListAdapter = new SimpleAdapter (this, 
 				dataList,
 				Android.Resource.Layout.SimpleListItem1,
-				new string[] {"Spanish"},
+				new string[] {"spanish"},
 				new int[] {Android.Resource.Id.Text1}
 			);
 		}
@@ -31,9 +31,10 @@ namespace ListActivitySimpleAdapterXmlFile
 			int position,
 			long id)
 		{
-			string word = (string)((JavaDictionary<string,object>)ListView.GetItemAtPosition(position))["English"];
+			string word = (string)((JavaDictionary<string,object>)ListView.GetItemAtPosition(position))["english"];
+			string pos = (string)((JavaDictionary<string,object>)ListView.GetItemAtPosition(position))["pos"];
 			Android.Widget.Toast.MakeText(this,
-				word,
+				word + ", " + pos,
 				Android.Widget.ToastLength.Short).Show();
 		}
 

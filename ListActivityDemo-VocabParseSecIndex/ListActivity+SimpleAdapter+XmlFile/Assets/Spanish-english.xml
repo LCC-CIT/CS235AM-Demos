@@ -1,4 +1,4 @@
-<?xmlversion="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <vocabulary>
 <word>
 <spanish>abojo</spanish>
@@ -27,7 +27,7 @@
 </word>
 <word>
 <spanish>amar</spanish>
-<english>tolove</english>
+<english>to love</english>
 <pos>verb</pos>
 </word>
 <word>
@@ -47,7 +47,7 @@
 </word>
 <word>
 <spanish>años</spanish>
-<english>yearsold</english>
+<english>years old</english>
 <pos>noun</pos>
 </word>
 <word>
@@ -62,7 +62,7 @@
 </word>
 <word>
 <spanish>beber</spanish>
-<english>todrink</english>
+<english>to drink</english>
 <pos>verb</pos>
 </word>
 <word>
@@ -102,7 +102,7 @@
 </word>
 <word>
 <spanish>caminar</spanish>
-<english>towalk</english>
+<english>to walk</english>
 <pos>verb</pos>
 </word>
 <word>
@@ -137,32 +137,27 @@
 </word>
 <word>
 <spanish>comer</spanish>
-<english>toeat</english>
+<english>to eat</english>
 <pos>verb</pos>
 </word>
 <word>
 <spanish>correr</spanish>
-<english>torun</english>
+<english>to run</english>
 <pos>verb</pos>
 </word>
 <word>
 <spanish>cosas</spanish>
-<english>stuff</english>
+<english>things</english>
 <pos>noun</pos>
 </word>
 <word>
 <spanish>creo</spanish>
-<english>I</english>
-<pos>pro</pos>
-</word>
-<word>
-<spanish>decir</spanish>
-<english>tosay</english>
+<english>I think</english>
 <pos>verb</pos>
 </word>
 <word>
 <spanish>decir</spanish>
-<english>say</english>
+<english>to say</english>
 <pos>verb</pos>
 </word>
 <word>
@@ -182,7 +177,7 @@
 </word>
 <word>
 <spanish>dormir</spanish>
-<english>tosleep</english>
+<english>to sleep</english>
 <pos>verb</pos>
 </word>
 <word>
@@ -212,7 +207,7 @@
 </word>
 <word>
 <spanish>entrar</spanish>
-<english>toenter</english>
+<english>to enter</english>
 <pos>verb</pos>
 </word>
 <word>
@@ -232,7 +227,7 @@
 </word>
 <word>
 <spanish>estudiar</spanish>
-<english>tostudy</english>
+<english>to study</english>
 <pos>verb</pos>
 </word>
 <word>
@@ -292,7 +287,7 @@
 </word>
 <word>
 <spanish>gustar</spanish>
-<english>tolike</english>
+<english>to like</english>
 <pos>verb</pos>
 </word>
 <word>
@@ -302,12 +297,12 @@
 </word>
 <word>
 <spanish>has</spanish>
-<english>have</english>
+<english>searched</english>
 <pos>verb</pos>
 </word>
 <word>
 <spanish>hasta</spanish>
-<english>to</english>
+<english>up to</english>
 <pos>prep</pos>
 </word>
 <word>
@@ -331,11 +326,6 @@
 <pos>noun</pos>
 </word>
 <word>
-<spanish>hombre</spanish>
-<english>man</english>
-<pos>noun</pos>
-</word>
-<word>
 <spanish>ir</spanish>
 <english>go</english>
 <pos>verb</pos>
@@ -347,7 +337,7 @@
 </word>
 <word>
 <spanish>jugar</spanish>
-<english>toplay</english>
+<english>to play</english>
 <pos>verb</pos>
 </word>
 <word>
@@ -357,7 +347,7 @@
 </word>
 <word>
 <spanish>leer</spanish>
-<english>toread</english>
+<english>to read</english>
 <pos>verb</pos>
 </word>
 <word>
@@ -432,12 +422,12 @@
 </word>
 <word>
 <spanish>mí</spanish>
-<english>me</english>
+<english>my</english>
 <pos>pro</pos>
 </word>
 <word>
 <spanish>ni</spanish>
-<english>or</english>
+<english>neither</english>
 <pos>con</pos>
 </word>
 <word>
@@ -462,7 +452,7 @@
 </word>
 <word>
 <spanish>oscurecer</spanish>
-<english>todim</english>
+<english>to dim</english>
 <pos>verb</pos>
 </word>
 <word>
@@ -527,17 +517,17 @@
 </word>
 <word>
 <spanish>sabes</spanish>
-<english>know</english>
+<english>you know</english>
 <pos>verb</pos>
 </word>
 <word>
 <spanish>saltar</spanish>
-<english>tojump</english>
+<english>to jump</english>
 <pos>verb</pos>
 </word>
 <word>
 <spanish>sentar</spanish>
-<english>tosit</english>
+<english>to sit</english>
 <pos>verb</pos>
 </word>
 <word>
@@ -552,7 +542,7 @@
 </word>
 <word>
 <spanish>siento</spanish>
-<english>am</english>
+<english>I feel</english>
 <pos>verb</pos>
 </word>
 <word>
@@ -602,7 +592,7 @@
 </word>
 <word>
 <spanish>tenemos</spanish>
-<english>have</english>
+<english>we have</english>
 <pos>verb</pos>
 </word>
 <word>
@@ -616,18 +606,13 @@
 <pos>noun</pos>
 </word>
 <word>
-<spanish>tiempo</spanish>
-<english>time</english>
-<pos>noun</pos>
-</word>
-<word>
 <spanish>tonto</spanish>
 <english>silly</english>
 <pos>adj</pos>
 </word>
 <word>
 <spanish>trabajar</spanish>
-<english>towork</english>
+<english>to work</english>
 <pos>verb</pos>
 </word>
 <word>
@@ -642,12 +627,12 @@
 </word>
 <word>
 <spanish>va</spanish>
-<english>will</english>
-<pos>adv</pos>
+<english>goes</english>
+<pos>verb</pos>
 </word>
 <word>
 <spanish>ver</spanish>
-<english>see</english>
+<english>look</english>
 <pos>verb</pos>
 </word>
 <word>
@@ -662,7 +647,7 @@
 </word>
 <word>
 <spanish>volar</spanish>
-<english>tofly</english>
+<english>to fly</english>
 <pos>verb</pos>
 </word>
 <word>
@@ -671,8 +656,8 @@
 <pos>pro</pos>
 </word>
 <word>
-<spanish>you</spanish>
-<english>usted</english>
+<spanish>usted</spanish>
+<english>you</english>
 <pos>pro</pos>
 </word>
 <word>
