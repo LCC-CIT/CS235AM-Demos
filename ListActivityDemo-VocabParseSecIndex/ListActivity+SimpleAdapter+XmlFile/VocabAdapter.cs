@@ -10,7 +10,7 @@ namespace ListActivitySimpleAdapterXmlFile
 		IList<IDictionary<string, object>> dataList;
 		String[] sections;
 		Java.Lang.Object[] sectionsObjects;
-		Dictionary<string, int> alphaIndex; 
+		Dictionary<string, int> posIndex; 
 
 		public VocabAdapter (Context context, 
 			IList<IDictionary<string, object>> data, 
@@ -24,7 +24,7 @@ namespace ListActivitySimpleAdapterXmlFile
 
 		public int GetPositionForSection(int section)
 		{
-			return alphaIndex [sections [section]];
+			return posIndex [sections [section]];
 		}
 
 		public int GetSectionForPosition(int position)
@@ -39,21 +39,21 @@ namespace ListActivitySimpleAdapterXmlFile
 
 		private void BuildSectionIndex()
 		{
-			alphaIndex = new Dictionary<string, int>();		// Map sequential numbers
+			posIndex = new Dictionary<string, int>();		// Map sequential numbers
 			for (var i = 0; i < Count; i++)
 			{
 				// Use the part of speech as a key
 				var key = (string)dataList[i]["pos"];
-				if (!alphaIndex.ContainsKey(key))
+				if (!posIndex.ContainsKey(key))
 				{
-					alphaIndex.Add(key, i);
+					posIndex.Add(key, i);
 				} 
 			}
 
 			// Get the count of sections
-			sections = new string[alphaIndex.Keys.Count];
+			sections = new string[posIndex.Keys.Count];
 			// Copy section names into the sections array
-			alphaIndex.Keys.CopyTo(sections, 0);
+			posIndex.Keys.CopyTo(sections, 0);
 
 			// Copy section names into a Java object array
 			sectionsObjects = new Java.Lang.Object[sections.Length];

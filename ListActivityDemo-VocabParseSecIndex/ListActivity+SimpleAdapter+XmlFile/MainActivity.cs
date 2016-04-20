@@ -18,9 +18,9 @@ namespace ListActivitySimpleAdapterXmlFile
 			var dataList = reader.VocabList;
 			ListAdapter = new VocabAdapter (this, 
 				dataList,
-				Android.Resource.Layout.SimpleListItem1,
-				new string[] {"spanish"},
-				new int[] {Android.Resource.Id.Text1}
+				Android.Resource.Layout.TwoLineListItem,
+				new string[] {"spanish", "pos"},
+				new int[] {Android.Resource.Id.Text1, Android.Resource.Id.Text2}
 			);
 
 			// This is all you need to do to enable fast scrolling

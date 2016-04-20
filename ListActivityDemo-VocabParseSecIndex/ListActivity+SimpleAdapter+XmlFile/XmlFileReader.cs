@@ -16,12 +16,13 @@ namespace ListActivitySimpleAdapterXmlFile
 		{
 			// SimpleAdapter requires a list of JavaDictionary<string,object> objects
 			vocabList = new List<IDictionary<string, object>>(); 
+
 			/*
 			//for testing
 			var item1 = new JavaDictionary<string, object> ();
 			item1.Add ("spanish", "mono");
 			item1.Add ("english", "monkey");
-			item1.Add ("partOfSpeech", "noun");
+			item1.Add ("pos", "noun");
 			vocabList.Add(item1);
 			var item2 = new JavaDictionary<string, object> ();
 			item2.Add ("spanish", "agua");
@@ -34,7 +35,7 @@ namespace ListActivitySimpleAdapterXmlFile
 			item3.Add ("pos", "verb");
 			vocabList.Add(item3);
 			*/
-
+		
 			// Parse the xml file and fill the list of JavaDictionary objects with vocabulary data
 			using (XmlReader reader = XmlReader.Create (xmlStream)) {
 				JavaDictionary<string, object> word = null;
@@ -74,7 +75,7 @@ namespace ListActivitySimpleAdapterXmlFile
 						
 				}
 			}
-
+		
 		}
 	}
 }
