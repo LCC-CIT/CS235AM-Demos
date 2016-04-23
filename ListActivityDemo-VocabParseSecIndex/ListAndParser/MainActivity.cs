@@ -19,19 +19,23 @@ namespace ListAndParser
 		{
 			base.OnCreate (bundle);
 
-			vocabItems = new List<VocabItem>();		// Lists are more convenient than arrays
+			vocabItems = new List<VocabItem>();		// Our list adapter will use this (lists are nicer to work with than arrays)
 
-			const int NUMBER_OF_FIELDS = 3;	 // The text file will have 3 fields, English word, Spanish word, part of speech, per line
-			TextParser parser = new TextParser (",", NUMBER_OF_FIELDS);	// We will use this to get all the vocab info from the file
-			var vocabList = parser.ParseText (Assets.Open(@"spanish-english.csv"));		// Open the file as a stream and parse all the text
-			vocabList.Sort((x, y) => String.Compare(x[2], y[2],					// sort on part of speech so the section indexer will work.
-			                                        StringComparison.Ordinal));
+			// parse the spanish-english vocabulary file
+			const int NUMBER_OF_FIELDS = 3;	   // The text file will have 3 fields, English word, Spanish word, and part of speech.
+			TextParser parser = new TextParser (",", NUMBER_OF_FIELDS);	   // instantiate our general purpose text file parser object.
+			List<string[]> stringArrays;    // The parser generates a List of string arrays. Each array represents one line of the text file.
+			stringArrays= parser.ParseText (Assets.Open(@"spanish-english.csv"));     // Open the file as a stream and parse all the text
+
+			// Sort the List of string arrays
+			stringArrays.Sort((x, y) => String.Compare(x[2], y[2],	  // provide a comparator method for the array element containing pos		
+				StringComparison.Ordinal));      // Sorts on part of speech using the comparator above. The rows need to be in order for the indexer to work.
 
 			// Copy the List of strings into our List of VocabItem objects
-			foreach(string[] wordInfo in vocabList)
+			foreach(string[] wordInfo in stringArrays)    
 				vocabItems.Add(new VocabItem(wordInfo[0], wordInfo[1], wordInfo[2]));
 
-			// Instantiate our custome list adapter
+			// Instantiate our custom listView adapter
 			ListAdapter = new VocabAdapter (this, vocabItems);
 
 			// This is all you need to do to enable fast scrolling
