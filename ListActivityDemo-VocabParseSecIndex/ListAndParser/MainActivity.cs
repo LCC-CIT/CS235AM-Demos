@@ -19,7 +19,7 @@ namespace ListAndParser
 		{
 			base.OnCreate (bundle);
 
-			vocabItems = new List<VocabItem>();		// Our list adapter will use this (lists are nicer to work with than arrays)
+			vocabItems = new List<VocabItem>();		// Instantiate the List object, note that there are no VocabItem objects yet
 
 			// parse the spanish-english vocabulary file
 			const int NUMBER_OF_FIELDS = 3;	   // The text file will have 3 fields, English word, Spanish word, and part of speech.
