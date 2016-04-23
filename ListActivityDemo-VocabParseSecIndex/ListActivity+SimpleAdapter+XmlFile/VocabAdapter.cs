@@ -7,24 +7,26 @@ namespace ListActivitySimpleAdapterXmlFile
 {
 	public class VocabAdapter : SimpleAdapter, ISectionIndexer
 	{
-		IList<IDictionary<string, object>> dataList;
+		List<IDictionary<string, object>> dataList;
 		String[] sections;
 		Java.Lang.Object[] sectionsObjects;
-		Dictionary<string, int> alphaIndex; 
+		Dictionary<string, int> partOfSpeechIndex; 
 
 		public VocabAdapter (Context context, 
-			IList<IDictionary<string, object>> data, 
+			List<IDictionary<string, object>> data, 
 			Int32 resource, 
 			String[] from, 
 			Int32[] to) : base(context, data, resource, from, to)
 		{
 			dataList = data;
+			// Sort list by Part Of Speech (pos) field
+			dataList.Sort((x, y) => String.Compare((string)x[XmlVocabFileParser.POS], (string)y[XmlVocabFileParser.POS]));
 			BuildSectionIndex ();
 		}
 
 		public int GetPositionForSection(int section)
 		{
-			return alphaIndex [sections [section]];
+			return partOfSpeechIndex [sections [section]];
 		}
 
 		public int GetSectionForPosition(int position)
@@ -39,21 +41,23 @@ namespace ListActivitySimpleAdapterXmlFile
 
 		private void BuildSectionIndex()
 		{
-			alphaIndex = new Dictionary<string, int>();		// Map sequential numbers
+
+
+			partOfSpeechIndex = new Dictionary<string, int>();		// Dictionaray will contain section names
 			for (var i = 0; i < Count; i++)
 			{
-				// Use the part of speech as a key
-				var key = (string)dataList[i]["pos"];
-				if (!alphaIndex.ContainsKey(key))
+				// Use the pos field as a key
+				var key = (string)dataList[i][XmlVocabFileParser.POS];
+				if (!partOfSpeechIndex.ContainsKey(key))
 				{
-					alphaIndex.Add(key, i);
+					partOfSpeechIndex.Add(key, i);
 				} 
 			}
 
 			// Get the count of sections
-			sections = new string[alphaIndex.Keys.Count];
+			sections = new string[partOfSpeechIndex.Keys.Count];
 			// Copy section names into the sections array
-			alphaIndex.Keys.CopyTo(sections, 0);
+			partOfSpeechIndex.Keys.CopyTo(sections, 0);
 
 			// Copy section names into a Java object array
 			sectionsObjects = new Java.Lang.Object[sections.Length];
