@@ -57,13 +57,16 @@
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\Main.axml" />
     <AndroidResource Include="Resources\values\Strings.xml" />
     <AndroidResource Include="Resources\drawable\Icon.png" />
     <AndroidResource Include="Resources\drawable\Rock.png" />
     <AndroidResource Include="Resources\drawable\Scissors.png" />
     <AndroidResource Include="Resources\drawable\pebbles.jpg" />
     <AndroidResource Include="Resources\drawable\Paper.png" />
+    <AndroidResource Include="Resources\layout\Main.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Resources\layout\" />
+  </ItemGroup>
 </Project>
