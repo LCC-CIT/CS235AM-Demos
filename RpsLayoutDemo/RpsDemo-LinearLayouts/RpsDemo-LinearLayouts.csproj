@@ -64,6 +64,7 @@
     <AndroidResource Include="Resources\drawable\pebbles.jpg" />
     <AndroidResource Include="Resources\drawable\Paper.png" />
     <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\layout-land\Main.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ItemGroup>
