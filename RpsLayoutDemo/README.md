@@ -3,7 +3,7 @@ This Xamarin solution contains projects for apps that have both portrait and lan
  * RpsDemo-LinearLayouts
  * RpsDemo-RelativeLayouts
 
-Note: This app is just one app in the class demo repository. To get the source code for this app you will need to clone or download the whole repository.
+Note: This solution is just one solution in the class demo repository. To get the source code for this app you will need to clone or download the whole repository.
 
 This code was written as an example for a class I teach at Lane Community College, 
 CS235AM, Intermediate Mobile Applications Development: Android. 
