@@ -77,6 +77,7 @@
     </AndroidResource>
     <AndroidResource Include="Resources\layout\activity_main.xml" />
     <AndroidResource Include="Resources\values\dimens.xml" />
+    <AndroidResource Include="Resources\layout-land\activity_main.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
