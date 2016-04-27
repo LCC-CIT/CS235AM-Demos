@@ -41,6 +41,25 @@ namespace RpsDemoRelativeLayout
 			}
 		}
 		
+		public partial class Dimension
+		{
+			
+			// aapt resource value: 0x7f050000
+			public const int activity_horizontal_margin = 2131034112;
+			
+			// aapt resource value: 0x7f050001
+			public const int activity_vertical_margin = 2131034113;
+			
+			static Dimension()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Dimension()
+			{
+			}
+		}
+		
 		public partial class Drawable
 		{
 			
@@ -69,8 +88,26 @@ namespace RpsDemoRelativeLayout
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060000
-			public const int myButton = 2131099648;
+			// aapt resource value: 0x7f070006
+			public const int compMoveTextView = 2131165190;
+			
+			// aapt resource value: 0x7f070000
+			public const int playButton = 2131165184;
+			
+			// aapt resource value: 0x7f070002
+			public const int rpsEditText = 2131165186;
+			
+			// aapt resource value: 0x7f070001
+			public const int rpsImage = 2131165185;
+			
+			// aapt resource value: 0x7f070003
+			public const int textView = 2131165187;
+			
+			// aapt resource value: 0x7f070005
+			public const int textView2 = 2131165189;
+			
+			// aapt resource value: 0x7f070004
+			public const int winnerLabel = 2131165188;
 			
 			static Id()
 			{
@@ -86,7 +123,7 @@ namespace RpsDemoRelativeLayout
 		{
 			
 			// aapt resource value: 0x7f040000
-			public const int Main = 2130968576;
+			public const int activity_main = 2130968576;
 			
 			static Layout()
 			{
@@ -117,11 +154,14 @@ namespace RpsDemoRelativeLayout
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f050001
-			public const int app_name = 2131034113;
+			// aapt resource value: 0x7f060002
+			public const int action_settings = 2131099650;
 			
-			// aapt resource value: 0x7f050000
-			public const int hello = 2131034112;
+			// aapt resource value: 0x7f060000
+			public const int app_name = 2131099648;
+			
+			// aapt resource value: 0x7f060001
+			public const int hello_world = 2131099649;
 			
 			static String()
 			{
