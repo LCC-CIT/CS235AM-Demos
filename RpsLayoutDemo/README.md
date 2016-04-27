@@ -1,7 +1,7 @@
 This Xamarin solution contains projects for apps that have both portrait and landscape layouts
 * RpsLayoutDemo - Rock, Paper, Scissors game - 2 projects:
-** RpsDemo-LinearLayouts
-** RpsDemo-RelativeLayouts
+ * RpsDemo-LinearLayouts
+ * RpsDemo-RelativeLayouts
 
 These apps were written for use with a class I teach at Lane Community College, 
 CS235AM, Intermediate Mobile Applications Development: Android. 
