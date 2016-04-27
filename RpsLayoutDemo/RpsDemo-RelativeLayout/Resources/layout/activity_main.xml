@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Waiting..."
-        android:id="@+id/winnerLabel"
+        android:id="@+id/winnerTextView"
         android:layout_alignTop="@+id/textView2"
         android:layout_toRightOf="@+id/compMoveTextView"
         android:layout_toEndOf="@+id/compMoveTextView" />

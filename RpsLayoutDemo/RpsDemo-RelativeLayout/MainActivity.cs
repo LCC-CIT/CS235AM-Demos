@@ -14,29 +14,34 @@ namespace RpsDemoRelativeLayout
 
 			SetContentView (Resource.Layout.activity_main);
 
-			Button button = FindViewById<Button> (Resource.Id.playButton);
-			ImageView image = FindViewById<ImageView> (Resource.Id.rpsImage);
+			var playButton = FindViewById<Button> (Resource.Id.playButton);
+			var rpsImageView = FindViewById<ImageView> (Resource.Id.rpsImage);
+			var rpsEditText = FindViewById<EditText> (Resource.Id.rpsEditText);
+			var winnerTextView = FindViewById<TextView> (Resource.Id.winnerTextView);
 
 			// Get a new random hand image
-			button.Click += delegate {
+			playButton.Click += delegate {
 				GameLogic game = new GameLogic ();
 				switch(game.ChooseHand())
 				{
 				case handShape.rock:
-					image.SetImageResource(Resource.Drawable.Rock);
+					rpsImageView.SetImageResource(Resource.Drawable.Rock);
 					break;
 				case handShape.paper:
-					image.SetImageResource(Resource.Drawable.Paper);
+					rpsImageView.SetImageResource(Resource.Drawable.Paper);
 					break;
 				case handShape.scissors:
-					image.SetImageResource(Resource.Drawable.Scissors);
+					rpsImageView.SetImageResource(Resource.Drawable.Scissors);
 					break;
 				default:
 					break;
 				}
+
+				// See if the user won
+				if (rpsEditText.Text != "")
+					winnerTextView.Text = game.didUserWin(rpsEditText.Text);
 			};
 		}
 	}
 }
-
 

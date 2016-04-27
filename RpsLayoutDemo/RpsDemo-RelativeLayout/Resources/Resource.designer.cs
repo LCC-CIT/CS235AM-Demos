@@ -94,9 +94,6 @@ namespace RpsDemoRelativeLayout
 			// aapt resource value: 0x7f070000
 			public const int playButton = 2131165184;
 			
-			// aapt resource value: 0x7f070007
-			public const int resetButton = 2131165191;
-			
 			// aapt resource value: 0x7f070002
 			public const int rpsEditText = 2131165186;
 			
@@ -110,10 +107,7 @@ namespace RpsDemoRelativeLayout
 			public const int textView2 = 2131165189;
 			
 			// aapt resource value: 0x7f070004
-			public const int winnerLabel = 2131165188;
-			
-			// aapt resource value: 0x7f070008
-			public const int winnerTextView = 2131165192;
+			public const int winnerTextView = 2131165188;
 			
 			static Id()
 			{
