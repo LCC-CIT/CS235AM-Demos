@@ -22,13 +22,13 @@ namespace RpsDemoRelativeLayout
 				GameLogic game = new GameLogic ();
 				switch(game.ChooseHand())
 				{
-				case 1:
+				case handShape.rock:
 					image.SetImageResource(Resource.Drawable.Rock);
 					break;
-				case 2:
+				case handShape.paper:
 					image.SetImageResource(Resource.Drawable.Paper);
 					break;
-				case 3:
+				case handShape.scissors:
 					image.SetImageResource(Resource.Drawable.Scissors);
 					break;
 				default:
