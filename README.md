@@ -18,3 +18,7 @@ only want code for one app.
     * CustomAdapterDemo: Custom adapter class defined and used for string array
     * ListActivityDemo: Uses pre-defined ArrayAdapter class for an array of Objects
     * ListAndParser: Uses a custom adapter with a section indexer
+* Apps that have both portrait and landscape layouts
+ * RpsLayoutDemo - Rock, Paper, Scissors game - 2 projects:
+  * RpsDemo-LinearLayouts
+  * RpsDemo-RelativeLayouts
