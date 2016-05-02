@@ -5,12 +5,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathFlashCards.v0", "MathFl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathFlashCards.v1", "MathFlashCards.v1\MathFlashCards.v1.csproj", "{F326EF82-32C4-442D-A2BE-1F026DC6DE0C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathFlashCards.v2", "MathFlashCards.v2\MathFlashCards.v2.csproj", "{26DF68FF-25C2-437D-AFAD-9C998B280E50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26DF68FF-25C2-437D-AFAD-9C998B280E50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26DF68FF-25C2-437D-AFAD-9C998B280E50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26DF68FF-25C2-437D-AFAD-9C998B280E50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26DF68FF-25C2-437D-AFAD-9C998B280E50}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9F01858C-46BA-4562-A936-04E4DC6A3D59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9F01858C-46BA-4562-A936-04E4DC6A3D59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F01858C-46BA-4562-A936-04E4DC6A3D59}.Release|Any CPU.ActiveCfg = Release|Any CPU
