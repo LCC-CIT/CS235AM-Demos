@@ -13,10 +13,15 @@ namespace ListAndParser
 		string delimiter;
 		int numFields;
 
-		public TextParser (string d, int n)
+		/// <summary>
+		/// Initializes a new instance of the <see cref="ListAndParser.TextParser"/> class.
+		/// </summary>
+		/// <param name="columnDelimiter">String that separates columns in the text being parsed. Examples: ",", "\t", " ".</param>
+		/// <param name="numberOfFields">Number of columns in the text being parsed.</param>
+		public TextParser (string columnDelimiter, int numberOfFields)
 		{
-			delimiter = d;
-			numFields = n;
+			delimiter = columnDelimiter;
+			numFields = numberOfFields;
 		}
 
 		public List<string[]> ParseText(Stream stream)
