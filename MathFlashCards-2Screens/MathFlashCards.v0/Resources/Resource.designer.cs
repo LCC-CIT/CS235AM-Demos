@@ -1922,7 +1922,7 @@ namespace MathFlashCards
 					16843055,
 					16843056,
 					16843057,
-					16843829};
+					16843754};
 			
 			// aapt resource value: 4
 			public const int MenuView_android_headerBackground = 4;

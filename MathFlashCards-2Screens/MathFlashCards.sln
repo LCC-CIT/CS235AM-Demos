@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathFlashCards.v1", "MathFl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathFlashCards.v2", "MathFlashCards.v2\MathFlashCards.v2.csproj", "{26DF68FF-25C2-437D-AFAD-9C998B280E50}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathFlashCards.v3", "MathFlashCards.v3\MathFlashCards.v3.csproj", "{6C2C9385-F8A4-4539-A7B3-45835BB7F4F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{26DF68FF-25C2-437D-AFAD-9C998B280E50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26DF68FF-25C2-437D-AFAD-9C998B280E50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26DF68FF-25C2-437D-AFAD-9C998B280E50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C2C9385-F8A4-4539-A7B3-45835BB7F4F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C2C9385-F8A4-4539-A7B3-45835BB7F4F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C2C9385-F8A4-4539-A7B3-45835BB7F4F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C2C9385-F8A4-4539-A7B3-45835BB7F4F0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9F01858C-46BA-4562-A936-04E4DC6A3D59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9F01858C-46BA-4562-A936-04E4DC6A3D59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F01858C-46BA-4562-A936-04E4DC6A3D59}.Release|Any CPU.ActiveCfg = Release|Any CPU

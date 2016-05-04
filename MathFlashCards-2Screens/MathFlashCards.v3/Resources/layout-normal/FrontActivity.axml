@@ -7,12 +7,5 @@
         android:name="MathFlashCards.FrontFragment"
         android:id="@+id/frontFragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1" />
-    <fragment
-        android:name="MathFlashCards.BackFragment"
-        android:id="@+id/backFragment"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1" />
+        android:layout_height="wrap_content" />
 </LinearLayout>

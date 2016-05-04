@@ -4,16 +4,16 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <ProjectGuid>{26DF68FF-25C2-437D-AFAD-9C998B280E50}</ProjectGuid>
+    <ProjectGuid>{6C2C9385-F8A4-4539-A7B3-45835BB7F4F0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>MathFlashCards</RootNamespace>
-    <AndroidApplication>True</AndroidApplication>
-    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
-    <AndroidResgenClass>Resource</AndroidResgenClass>
-    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidApplication>True</AndroidApplication>
     <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
-    <AssemblyName>MathFlashCards</AssemblyName>
+    <AssemblyName>MathFlashCards.v3</AssemblyName>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
   </PropertyGroup>
@@ -25,8 +25,8 @@
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <ConsolePause>false</ConsolePause>
     <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>full</DebugType>
@@ -34,8 +34,8 @@
     <OutputPath>bin\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <ConsolePause>false</ConsolePause>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,11 +46,11 @@
   <ItemGroup>
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="MathQuiz.cs" />
     <Compile Include="FrontActivity.cs" />
     <Compile Include="BackActivity.cs" />
-    <Compile Include="FrontFragment.cs" />
     <Compile Include="BackFragment.cs" />
+    <Compile Include="FrontFragment.cs" />
+    <Compile Include="MathQuiz.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -64,20 +64,21 @@
     <AndroidResource Include="Resources\mipmap-xhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
-    <AndroidResource Include="Resources\layout\BackFragment.axml" />
     <AndroidResource Include="Resources\layout\BackActivity.axml" />
     <AndroidResource Include="Resources\layout\FrontFragment.axml" />
+    <AndroidResource Include="Resources\layout\BackFragment.axml" />
     <AndroidResource Include="Resources\layout-normal\FrontActivity.axml" />
+    <AndroidResource Include="Resources\layout-large-land\FrontActivity.axml" />
     <AndroidResource Include="Resources\layout-large\FrontActivity.axml" />
     <AndroidResource Include="Resources\layout-normal-land\FrontActivity.axml" />
-    <AndroidResource Include="Resources\layout-large-land\FrontActivity.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
     <Folder Include="Resources\layout-large\" />
+    <Folder Include="Resources\layout-large-land\" />
     <Folder Include="Resources\layout-normal\" />
     <Folder Include="Resources\layout-normal-land\" />
-    <Folder Include="Resources\layout-large-land\" />
+    <Folder Include="Resources\layout\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
