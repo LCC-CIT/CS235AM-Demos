@@ -26,8 +26,19 @@ namespace HelloFragment
 		public override View OnCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 		{
 			// Use this to return your custom view for this Fragment
-			return inflater.Inflate(Resource.Layout.HelloFragmentUI, container, false);
+			var view = inflater.Inflate(Resource.Layout.HelloFragmentUI, container, false);
 
+			int count = 1;
+
+			// Get our button from the layout resource,
+			// and attach an event to it
+			Button button = view.FindViewById<Button> (Resource.Id.myButton);
+
+			button.Click += delegate {
+				button.Text = string.Format ("{0} clicks!", count++);
+			};
+
+			return view;
 		}
 	}
 }
