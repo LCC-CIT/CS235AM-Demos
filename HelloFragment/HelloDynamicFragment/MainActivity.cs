@@ -2,7 +2,7 @@
 using Android.Widget;
 using Android.OS;
 
-namespace HelloDynamicFragment
+namespace HelloFragment
 {
 	[Activity (Label = "HelloDynamicFragment", MainLauncher = true, Icon = "@mipmap/icon")]
 	public class MainActivity : Activity
@@ -15,6 +15,16 @@ namespace HelloDynamicFragment
 
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
+
+			// Load the fragment used by both layouts (landscape and portrait)
+			// Note: The fragment has the ID of its container
+			FragmentTransaction ft = FragmentManager.BeginTransaction ();
+			Fragment helloFrag = FragmentManager.FindFragmentById (Resource.Id.fragLayout); 
+			if (helloFrag != null)
+				ft.Remove (helloFrag);  
+			helloFrag = new HelloFrag ();
+			ft.Add (Resource.Id.fragLayout, helloFrag);
+			ft.Commit ();
 
 			// Get our button from the layout resource,
 			// and attach an event to it
