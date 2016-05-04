@@ -18,35 +18,42 @@ namespace MathFlashCards
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.FrontActivity);
 
-			// See if we're loading two fragments
-			bool isDualPane = false;
-			// Only the dual pane layout has a takeMeBack button and answer TextView
-			var resetButton = FindViewById<Button> (Resource.Id.takeMeBackButton);
-			var answerTextView = FindViewById<TextView>(Resource.Id.answerTextView);
-			if (resetButton != null)
-			{
-				isDualPane = true;
+			FragmentTransaction ft = FragmentManager.BeginTransaction ();
+			var frontFrag = FragmentManager.FindFragmentById (Resource.Id.normalFragment);
+			// Is there a fragment in the frame layout?
+			if (frontFrag != null)
+				ft.Remove (frontFrag);
+			frontFrag = new FrontFragment ();
+			ft.Add (Resource.Id.normalFragment, frontFrag);
+			ft.Commit ();
 
-				resetButton.Click += delegate {
+			var answerTextView = FindViewById<TextView>(Resource.Id.answerTextView);
+
+					// See if we're loading two fragments 
+			bool  isDualPane = false;
+			// Only the dual pane layout has a reset button
+			var resetButton = FindViewById<Button>(Resource.Id.takeMeBackButton);
+			if (resetButton != null) {
+				isDualPane = true; 
+
+				resetButton.Click += delegate(object sender, System.EventArgs e) {
+					MakeNewProblem();
 					answerTextView.Text = "";
-					ShowNewQuestion();
 				};
 			}
 			
-			var showAnswerButton = FindViewById<Button> (Resource.Id.showAnswerButton);
-			
+			Button showAnswerButton = FindViewById<Button> (Resource.Id.showAnswerButton);
 			showAnswerButton.Click += delegate {
-				if(isDualPane)   // for dual-pane send answer to other fragment
-				{
-					answerTextView.Text = quiz.CalcSum().ToString();
+				if(isDualPane)  {
+					      answerTextView.Text = quiz.CalcSum().ToString();
 				}
-				else  // For single-pane, launch the other activity
-				{
-					var back = new Intent(this, typeof(BackActivity));
-					back.PutExtra("Answer", quiz.CalcSum());
-					StartActivity(back);
-				}
-			};
+				else {
+					    var back = new Intent(this, typeof(BackActivity));
+					    back.PutExtra("Answer", quiz.CalcSum());
+					    StartActivity(back);
+				} 
+			}; 
+
 		}
 
 
@@ -54,12 +61,11 @@ namespace MathFlashCards
 		{
 			base.OnResume ();
 
-			ShowNewQuestion ();
+			MakeNewProblem ();
 		}
 
 
-		private void ShowNewQuestion()
-		{
+		private void MakeNewProblem() {
 			quiz.MakeRandom ();
 
 			TextView firstNumberTextView = FindViewById<TextView> (Resource.Id.firstNumberTextView);

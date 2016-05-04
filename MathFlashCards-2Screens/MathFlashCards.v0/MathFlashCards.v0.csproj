@@ -6,7 +6,7 @@
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <ProjectGuid>{9F01858C-46BA-4562-A936-04E4DC6A3D59}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>MathFlashCardsv0</RootNamespace>
+    <RootNamespace>MathFlashCards</RootNamespace>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <AndroidResgenClass>Resource</AndroidResgenClass>
