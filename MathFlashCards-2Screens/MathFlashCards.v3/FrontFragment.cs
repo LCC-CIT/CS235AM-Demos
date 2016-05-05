@@ -18,16 +18,24 @@ namespace MathFlashCards
 	{
 		private bool isInDualPane = false;
 
+		// Constructors
+
+		public FrontFragment() : base()
+		{
+			// Nothing to do
+		}
+
 		public FrontFragment(bool isInDualPane) : base()
 		{
 			this.isInDualPane = isInDualPane;
 		}
 
+		// Life-cycle callback methods
+
 		public override void OnCreate (Bundle savedInstanceState)
 		{
 			base.OnCreate (savedInstanceState);
 
-			// Create your fragment here
 		}
 
 		public override View OnCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)

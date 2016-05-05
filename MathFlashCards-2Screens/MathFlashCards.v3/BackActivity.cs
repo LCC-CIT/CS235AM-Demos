@@ -22,6 +22,15 @@ namespace MathFlashCards
 
 			SetContentView (Resource.Layout.BackActivity);
 
+			// Load the back fragment
+			Fragment backFrag = FragmentManager.FindFragmentById (Resource.Id.backFragment);
+			FragmentTransaction ft = FragmentManager.BeginTransaction ();
+			// Is there a fragment in the frame layout?
+			if (backFrag != null)
+				ft.Remove (backFrag);
+			backFrag = new BackFragment (false);
+			ft.Add (Resource.Id.backFragment, backFrag);
+			ft.Commit ();
 		}
 
 		protected override void OnResume ()
