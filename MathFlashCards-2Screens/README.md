@@ -1,27 +1,31 @@
-This is an example of a multi-screen app. It simulates flash cards. 
+This is an example of a multi-screen app. It simulates flash cards.
 A math problem is displayed. When the user presses "Show answer", another activity
 is launched and the answer is shown (as if they had turned over the card to see the answer).
 
-The main concepts demonstrated are:
-* Starting a new activity or resuming an existing activity using an intent
-* Managing activity launch mode
-* Sending information from one activity to another using an intent
-* Using activity life-cycle events: onCreate, onResume, onNewIntent
+There are four versions of this app:
+* v0 - has a button on the first activity that launches the second activity. To go back to the first activity, use the system back button.<br>
+Concepts demonstrated:
+  * Starting a new activity using an intent
+  * Resuming an existing activity using an intent
+  * Sending information to another activity via an intent
+* v1 - has buttons on both the first and second activities that launch the other activity. This version has activities with LaunchMode = SingleInstance.<br>
+Concepts demonstrated:
+  * Managing activity launch mode
+  * Using activity life-cycle callbacks
+* v2 - Same as v1, but using statically loaded fragments<br>
+Concepts demonstrated:
+  * Specifying fragment classes in the AXML layouts for the Activities
+  * Loading different configurations of fragments based on screen size and orientation
+* v3 - Same as v2, but fragments are loaded programmatically
+  * Using the FragmentManager
+  * adding and removing fragments from Activities using a FragmentTransaction object
+  * Implementing event handlers in the Fragments (instead of the Activities)
+  * Using code to Manage single-pane vs. dual-pane layouts
+  * Passing information between fragments
 
-There are four versions of this app:<br>
-* v0 - has a button on the first activity that launches the second activity. 
-To go back to the first activity, use the system back button.<br>
-* v1 - has buttons on both the first and second activities that launch the other activity. 
-This version has activities with LaunchMode = SingleInstance.<br>
-* v2 - Same as v1, but using fragments for large and normal screen sizes and both orientations. 
-Fragments are loaded statically (the fragment class is specified in the Activities' AXML layouts).
-* v3 - Same as v2, but fragments are loaded programmatically using the FragmentManager instead of statically,
-and the button-click event handlers are in the fragments.
-
-Note: This app is just one app in the class demo repository. 
-To get the source code for this app you will need to 
+Note: This app is just one app in the class demo repository.
+To get the source code for this app you will need to
 clone or download the whole repository.
 
-This demo was written by Brian Bird for CS235AM, Android App Development, at Lane Community College. 
+This demo was written by Brian Bird for CS235AM, Android App Development, at Lane Community College.
 Read more about the course here: https://birdsbits.wordpress.com/2014/09/09/xamarin-android-course
-
