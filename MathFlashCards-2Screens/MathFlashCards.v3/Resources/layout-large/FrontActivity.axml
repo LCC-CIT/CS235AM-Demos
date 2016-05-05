@@ -3,14 +3,12 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <fragment
-        android:name="MathFlashCards.FrontFragment"
+    <FrameLayout
         android:id="@+id/frontFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1" />
-    <fragment
-        android:name="MathFlashCards.BackFragment"
+    <FrameLayout
         android:id="@+id/backFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

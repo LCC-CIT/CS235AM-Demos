@@ -10,8 +10,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/answerTextView" />
     <Button
-        android:id="@+id/takeMeBackButton"
+        android:id="@+id/newQuestionButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Show Front" />
+        android:text="New Question" />
 </LinearLayout>

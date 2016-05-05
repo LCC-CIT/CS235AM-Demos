@@ -3,6 +3,10 @@ using Android.Widget;
 using Android.OS;
 using Android.Content;
 
+// MathFlashCards.v0
+// This version doesn't have a button on BackActivity's UI
+// By Brian Bird, April 4, 2016
+
 namespace MathFlashCards
 {
 	// No launch mode is specified, but there is no other activity that starts this activity

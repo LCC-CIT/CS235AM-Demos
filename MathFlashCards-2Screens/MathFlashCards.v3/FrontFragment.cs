@@ -26,7 +26,22 @@ namespace MathFlashCards
 		public override View OnCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 		{
 			// Use this to return your custom view for this Fragment
-			return inflater.Inflate(Resource.Layout.FrontFragment, container, false);
+			var view = inflater.Inflate(Resource.Layout.FrontFragment, container, false);
+			var frontActivity = (FrontActivity)Activity;
+
+			Button showAnswerButton = view.FindViewById<Button> (Resource.Id.showAnswerButton);
+			showAnswerButton.Click += delegate {
+				if(frontActivity.isDualPane)  {
+					frontActivity.ShowAnswer();
+				}
+				else {
+					var back = new Intent(frontActivity, typeof(BackActivity));
+					back.PutExtra("Answer", frontActivity.quiz.CalcSum());
+					StartActivity(back);
+				} 
+			}; 
+
+			return view;
 		}
 	}
 }

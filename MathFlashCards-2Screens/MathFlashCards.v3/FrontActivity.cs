@@ -3,13 +3,18 @@ using Android.Widget;
 using Android.OS;
 using Android.Content;
 
+// MathFlashCards.v3
+// This version doesn't have a button on BackActivity's UI
+// By Brian Bird, May 2, 2016
+
 namespace MathFlashCards
 {
 	[Activity (Label = "MathFlashCards", MainLauncher = true, Icon = "@mipmap/icon",
 		LaunchMode = Android.Content.PM.LaunchMode.SingleInstance)]
 	public class FrontActivity : Activity
 	{
-		MathQuiz quiz = new MathQuiz();
+		internal MathQuiz quiz = new MathQuiz();
+		internal bool isDualPane = false;
 
 		protected override void OnCreate (Bundle savedInstanceState)
 		{
@@ -18,41 +23,41 @@ namespace MathFlashCards
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.FrontActivity);
 
+			// Load the first fragment
+			var frontFrag = FragmentManager.FindFragmentById (Resource.Id.frontFragment);
 			FragmentTransaction ft = FragmentManager.BeginTransaction ();
-			var frontFrag = FragmentManager.FindFragmentById (Resource.Id.normalFragment);
 			// Is there a fragment in the frame layout?
 			if (frontFrag != null)
 				ft.Remove (frontFrag);
 			frontFrag = new FrontFragment ();
-			ft.Add (Resource.Id.normalFragment, frontFrag);
+			ft.Add (Resource.Id.frontFragment, frontFrag);
 			ft.Commit ();
+
+			// Load the second fragment, if a dual-pane layout is loaded
+			var backFrag = FragmentManager.FindFragmentById (Resource.Id.backFragment);
+			ft = FragmentManager.BeginTransaction ();
+			// Is there a fragment in the frame layout?
+			if (backFrag != null)
+				ft.Remove (backFrag);
+			frontFrag = new BackFragment ();
+			ft.Add (Resource.Id.backFragment, backFrag);
+			ft.Commit ();
+
 
 			var answerTextView = FindViewById<TextView>(Resource.Id.answerTextView);
 
-					// See if we're loading two fragments 
-			bool  isDualPane = false;
+			// See if we're loading two fragments 
 			// Only the dual pane layout has a reset button
-			var resetButton = FindViewById<Button>(Resource.Id.takeMeBackButton);
-			if (resetButton != null) {
+			var newQuestionButton = FindViewById<Button>(Resource.Id.newQuestionButton);
+			if (newQuestionButton != null) {
 				isDualPane = true; 
 
-				resetButton.Click += delegate(object sender, System.EventArgs e) {
+				newQuestionButton.Click += delegate(object sender, System.EventArgs e) {
 					MakeNewProblem();
 					answerTextView.Text = "";
 				};
 			}
 			
-			Button showAnswerButton = FindViewById<Button> (Resource.Id.showAnswerButton);
-			showAnswerButton.Click += delegate {
-				if(isDualPane)  {
-					      answerTextView.Text = quiz.CalcSum().ToString();
-				}
-				else {
-					    var back = new Intent(this, typeof(BackActivity));
-					    back.PutExtra("Answer", quiz.CalcSum());
-					    StartActivity(back);
-				} 
-			}; 
 
 		}
 
@@ -65,7 +70,7 @@ namespace MathFlashCards
 		}
 
 
-		private void MakeNewProblem() {
+		public void MakeNewProblem() {
 			quiz.MakeRandom ();
 
 			TextView firstNumberTextView = FindViewById<TextView> (Resource.Id.firstNumberTextView);
@@ -74,6 +79,13 @@ namespace MathFlashCards
 			var secondNumberTextView = FindViewById<TextView> (Resource.Id.secondNumberTextView);
 			secondNumberTextView.Text = quiz.SecondNumber.ToString();
 		}
+
+
+		public void ShowAnswer() {
+			var answerTextView = FindViewById<TextView>(Resource.Id.answerTextView);
+			answerTextView.Text = quiz.CalcSum().ToString();
+		}
+
 	}
 }
 

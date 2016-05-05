@@ -22,9 +22,9 @@ namespace MathFlashCards
 
 			SetContentView (Resource.Layout.BackActivity);
 
-			Button button = FindViewById<Button> (Resource.Id.takeMeBackButton);
+			Button newQuestionButton = FindViewById<Button> (Resource.Id.newQuestionButton);
 
-			button.Click += delegate {
+			newQuestionButton.Click += delegate {
 				var front = new Intent(this, typeof(FrontActivity));
 				StartActivity(front);
 			};
