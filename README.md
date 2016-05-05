@@ -13,7 +13,7 @@ only want code for one app.
     * v0: Two activities with just one pair of layouts for portrait orientation
     * v1: Same as v0, but with LaunchMode of FrontActivity set to SingleInstance
     * v2: Same as v1, but using fragments for large and normal screen sizes and both orientations
-    * v3: Same as v2, but fragments are loaded programmatically instead of statically (not done yet)
+    * v3: Same as v2, but fragments are loaded programmatically instead of statically
   * GuessMyNumber (not working yet)
 * App that saves activity state using OnSaveInstanceState
  * ToDo-SaveInstanceState, uses XmlSerializer to save and restore object state
@@ -26,5 +26,9 @@ only want code for one app.
   * RpsLayoutDemo - Rock, Paper, Scissors game - 2 projects:
     * RpsDemo-LinearLayouts
     * RpsDemo-RelativeLayouts
+* Apps that use Fragments
+  * HelloFragment
+  * MathFlashCards - see v2 and v3 of this solution above
+  * RpsFragDemo
 
-These apps were written for use with a class I teach at Lane Community College, CS235AM, Intermediate Mobile Applications Development: Android. Read more about the class and find out how to enroll here: https://birdsbits.wordpress.com/2014/09/09/xamarin-android-course/ 
+These apps were written for use with a class I teach at Lane Community College, CS235AM, Intermediate Mobile Applications Development: Android. Read more about the class and find out how to enroll here: https://birdsbits.wordpress.com/2014/09/09/xamarin-android-course/
