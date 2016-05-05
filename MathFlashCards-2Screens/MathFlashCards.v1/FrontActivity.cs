@@ -4,7 +4,8 @@ using Android.OS;
 using Android.Content;
 
 // MathFlashCards.v1
-// This version has a back button and uses LaunchMode = SingleInstance
+// This version has a button on the BackActivity UI to 
+// take you back to the front activity and uses LaunchMode = SingleInstance
 // By Brian Bird, April 6, 2016
 
 namespace MathFlashCards
