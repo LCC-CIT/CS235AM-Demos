@@ -22,12 +22,6 @@ namespace MathFlashCards
 
 			SetContentView (Resource.Layout.BackActivity);
 
-			Button newQuestionButton = FindViewById<Button> (Resource.Id.newQuestionButton);
-
-			newQuestionButton.Click += delegate {
-				var front = new Intent(this, typeof(FrontActivity));
-				StartActivity(front);
-			};
 		}
 
 		protected override void OnResume ()

@@ -16,6 +16,13 @@ namespace MathFlashCards
 {
 	public class FrontFragment : Fragment
 	{
+		private bool isInDualPane = false;
+
+		public FrontFragment(bool isInDualPane) : base()
+		{
+			this.isInDualPane = isInDualPane;
+		}
+
 		public override void OnCreate (Bundle savedInstanceState)
 		{
 			base.OnCreate (savedInstanceState);
@@ -31,7 +38,7 @@ namespace MathFlashCards
 
 			Button showAnswerButton = view.FindViewById<Button> (Resource.Id.showAnswerButton);
 			showAnswerButton.Click += delegate {
-				if(frontActivity.isDualPane)  {
+				if(isInDualPane)  {
 					frontActivity.ShowAnswer();
 				}
 				else {

@@ -14,7 +14,6 @@ namespace MathFlashCards
 	public class FrontActivity : Activity
 	{
 		internal MathQuiz quiz = new MathQuiz();
-		internal bool isDualPane = false;
 
 		protected override void OnCreate (Bundle savedInstanceState)
 		{
@@ -23,42 +22,30 @@ namespace MathFlashCards
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.FrontActivity);
 
-			// Load the first fragment
-			var frontFrag = FragmentManager.FindFragmentById (Resource.Id.frontFragment);
+			// see if a dual-pane layout is loaded
+			bool isDualPane = (FindViewById (Resource.Id.backFragment) != null);
+				
+			// Load the front fragment
+			Fragment frontFrag = FragmentManager.FindFragmentById (Resource.Id.frontFragment);
 			FragmentTransaction ft = FragmentManager.BeginTransaction ();
 			// Is there a fragment in the frame layout?
 			if (frontFrag != null)
 				ft.Remove (frontFrag);
-			frontFrag = new FrontFragment ();
+			frontFrag = new FrontFragment (isDualPane);
 			ft.Add (Resource.Id.frontFragment, frontFrag);
 			ft.Commit ();
 
-			// Load the second fragment, if a dual-pane layout is loaded
-			var backFrag = FragmentManager.FindFragmentById (Resource.Id.backFragment);
-			ft = FragmentManager.BeginTransaction ();
-			// Is there a fragment in the frame layout?
-			if (backFrag != null)
-				ft.Remove (backFrag);
-			frontFrag = new BackFragment ();
-			ft.Add (Resource.Id.backFragment, backFrag);
-			ft.Commit ();
-
-
-			var answerTextView = FindViewById<TextView>(Resource.Id.answerTextView);
-
-			// See if we're loading two fragments 
-			// Only the dual pane layout has a reset button
-			var newQuestionButton = FindViewById<Button>(Resource.Id.newQuestionButton);
-			if (newQuestionButton != null) {
-				isDualPane = true; 
-
-				newQuestionButton.Click += delegate(object sender, System.EventArgs e) {
-					MakeNewProblem();
-					answerTextView.Text = "";
-				};
+			// Load the back fragment, if a dual-pane layout is loaded
+			if(isDualPane) {
+				var backFrag = FragmentManager.FindFragmentById (Resource.Id.backFragment);
+				ft = FragmentManager.BeginTransaction ();
+				// Is there a fragment in the frame layout?
+				if (backFrag != null)
+					ft.Remove (backFrag);
+				backFrag = new BackFragment (isDualPane);
+				ft.Add (Resource.Id.backFragment, backFrag);
+				ft.Commit ();
 			}
-			
-
 		}
 
 
@@ -66,11 +53,12 @@ namespace MathFlashCards
 		{
 			base.OnResume ();
 
-			MakeNewProblem ();
+			ShowNewProblem ();
 		}
 
 
-		public void MakeNewProblem() {
+		// Can be called by code in a fratment
+		public void ShowNewProblem() {
 			quiz.MakeRandom ();
 
 			TextView firstNumberTextView = FindViewById<TextView> (Resource.Id.firstNumberTextView);
@@ -80,7 +68,7 @@ namespace MathFlashCards
 			secondNumberTextView.Text = quiz.SecondNumber.ToString();
 		}
 
-
+		// called by code in a fragment
 		public void ShowAnswer() {
 			var answerTextView = FindViewById<TextView>(Resource.Id.answerTextView);
 			answerTextView.Text = quiz.CalcSum().ToString();
