@@ -1,4 +1,8 @@
-This is an example of a multi-screen app. The main concepts demonstrated are:
+This is an example of a multi-screen app. It simulates flash cards. 
+A math problem is displayed. When the user presses "Show answer", another activity
+is launched and the answer is shown (as if they had turned over the card to see the answer).
+
+The main concepts demonstrated are:
 * Starting a new activity or resuming an existing activity using an intent
 * Managing activity launch mode
 * Sending information from one activity to another using an intent
@@ -11,7 +15,7 @@ To go back to the first activity, use the system back button.<br>
 This app has activities with LaunchMode = SingleInstance.<br>
 * v2 - Same as v1, but using fragments for large and normal screen sizes and both orientations. 
 Fragments are loaded statically (the fragment class to instantiate is specified in the AXML layout).
-* v3 - Same as v2, but fragments are loaded programmatically instead of statically (not done yet)
+* v3 - Same as v2, but fragments are loaded programmatically using the FragmentManager instead of statically
 
 Note: This app is just one app in the class demo repository. 
 To get the source code for this app you will need to 

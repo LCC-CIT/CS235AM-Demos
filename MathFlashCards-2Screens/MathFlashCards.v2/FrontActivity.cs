@@ -3,6 +3,11 @@ using Android.Widget;
 using Android.OS;
 using Android.Content;
 
+// MathFlashCards.v2
+// This version uses fragments that are specified in the AXML layouts for
+// the Activities (FrontActivity.axml and BackActivity.axml)
+// By Brian Bird, May 2, 2016
+
 namespace MathFlashCards
 {
 	[Activity (Label = "MathFlashCards", MainLauncher = true, Icon = "@mipmap/icon",

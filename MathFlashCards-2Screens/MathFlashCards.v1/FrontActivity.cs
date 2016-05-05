@@ -3,6 +3,10 @@ using Android.Widget;
 using Android.OS;
 using Android.Content;
 
+// MathFlashCards.v1
+// This version has a back button and uses LaunchMode = SingleInstance
+// By Brian Bird, April 6, 2016
+
 namespace MathFlashCards
 {
 	[Activity (Label = "Front", MainLauncher = true, Icon = "@mipmap/icon", LaunchMode = Android.Content.PM.LaunchMode.SingleInstance)]
