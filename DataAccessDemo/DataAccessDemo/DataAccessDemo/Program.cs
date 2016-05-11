@@ -69,7 +69,7 @@ namespace L2Ch3.ConsoleApp
 			Stock singleItem = db.Get<Stock> (x => x.Name == "Google");
 			Console.WriteLine ("Stock Symbol for Google: {0}", singleItem.Symbol);
 
-			var resultSet = db.Get<Stock> (x => x.ClosingPrice >= 30.0m);
+			singleItem = db.Get<Stock> (x => x.ClosingPrice >= 30.0m);
 				Console.WriteLine ("First stock priced at or over 30: {0}, price: {1}",
 									singleItem.Symbol, singleItem.ClosingPrice);
 			
