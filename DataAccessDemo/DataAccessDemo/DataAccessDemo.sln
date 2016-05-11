@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess-Console", "DataAccessDemo\DataAccess-Console.csproj", "{C9D4D367-899A-4F8F-A962-C9FBF08245E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{9D7889E7-4662-404A-B359-96FA268A1521}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess-Android", "DataAccess-Android\DataAccess-Android.csproj", "{DD9E6D45-E2D8-467C-9EA8-059046CFE085}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess-Android-ListView", "DataAccess-Android-ListView\DataAccess-Android-ListView.csproj", "{D52CB52B-E5DF-4BBD-8149-3F1C4E646C11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{9D7889E7-4662-404A-B359-96FA268A1521}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

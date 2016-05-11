@@ -1,29 +1,28 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
+using System.IO;
+using SQLite;
 
 namespace DataAccessAndroidListView
 {
 	[Activity (Label = "DataAccess-Android-ListView", MainLauncher = true, Icon = "@mipmap/icon")]
-	public class MainActivity : Activity
+	public class MainActivity : ListActivity
 	{
-		int count = 1;
-
-		protected override void OnCreate (Bundle savedInstanceState)
+		protected override void OnCreate (Bundle bundle)
 		{
-			base.OnCreate (savedInstanceState);
+			base.OnCreate (bundle);
 
-			// Set our view from the "main" layout resource
-			SetContentView (Resource.Layout.Main);
+			// Get all the stock data in a cursor
+			var db = new StockDatabase(this);
+			var cursor = db.ReadableDatabase.RawQuery ("SELECT * FROM Stocks", null);
 
-			// Get our button from the layout resource,
-			// and attach an event to it
-			Button button = FindViewById<Button> (Resource.Id.myButton);
-			
-			button.Click += delegate {
-				button.Text = string.Format ("{0} clicks!", count++);
-			};
+			// Provide the adapter with the data
+			ListAdapter = new StockListAdapter (this, cursor);
+
 		}
+
+
 	}
 }
 
