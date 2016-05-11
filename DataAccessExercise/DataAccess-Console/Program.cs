@@ -48,7 +48,8 @@ namespace DataAccess.DOS
 				if (pk % 100 == 0)
 					Console.WriteLine ("{0} rows inserted", pk);
 			}
-
+			// Show the final count of rows inserted
+			Console.WriteLine ("{0} rows inserted", pk);
 
 			// Just for testing
 			// Read the stock from the database

@@ -11,6 +11,9 @@ using DataAccess.DAL;
 using System.Linq;
 
 // Note: the namespace DataAccess.Android caused resolve problems, so I cahnged it
+using Android;
+
+
 namespace DataAccess.Droid
 {
 	[Activity (Label = "L2Ch3.DroidGUI", MainLauncher = true)]
