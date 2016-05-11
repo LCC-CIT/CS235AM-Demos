@@ -4,11 +4,10 @@
 using System;
 using SQLite;
 using System.IO;
-//using DataAccess.DAL; 
 using DataAccess.DAL;
 using System.Collections.Generic;
 
-namespace L2Ch3.ConsoleApp
+namespace DataAccess.DOS
 {
 	class MainClass
 	{

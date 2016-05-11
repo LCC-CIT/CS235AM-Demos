@@ -3,11 +3,9 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{C9D4D367-899A-4F8F-A962-C9FBF08245E4}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DataAccessDemo</RootNamespace>
+    <RootNamespace>DataAccess.Console</RootNamespace>
     <AssemblyName>DataAccessDemo</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">

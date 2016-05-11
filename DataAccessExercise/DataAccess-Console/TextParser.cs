@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 
-namespace L2Ch3.ConsoleApp
+namespace DataAccess.DOS
 {
     /// <summary>
     /// Contains methods for parsing csd text files

@@ -10,7 +10,8 @@ using SQLite;
 using DataAccess.DAL;
 using System.Linq;
 
-namespace DataAccessAndroid
+// Note: the namespace DataAccess.Android caused resolve problems, so I cahnged it
+namespace DataAccess.Droid
 {
 	[Activity (Label = "L2Ch3.DroidGUI", MainLauncher = true)]
 	public class Activity1 : Activity
@@ -77,7 +78,7 @@ namespace DataAccessAndroid
 				queryText.Text = string.Format ("Stock Symbol for Google: {0}", existingItem.Symbol);
 
 				// Use the Get method with a primary key
-				existingItem = db.Get<Stock> ("FB");
+				existingItem = db.Get<Stock> (7);
 				queryText.Text += string.Format ("\r\nStock Name for Symbol FB: {0}", existingItem.Name);
 
 				// Query using  SQL
