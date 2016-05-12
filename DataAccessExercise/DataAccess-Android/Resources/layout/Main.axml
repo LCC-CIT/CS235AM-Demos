@@ -14,11 +14,17 @@
         android:layout_height="wrap_content"
         android:id="@+id/stockSpinner" />
     <TextView
-        android:text="Medium Text"
+        android:text="Choose the start date"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/queryTextView" />
+        android:id="@+id/datePromptTextView" />
+    <DatePicker
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:calendarViewShown="false"
+        android:spinnersShown="true"
+        android:id="@+id/stockDatePicker" />
     <Button
         android:text="Show Data in a ListView"
         android:layout_width="fill_parent"

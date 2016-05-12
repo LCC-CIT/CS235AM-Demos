@@ -63,17 +63,28 @@ namespace DataAccess.Droid
 				selectedSymbol = (string)spinner.GetItemAtPosition(e.Position);
 			};
 
-			/* ------- Query for selected stock prices -------- */
+			/* ------- DatePicker initialization ------- */
 
+			var stockDatePicker = FindViewById<DatePicker> (Resource.Id.stockDatePicker);
+
+			Stock firstDateStock = 
+				db.Get<Stock>((from s in db.Table<Stock>() select s).Min(s => s.ID));
+			DateTime firstDate = firstDateStock.Date;
+			stockDatePicker.DateTime = firstDate;
+
+			/* ------- Query for selected stock prices -------- */
 
 			Button listViewButton = FindViewById<Button> (Resource.Id.listViewButton);
 			ListView stocksListView = FindViewById<ListView> (Resource.Id.stocksListView);
 			listViewButton.Click += delegate 
 			{
-				//var stockNamesArray = (from stock in db.Table<Stock>() select stock.Name).ToArray ();
-				var stocks = (from stock in db.Table<Stock>() 
-					where stock.Symbol == selectedSymbol 
-					select stock).ToList ();
+				DateTime endDate = stockDatePicker.DateTime;
+				DateTime startDate = stockDatePicker.DateTime.AddDays(-14.0);
+				var stocks = (from s in db.Table<Stock>() 
+					where (s.Symbol == selectedSymbol) 
+						&& (s.Date <= endDate) 
+						&& (s.Date >= startDate)
+					select s).ToList ();
 				// HACK: gets around "Default constructor not found for type System.String" error
 				int count = stocks.Count;
 				string[] stockInfoArray = new string[count];
