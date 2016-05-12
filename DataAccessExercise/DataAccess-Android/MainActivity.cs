@@ -46,24 +46,35 @@ namespace DataAccess.Droid
 			// Open the database
 			db = new SQLiteConnection (dbPath);
 
-			Button queryButton = FindViewById<Button> (Resource.Id.queryButton);
-			TextView queryText = FindViewById<TextView> (Resource.Id.queryTextView);
-			queryButton.Click += delegate 
-			{
-				// Query using Linq
-				int count = (from s in db.Table<Stock> () select s).Count();
-				queryText.Text = count.ToString();
+			/* ------ Spinner initialization ------ */
+
+			// Initialize the adapter for the spinner with stock symbols
+			var distinctStocks = db.Table<Stock> ().GroupBy (s => s.Symbol).Select (s => s.First ());
+			var stockSymbols = distinctStocks.Select (s => s.Symbol).ToList ();
+			var adapter = new ArrayAdapter (this, Android.Resource.Layout.SimpleSpinnerItem, stockSymbols);
+
+			var stockSpinner = FindViewById <Spinner> (Resource.Id.stockSpinner);
+			stockSpinner.Adapter = adapter;
+
+			// Event handler for selected spinner item
+			string selectedSymbol;
+			stockSpinner.ItemSelected += delegate(object sender, AdapterView.ItemSelectedEventArgs e) {
+				Spinner spinner = (Spinner)sender;
+				selectedSymbol = (string)spinner.GetItemAtPosition(e.Position);
 			};
+
+			/* ------- Query for selected stock prices -------- */
+
 
 			Button listViewButton = FindViewById<Button> (Resource.Id.listViewButton);
 			ListView stocksListView = FindViewById<ListView> (Resource.Id.stocksListView);
 			listViewButton.Click += delegate 
 			{
 				//var stockNamesArray = (from stock in db.Table<Stock>() select stock.Name).ToArray ();
-				var stocks = (from stock in db.Table<Stock>() select stock).ToList ();
+				var stocks = (from stock in db.Table<Stock>() 
+					where stock.Symbol == selectedSymbol 
+					select stock).ToList ();
 				// HACK: gets around "Default constructor not found for type System.String" error
-				// var stockNames = stocks.Select (s => s.Name).ToArray();
-				// var stockNamesArray = stockNames.ToArray ();
 				int count = stocks.Count;
 				string[] stockInfoArray = new string[count];
 				for(int i = 0; i < count; i++)

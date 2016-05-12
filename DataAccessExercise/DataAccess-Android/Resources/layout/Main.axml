@@ -4,16 +4,15 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
     <TextView
-        android:text="Medium Text"
+        android:text="Choose a stock"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/insertTextView" />
-    <Button
-        android:id="@+id/queryButton"
-        android:layout_width="fill_parent"
+        android:id="@+id/promptTextView" />
+    <Spinner
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Query Data" />
+        android:id="@+id/stockSpinner" />
     <TextView
         android:text="Medium Text"
         android:textAppearance="?android:attr/textAppearanceMedium"
