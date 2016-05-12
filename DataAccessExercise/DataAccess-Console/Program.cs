@@ -1,5 +1,6 @@
-// Example of using SQLite-net ORM
-// Brian Bird, 5/20/13
+// Starter for exercise using SQLite-net ORM
+// Original written by Brian Bird, 5/20/13
+// Completed by Brian Bird 5/12/16
 
 using System;
 using SQLite;
@@ -7,6 +8,7 @@ using System.IO;
 using DataAccess.DAL;
 using System.Collections.Generic;
 
+// Note: the namespace DataAccess.Console caused resolve problems, so I cahnged it
 namespace DataAccess.DOS
 {
 	class MainClass

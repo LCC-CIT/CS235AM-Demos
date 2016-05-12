@@ -16,7 +16,7 @@ using Android;
 
 namespace DataAccess.Droid
 {
-	[Activity (Label = "L2Ch3.DroidGUI", MainLauncher = true)]
+	[Activity (Label = "Stocks dB Exercise", MainLauncher = true)]
 	public class Activity1 : Activity
 	{
 
@@ -30,69 +30,29 @@ namespace DataAccess.Droid
 			string dbPath = "";
 			SQLiteConnection db = null;
 
-			Button pathButton = FindViewById<Button> (Resource.Id.myButton);
-			TextView text = FindViewById<TextView> (Resource.Id.myTextView);
-			pathButton.Click += delegate 
+			// Get the path to the database that was deployed in Assets
+			dbPath = Path.Combine (
+				System.Environment.GetFolderPath (System.Environment.SpecialFolder.Personal), "stocks.db3");
+
+			// It seems you can read a file in Assets, but not write to it
+			// so we'll copy our file to a read/write location
+			//if(!File.Exists (dbPath))
 			{
-				// Get the path to the database that was deployed in Assets
-				dbPath = Path.Combine (
-					System.Environment.GetFolderPath (System.Environment.SpecialFolder.Personal), "stocks.db3");
+				using (Stream inStream = Assets.Open ("stocks.db3"))
+					using (Stream outStream = File.Create (dbPath))
+						inStream.CopyTo(outStream);
+			}
 
-				text.Text = dbPath;
-
-				// It seems you can read a file in Assets, but not write to it
-				// so we'll copy our file to a read/write location
-				//if(!File.Exists (dbPath))
-				{
-					using (Stream inStream = Assets.Open ("stocks.db3"))
-						using (Stream outStream = File.Create (dbPath))
-							inStream.CopyTo(outStream);
-					text.Text += "\r\nCopied stocks.db3 from Assets";
-				}
-
-				// Open the database
-				db = new SQLiteConnection (dbPath);
-				text.Text += "\r\nCreated a database connection";
-			};
-
-			Button insertButton = FindViewById<Button> (Resource.Id.insertButton);
-			TextView insertText = FindViewById<TextView> (Resource.Id.insertTextView);
-			insertButton.Click += delegate 
-			{
-				int count = 0;
-				if( db.Find<Stock>("AMD") == null )
-				{
-					count += db.Insert(new Stock() {Symbol = "AMD", Name = "Advanced Micro Devices"});
-					count += db.Insert(new Stock() {Symbol = "INTC", Name = "Intel"});
-					count += db.Insert (new Stock() {Symbol = "SNCR", Name = "Synchronoss"});
-					count += db.Insert (new Stock() {Symbol = "TDC", Name = "Teradata"});
-					count += db.Insert (new Stock() {Symbol = "BBRY", Name = "BlackBerry"});
-					count += db.Insert (new Stock() {Symbol = "NOK", Name = "Nokia"});
-					count += db.Insert (new Stock() {Symbol = "IBM", Name = "International Business Machines"});
-				}
-				insertText.Text = string.Format("{0} rows inserted", count);
-			};
+			// Open the database
+			db = new SQLiteConnection (dbPath);
 
 			Button queryButton = FindViewById<Button> (Resource.Id.queryButton);
 			TextView queryText = FindViewById<TextView> (Resource.Id.queryTextView);
 			queryButton.Click += delegate 
 			{
-				var existingItem = db.Get<Stock> (x => x.Name == "Google");
-				queryText.Text = string.Format ("Stock Symbol for Google: {0}", existingItem.Symbol);
-
-				// Use the Get method with a primary key
-				existingItem = db.Get<Stock> (7);
-				queryText.Text += string.Format ("\r\nStock Name for Symbol FB: {0}", existingItem.Name);
-
-				// Query using  SQL
-				var stocksStartingWithA = db.Query<Stock> ("SELECT * FROM Stocks WHERE Symbol LIKE ?", "A%"); 
-				foreach(Stock stock in stocksStartingWithA)
-					queryText.Text += string.Format ("\r\nStock starting with A: {0}", stock.Symbol);
-
 				// Query using Linq
-				var stocksStartingWithM = from s in db.Table<Stock> () where s.Symbol.StartsWith ("M") select s;
-				foreach(Stock stock in stocksStartingWithM)
-					queryText.Text += string.Format ("\r\nStock starting with M: {0}", stock.Symbol);
+				int count = (from s in db.Table<Stock> () select s).Count();
+				queryText.Text = count.ToString();
 			};
 
 			Button listViewButton = FindViewById<Button> (Resource.Id.listViewButton);
@@ -102,11 +62,19 @@ namespace DataAccess.Droid
 				//var stockNamesArray = (from stock in db.Table<Stock>() select stock.Name).ToArray ();
 				var stocks = (from stock in db.Table<Stock>() select stock).ToList ();
 				// HACK: gets around "Default constructor not found for type System.String" error
-				var stockNames = stocks.Select (s => s.Name).ToArray();
-				var stockNamesArray = stockNames.ToArray ();
+				// var stockNames = stocks.Select (s => s.Name).ToArray();
+				// var stockNamesArray = stockNames.ToArray ();
+				int count = stocks.Count;
+				string[] stockInfoArray = new string[count];
+				for(int i = 0; i < count; i++)
+				{
+					stockInfoArray[i] = 
+						stocks[i].Date.ToShortDateString() + "\t\t" + stocks[i].Name + "\t\t" + stocks[i].ClosingPrice;
+				}
+					
 
 				stocksListView.Adapter = 
-					new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, stockNamesArray);
+					new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, stockInfoArray);
 			};
 		}
 
