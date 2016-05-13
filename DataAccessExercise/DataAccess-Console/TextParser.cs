@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Written by Brian Bird, 5/15/12
+
+using System;
 using System.Collections.Generic;
 using System.IO;
 
@@ -26,14 +28,6 @@ namespace DataAccess.DOS
         public List<string[]> ParseText(Stream stream)
         {
             List<string[]> rows = new List<string[]>();
-            /* For testing
-			rows.Add (new string[] {"mono", "monkey", "noun"});
-			rows.Add (new string[] {"agua", "water", "noun"});
-			rows.Add (new string[] {"si", "yes", "noun"});
-			rows.Add (new string[] {"perro", "dog", "noun"});
-			rows.Add (new string[] {"gato", "cat", "noun" });
-			rows.Add (new string[] {"sustantivo", "noun", "noun" });
-			*/
 
             string[] delim = new string[1];
             delim[0] = delimiter;

@@ -1,8 +1,9 @@
+// Demo of using SQLite-net ORM
+// Brian Bird, 5/20/13
+// Converted to an exercise starter and completed
+// By Brian Bird 5/12/16
 using System;
 using Android.App;
-using Android.Content;
-using Android.Runtime;
-using Android.Views;
 using Android.Widget;
 using Android.OS;
 using System.IO;
@@ -11,15 +12,11 @@ using DataAccess.DAL;
 using System.Linq;
 
 // Note: the namespace DataAccess.Android caused resolve problems, so I cahnged it
-using Android;
-
-
 namespace DataAccess.Droid
 {
-	[Activity (Label = "Stocks dB Exercise", MainLauncher = true)]
+    [Activity (Label = "Stocks dB Exercise", MainLauncher = true)]
 	public class Activity1 : Activity
 	{
-
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
@@ -27,7 +24,9 @@ namespace DataAccess.Droid
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
 
-			string dbPath = "";
+            /* ------ copy and open the dB file using the SQLite-Net ORM ------ */
+
+            string dbPath = "";
 			SQLiteConnection db = null;
 
 			// Get the path to the database that was deployed in Assets
@@ -36,12 +35,9 @@ namespace DataAccess.Droid
 
 			// It seems you can read a file in Assets, but not write to it
 			// so we'll copy our file to a read/write location
-			//if(!File.Exists (dbPath))
-			{
-				using (Stream inStream = Assets.Open ("stocks.db3"))
-					using (Stream outStream = File.Create (dbPath))
-						inStream.CopyTo(outStream);
-			}
+			using (Stream inStream = Assets.Open ("stocks.db3"))
+				using (Stream outStream = File.Create (dbPath))
+					inStream.CopyTo(outStream);
 
 			// Open the database
 			db = new SQLiteConnection (dbPath);
@@ -57,7 +53,7 @@ namespace DataAccess.Droid
 			stockSpinner.Adapter = adapter;
 
 			// Event handler for selected spinner item
-			string selectedSymbol;
+			string selectedSymbol = "";
 			stockSpinner.ItemSelected += delegate(object sender, AdapterView.ItemSelectedEventArgs e) {
 				Spinner spinner = (Spinner)sender;
 				selectedSymbol = (string)spinner.GetItemAtPosition(e.Position);
@@ -94,7 +90,6 @@ namespace DataAccess.Droid
 						stocks[i].Date.ToShortDateString() + "\t\t" + stocks[i].Name + "\t\t" + stocks[i].ClosingPrice;
 				}
 					
-
 				stocksListView.Adapter = 
 					new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, stockInfoArray);
 			};

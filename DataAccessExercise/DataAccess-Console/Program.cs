@@ -32,7 +32,6 @@ namespace DataAccess.DOS
 			AddStocksToDb (db, "GOOG", "Google", "GoogleStocks.csv");
 			AddStocksToDb (db, "EA", "Electronic Arts", "EAStocks.csv");
 			AddStocksToDb (db, "SNE", "Sony", "SonyStocks.csv");
-
 		}
 
 		private static void AddStocksToDb(SQLiteConnection db, string symbol, string name, string file)
