@@ -1,7 +1,7 @@
 using System;
 using SQLite;
 
-namespace DataAccess.DAL
+namespace Weather.DAL
 {
 	[Table("Stocks")]
 	public class Stock

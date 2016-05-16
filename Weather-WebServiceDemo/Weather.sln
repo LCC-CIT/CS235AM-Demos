@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{9D7889E7-4662-404A-B359-96FA268A1521}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Dos", "Weather-Console\Weather.Dos.csproj", "{C9D4D367-899A-4F8F-A962-C9FBF08245E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess-Console", "DataAccess-Console\DataAccess-Console.csproj", "{C9D4D367-899A-4F8F-A962-C9FBF08245E4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Droid", "Weather-Android\Weather.Droid.csproj", "{DD9E6D45-E2D8-467C-9EA8-059046CFE085}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stocks", "Stocks\Stocks.csproj", "{DD9E6D45-E2D8-467C-9EA8-059046CFE085}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.DAL", "Weather-DAL\Weather.DAL.csproj", "{9D7889E7-4662-404A-B359-96FA268A1521}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

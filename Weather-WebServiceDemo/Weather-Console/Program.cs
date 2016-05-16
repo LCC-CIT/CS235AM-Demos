@@ -1,12 +1,11 @@
-// Demo of using SQLite-net ORM
+// Demo of using A SOAP Web Service with the SQLite-net ORM
 // Brian Bird, 5/20/13
-// Converted to an exercise starter and completed
 // By Brian Bird 5/12/16
 
 using System;
 using SQLite;
 using System.IO;
-using DataAccess.DAL;
+using Weather.DAL;
 using System.Collections.Generic;
 
 namespace DataAccess.DOS
