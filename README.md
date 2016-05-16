@@ -30,5 +30,14 @@ only want code for one app.
   * HelloFragment
   * MathFlashCards - see v2 and v3 of this solution above
   * RpsFragDemo
+* Apps that use an SQLite Database and SQLite.Net ORM
+  * DataAccessDemo - Displays stock price history in a ListView
+  * DataAccessExercise - built on DataAccessDemo, includes a Spinner, DatePicker and complex queries
+* Apps that consume a WebService
+  * Stocks+WebService - Not finished. Can someone help me find a free Stock price Web Service?
+  * Weather-WebServiceDemo - Not finished yet
 
-These apps were written for use with a class I teach at Lane Community College, CS235AM, Intermediate Mobile Applications Development: Android. Read more about the class and find out how to enroll here: https://birdsbits.wordpress.com/2014/09/09/xamarin-android-course/
+I wrote these apps for use with a class I teach at Lane Community College, CS235AM, Intermediate Mobile Applications Development: Android. Read more about the class and find out how to enroll here: https://birdsbits.wordpress.com/2014/09/09/xamarin-android-course/
+
+Read the rest of my blog, BirdsBits, here:
+https://birdsbits.wordpress.com
