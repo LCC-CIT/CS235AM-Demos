@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Tests", "Weather.Tests\Weather.Tests.csproj", "{A23CF3E4-0E6B-4D70-9864-89152727B82F}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Droid", "Weather.Droid\Weather.Droid.csproj", "{F197F00B-67C2-465B-9CEE-0611AF4021D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.DAL", "Weather.DAL\Weather.DAL.csproj", "{1949B977-ABC2-4DF5-B679-FCDA852C8EED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoapService", "SoapService\SoapService.csproj", "{D65203FD-27D7-41DA-902E-0219D81B8D19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Dos", "Weather.Dos\Weather.Dos.csproj", "{C340706E-2F79-4EE2-B916-BCE71B81D7FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,14 +15,14 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1949B977-ABC2-4DF5-B679-FCDA852C8EED}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{1949B977-ABC2-4DF5-B679-FCDA852C8EED}.Debug|x86.Build.0 = Debug|Any CPU
-		{1949B977-ABC2-4DF5-B679-FCDA852C8EED}.Release|x86.ActiveCfg = Release|Any CPU
-		{1949B977-ABC2-4DF5-B679-FCDA852C8EED}.Release|x86.Build.0 = Release|Any CPU
-		{A23CF3E4-0E6B-4D70-9864-89152727B82F}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{A23CF3E4-0E6B-4D70-9864-89152727B82F}.Debug|x86.Build.0 = Debug|Any CPU
-		{A23CF3E4-0E6B-4D70-9864-89152727B82F}.Release|x86.ActiveCfg = Release|Any CPU
-		{A23CF3E4-0E6B-4D70-9864-89152727B82F}.Release|x86.Build.0 = Release|Any CPU
+		{C340706E-2F79-4EE2-B916-BCE71B81D7FF}.Debug|x86.ActiveCfg = Debug|x86
+		{C340706E-2F79-4EE2-B916-BCE71B81D7FF}.Debug|x86.Build.0 = Debug|x86
+		{C340706E-2F79-4EE2-B916-BCE71B81D7FF}.Release|x86.ActiveCfg = Release|x86
+		{C340706E-2F79-4EE2-B916-BCE71B81D7FF}.Release|x86.Build.0 = Release|x86
+		{D65203FD-27D7-41DA-902E-0219D81B8D19}.Debug|x86.ActiveCfg = Debug|x86
+		{D65203FD-27D7-41DA-902E-0219D81B8D19}.Debug|x86.Build.0 = Debug|x86
+		{D65203FD-27D7-41DA-902E-0219D81B8D19}.Release|x86.ActiveCfg = Release|x86
+		{D65203FD-27D7-41DA-902E-0219D81B8D19}.Release|x86.Build.0 = Release|x86
 		{F197F00B-67C2-465B-9CEE-0611AF4021D0}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{F197F00B-67C2-465B-9CEE-0611AF4021D0}.Debug|x86.Build.0 = Debug|Any CPU
 		{F197F00B-67C2-465B-9CEE-0611AF4021D0}.Release|x86.ActiveCfg = Release|Any CPU

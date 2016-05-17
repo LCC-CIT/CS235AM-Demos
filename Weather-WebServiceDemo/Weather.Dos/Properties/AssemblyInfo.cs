@@ -4,13 +4,13 @@ using System.Runtime.CompilerServices;
 // Information about this assembly is defined by the following attributes.
 // Change them to the values specific to your project.
 
-[assembly: AssemblyTitle ("Weather.DAL")]
+[assembly: AssemblyTitle ("Weather.Dos")]
 [assembly: AssemblyDescription ("")]
 [assembly: AssemblyConfiguration ("")]
-[assembly: AssemblyCompany ("Creative CyberSolutions")]
+[assembly: AssemblyCompany ("Lane Community College")]
 [assembly: AssemblyProduct ("")]
 [assembly: AssemblyCopyright ("Brian Bird")]
-[assembly: AssemblyTrademark ("CCS")]
+[assembly: AssemblyTrademark ("LCC")]
 [assembly: AssemblyCulture ("")]
 
 // The assembly version has the format "{Major}.{Minor}.{Build}.{Revision}".
