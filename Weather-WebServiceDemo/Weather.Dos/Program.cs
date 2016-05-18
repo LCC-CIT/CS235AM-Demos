@@ -1,5 +1,5 @@
 ﻿using System;
-using SoapPractice.graphical.weather.gov;
+using SoapService;
 
 namespace Weather.Dos
 {
@@ -7,18 +7,9 @@ namespace Weather.Dos
 	{
 		public static void Main (string[] args)
 		{
-			ndfdXML soapService = new ndfdXML ();
+			var forecast = new Forecast ();
 
-			// string latLon = soapService.LatLonListZipCode ("97405");
-
-			// Console.WriteLine (latLon);
-
-			string weather = soapService.NDFDgenLatLonList ("43.9292,-123.087",
-				productType.glance, DateTime.Now, DateTime.Now.AddDays (1),
-				unitType.e, new weatherParametersType () 
-				{mint = true, maxt = true, pop12 = true}
-			);
-			Console.WriteLine (weather);
+			Console.WriteLine (forecast.get7DayLowAndHigh("97405"));
 
 		}
 	}
