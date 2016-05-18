@@ -38,23 +38,16 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="..\SoapService\Web References\graphical.weather.gov\Reference.cs">
-      <Link>SoapService\Web References\graphical.weather.gov\Reference.cs</Link>
-    </Compile>
-    <Compile Include="..\SoapService\Forecast.cs">
-      <Link>SoapService\Forecast.cs</Link>
-    </Compile>
-    <Compile Include="..\RestService\RestService.cs">
-      <Link>RestService.cs</Link>
-    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <None Include="..\SoapService\Web References\graphical.weather.gov\Reference.map">
-      <Link>SoapService\Web References\graphical.weather.gov\Reference.map</Link>
-    </None>
-    <None Include="..\SoapService\Web References\graphical.weather.gov\ndfdXML.wsdl">
-      <Link>SoapService\Web References\graphical.weather.gov\ndfdXML.wsdl</Link>
-    </None>
+    <ProjectReference Include="..\SoapService\SoapService.csproj">
+      <Project>{D65203FD-27D7-41DA-902E-0219D81B8D19}</Project>
+      <Name>SoapService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RestService\RestService.csproj">
+      <Project>{BD3FFDEC-0D14-4D33-A171-CD8F7ED5E72D}</Project>
+      <Name>RestService</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>
