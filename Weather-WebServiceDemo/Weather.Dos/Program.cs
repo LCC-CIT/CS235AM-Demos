@@ -7,9 +7,11 @@ namespace Weather.Dos
 	{
 		public static void Main (string[] args)
 		{
-			var forecast = new Forecast ();
+            //var forecast = new Forecast ();
+            var forecast = new RestService.Forecast();
 
-			Console.WriteLine (forecast.get7DayLowAndHigh("97405"));
+            Console.WriteLine (forecast.get7DayLowAndHigh("97405"));
+
 
 		}
 	}

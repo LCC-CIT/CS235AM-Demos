@@ -16,12 +16,16 @@ namespace SoapService
 				productType.glance, DateTime.Now, DateTime.Now.AddDays (7),
 				unitType.e, new weatherParametersType () 
 			{ mint = true, maxt = true} );
-			return ParseLowHighXml (forecast);
+			return ParseLowsXml (forecast);
 		}
-
+        /*XML returned for LatLonList
+         * <dwml version='1.0' xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='http://graphical.weather.gov/xml/DWMLgen/schema/DWML.xsd'>
+         *   <latLonList>43.9292,-123.087</latLonList>
+         * </dwml>
+         */
 		private string ParseZipXml(string latLonXml) {
 			var latLonDoc = XDocument.Parse (latLonXml);
-			XElement latLonElement = latLonDoc.Element ("dwml");
+			XElement latLonElement = latLonDoc.Element ("dwml").Element("latLonList");
 			return latLonElement.Value;
 		}
 
@@ -42,10 +46,10 @@ namespace SoapService
         </temperature>
       */
 
-		private string ParseLowsXml(string forecastXml) {
+        private string ParseLowsXml(string forecastXml) {
 			var forecastDoc = XDocument.Parse (forecastXml);
 			// This works too, but I commented it out to use Linq instead
-			// var minTempElements = forecastDoc.Element("dwml").Element("data").Element("parameters").Element("temperature").Elements();
+			// var temperatureElements = forecastDoc.Element("dwml").Element("data").Element("parameters").Element("temperature").Elements();
 			var temperatureElements = forecastDoc.Root.Descendants("temperature");
 			var minTemperatures = (from t in temperatureElements
 				where t.Element("name").Value == "Daily Minimum Temperature"
