@@ -44,7 +44,9 @@
     <Compile Include="..\SoapService\Forecast.cs">
       <Link>SoapService\Forecast.cs</Link>
     </Compile>
-    <Compile Include="RestService.cs" />
+    <Compile Include="..\RestService\RestService.cs">
+      <Link>RestService.cs</Link>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
