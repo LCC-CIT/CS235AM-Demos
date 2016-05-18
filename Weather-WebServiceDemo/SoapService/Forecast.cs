@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Xml.Linq;
 using SoapPractice.graphical.weather.gov;
+using System.Linq;
 
 namespace SoapService
 {
@@ -20,15 +21,38 @@ namespace SoapService
 
 		private string ParseZipXml(string latLonXml) {
 			var latLonDoc = XDocument.Parse (latLonXml);
-			XElement latLon = latLonDoc.Element ("dwml");
-			return latLon.Value;
+			XElement latLonElement = latLonDoc.Element ("dwml");
+			return latLonElement.Value;
 		}
 
-		private string ParseLowHighXml(string forecastXml) {
+
+		/*
+		 * The temperature element of the forecast XML looks like this:
+		 * 
+		<parameters applicable-location="point1">
+      	  <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+            <name>Daily Minimum Temperature</name>
+            <value>72</value>
+            <value>57</value>
+            <value>60</value>
+            <value>65</value>
+            <value>64</value>
+            <value>64</value>
+            <value>65</value>
+        </temperature>
+      */
+
+		private string ParseLowsXml(string forecastXml) {
 			var forecastDoc = XDocument.Parse (forecastXml);
-			var minTempElements = forecastDoc.Element("dwml").Element("data").Element("parameters").Element("temperature").Elements();
+			// This works too, but I commented it out to use Linq instead
+			// var minTempElements = forecastDoc.Element("dwml").Element("data").Element("parameters").Element("temperature").Elements();
+			var temperatureElements = forecastDoc.Root.Descendants("temperature");
+			var minTemperatures = (from t in temperatureElements
+				where t.Element("name").Value == "Daily Minimum Temperature"
+				select t.Elements ("value")).FirstOrDefault();
+
 			string minTemps = "";
-			foreach(XElement e in minTempElements) 
+			foreach(XElement e in minTemperatures) 
 				minTemps += e.Value + ", ";
 
 			return minTemps;
