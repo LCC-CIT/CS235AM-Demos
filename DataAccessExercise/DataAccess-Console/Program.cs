@@ -44,6 +44,11 @@ namespace DataAccess.DOS
 
 			// Don't use the first array, it's a header
 			stringArrays.RemoveAt(0);
+
+			// Show the first date in Ticks
+			DateTime firstDate = Convert.ToDateTime(stringArrays[0][0]);
+			Console.WriteLine ("Beginning Date: {0} = {1} Ticks", firstDate.ToString (), firstDate.Ticks);
+
 			// Copy the List of strings into our Database
 			int pk = 0;
 			foreach (string[] stockInfo in stringArrays) {
@@ -58,7 +63,8 @@ namespace DataAccess.DOS
 					Console.WriteLine ("{0} {1} rows inserted", pk, symbol);
 			}
 			// Show the final count of rows inserted
-			Console.WriteLine ("{0} {1} rows inserted", pk, symbol);			
+			Console.WriteLine ("{0} {1} rows inserted", pk, symbol);	
+
 		}
 	}
 }
