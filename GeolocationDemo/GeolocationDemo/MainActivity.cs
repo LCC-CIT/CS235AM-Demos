@@ -22,9 +22,9 @@ namespace GeolocationDemo
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
 
-            // Note: In project options, Build, Android Application,
-            // check ACCESS_FINE_LOCATION and ACCESS_COARSE_LOCATION
-            // These must be enabled for Geolocation to work
+			// The ACCESS_COARSE_LOCATION & ACCESS_FINE_LOCATION permissions are required, 
+			// but the Geolocator library will automatically add this for you. 
+					
             var locator = CrossGeolocator.Current;
             locator.DesiredAccuracy = 50;
 
