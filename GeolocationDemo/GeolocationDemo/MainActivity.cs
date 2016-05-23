@@ -1,6 +1,6 @@
 // Demonstration of the Xamarin gelolocaction component
 // Written by Brian Bird, 6/5/13
-// Updated with the latest Xamarin Geolocation plug-in. BB 5/21/16
+// Updated with the latest Xamarin Geolocator plug-in. BB 5/21/16
 
 using System;
 using Android.App;
@@ -11,7 +11,7 @@ using Plugin.Geolocator;
 
 namespace GeolocationDemo
 {
-    [Activity (Label = "GeolocationDemo", MainLauncher = true)]
+    [Activity (Label = "Geolocator Demo", MainLauncher = true)]
 	public class MainActivity : Activity
 	{
 
@@ -19,17 +19,14 @@ namespace GeolocationDemo
 		{
 			base.OnCreate (bundle);
 
-			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
 
 			// The ACCESS_COARSE_LOCATION & ACCESS_FINE_LOCATION permissions are required, 
-			// but the Geolocator library will automatically add this for you. 
+			// but the Geolocator library will automatically add these for you. 
 					
             var locator = CrossGeolocator.Current;
             locator.DesiredAccuracy = 50;
 
-			// Get our button and TextView from the layout resource,
-			// and attach an event to it
 			Button button = FindViewById<Button> (Resource.Id.myButton);
 			TextView textView = FindViewById<TextView> (Resource.Id.positionTextView);
 
