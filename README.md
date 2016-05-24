@@ -18,8 +18,9 @@ only want code for one app.
 * App that saves activity state using OnSaveInstanceState
  * ToDo-SaveInstanceState, uses XmlSerializer to save and restore object state
 * Apps that use a ListActivity with fast scrolling
-  * ListActivityDemo-VocabularyParseSectionIndex, 3 projects:
+  * ListActivityDemo-VocabularyParseSectionIndex, 4 projects:
     * CustomAdapterDemo: Custom adapter class defined and used for string array
+    * ListActivity+SimpleAdapter+XmlFile: Custom adapter for List<IDictionary<string, object>>, XML parser 
     * ListActivityDemo: Uses pre-defined ArrayAdapter class for an array of Objects
     * ListAndParser: Uses a custom adapter with a section indexer
 * Apps that have both portrait and landscape layouts
