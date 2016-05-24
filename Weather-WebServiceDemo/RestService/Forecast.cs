@@ -22,7 +22,7 @@ namespace RestService
 				                       serviceUrl, requestParameters, begin, end, zip);
 
 			// Send a request to the service and get a response
-			var request = HttpWebRequest.Create(requestString);
+			var request = (HttpWebRequest)WebRequest.Create(requestString);
 			var response = (HttpWebResponse)request.GetResponse();
 
 			// Read and parse the response
