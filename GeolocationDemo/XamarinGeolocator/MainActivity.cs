@@ -9,9 +9,9 @@ using Android.OS;
 using System.Threading.Tasks;
 using Plugin.Geolocator;
 
-namespace GeolocationDemo
+namespace FusedLocationProviderDemo
 {
-    [Activity (Label = "Geolocator Demo", MainLauncher = true)]
+    [Activity (Label = "Xamarin Geolocator Demo", MainLauncher = true)]
 	public class MainActivity : Activity
 	{
 

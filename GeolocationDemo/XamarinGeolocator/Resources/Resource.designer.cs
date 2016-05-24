@@ -11,7 +11,7 @@
 
 [assembly: Android.Runtime.ResourceDesignerAttribute("GeolocationDemo.Resource", IsApplication=true)]
 
-namespace GeolocationDemo
+namespace FusedLocationProviderDemo
 {
 	
 	
@@ -41,11 +41,30 @@ namespace GeolocationDemo
 			}
 		}
 		
+		public partial class Drawable
+		{
+			
+			// aapt resource value: 0x7f020000
+			public const int Icon = 2130837504;
+			
+			static Drawable()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Drawable()
+			{
+			}
+		}
+		
 		public partial class Id
 		{
 			
 			// aapt resource value: 0x7f050000
 			public const int myButton = 2131034112;
+			
+			// aapt resource value: 0x7f050001
+			public const int positionTextView = 2131034113;
 			
 			static Id()
 			{
@@ -73,30 +92,11 @@ namespace GeolocationDemo
 			}
 		}
 		
-		public partial class Mipmap
-		{
-			
-			// aapt resource value: 0x7f020000
-			public const int Icon = 2130837504;
-			
-			static Mipmap()
-			{
-				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
-			}
-			
-			private Mipmap()
-			{
-			}
-		}
-		
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040001
-			public const int app_name = 2130968577;
-			
 			// aapt resource value: 0x7f040000
-			public const int hello = 2130968576;
+			public const int app_name = 2130968576;
 			
 			static String()
 			{
