@@ -69,7 +69,7 @@ namespace FusedLocationProviderDemo
 		// IOnConnectionFailedListener
 		public void OnConnectionFailed (Android.Gms.Common.ConnectionResult result)
 		{
-			throw new System.NotImplementedException ();
+			Toast.MakeText (this, "Connection failed", ToastLength.Long);
 		}
 
 

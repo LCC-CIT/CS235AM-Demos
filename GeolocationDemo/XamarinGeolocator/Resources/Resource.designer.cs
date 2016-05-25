@@ -11,7 +11,7 @@
 
 [assembly: Android.Runtime.ResourceDesignerAttribute("GeolocationDemo.Resource", IsApplication=true)]
 
-namespace FusedLocationProviderDemo
+namespace GeolocationDemo
 {
 	
 	
