@@ -33,7 +33,7 @@ namespace FusedLocationProviderDemo
 			// Clicking the first button will make a one-time call to get the user's last location
 			button.Click += delegate {
 				apiClient.Connect();
-				locationTextView.Text = "";
+				locationTextView.Text = "";				// Clear text view
 				button.Text = "Getting Last Location";
 			};		
 		}
@@ -77,10 +77,6 @@ namespace FusedLocationProviderDemo
 		public void OnLocationChanged (Android.Locations.Location location)
 		{
 			// This method returns changes in the user's location if they've been requested
-
-			// You must implement this to implement the Android.Gms.Locations.ILocationListener Interface
-			Log.Debug ("LocationClient", "Location updated");
-
 			locationTextView.Text = "Latitude: " + location.Latitude.ToString() + "\n";
 			locationTextView.Text += "Longitude: " + location.Longitude.ToString() + "\n";
 			locationTextView.Text += "Provider: " + location.Provider.ToString();
