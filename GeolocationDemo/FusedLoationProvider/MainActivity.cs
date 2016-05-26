@@ -32,9 +32,11 @@ namespace FusedLocationProviderDemo
 			
 			// Clicking the first button will make a one-time call to get the user's last location
 			button.Click += delegate {
+				// If we're already connected, then disconnect so that when we do connect we'll get a collaback
+				if(apiClient.IsConnected)
+					apiClient.Disconnect();
+				
 				apiClient.Connect();
-				locationTextView.Text = "";				// Clear text view
-				button.Text = "Getting Last Location";
 			};		
 		}
 
@@ -44,10 +46,12 @@ namespace FusedLocationProviderDemo
 		// Implementation for IConnectionCallbacks
 		public void OnConnected (Bundle connectionHint)
 		{
+			locationTextView.Text = "Getting last location";
 			Android.Locations.Location location = LocationServices.FusedLocationApi.GetLastLocation (apiClient);
 			if (location != null)
 			{
-				locationTextView.Text = "Latitude: " + location.Latitude.ToString() + "\n";
+				locationTextView.Text = "Last location:\n";
+				locationTextView.Text += "Latitude: " + location.Latitude.ToString() + "\n";
 				locationTextView.Text += "Longitude: " + location.Longitude.ToString() + "\n";
 				locationTextView.Text += "Provider: " + location.Provider.ToString();
 			}
@@ -55,8 +59,7 @@ namespace FusedLocationProviderDemo
 			{
 				locationTextView.Text = "No location info available";
 			}
-			button.Text = "Show Location";
-			apiClient.Disconnect ();
+			// apiClient.Disconnect ();
 		}
 
 
@@ -69,7 +72,7 @@ namespace FusedLocationProviderDemo
 		// IOnConnectionFailedListener
 		public void OnConnectionFailed (Android.Gms.Common.ConnectionResult result)
 		{
-			Toast.MakeText (this, "Connection failed", ToastLength.Long);
+			locationTextView.Text = "Connection failed";
 		}
 
 
