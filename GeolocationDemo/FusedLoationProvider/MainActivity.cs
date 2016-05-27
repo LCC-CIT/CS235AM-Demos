@@ -3,7 +3,7 @@ using Android.Widget;
 using Android.OS;
 using Android.Gms.Location;
 using Android.Gms.Common.Apis;
-using Android.Util;
+//using Android.Util;
 
 namespace FusedLocationProviderDemo
 {
@@ -12,7 +12,7 @@ namespace FusedLocationProviderDemo
 		GoogleApiClient.IOnConnectionFailedListener, 
 		ILocationListener 
 	{
-		Button button;
+		Button lastLocationButton, locationUpdateButton;
 		TextView locationTextView;
 		GoogleApiClient apiClient;
 
@@ -26,40 +26,54 @@ namespace FusedLocationProviderDemo
 			// Set up Google Play location service
 			apiClient = new GoogleApiClient.Builder (this, this, this)
 				.AddApi (LocationServices.API).Build ();
+			apiClient.Connect ();
 
-			button = FindViewById<Button> (Resource.Id.myButton);
+			lastLocationButton = FindViewById<Button> (Resource.Id.lastLocationButton);
 			locationTextView = FindViewById<TextView> (Resource.Id.locationTextView);
 			
-			// Clicking the first button will make a one-time call to get the user's last location
-			button.Click += delegate {
-				// If we're already connected, then disconnect so that when we do connect we'll get a collaback
-				if(apiClient.IsConnected)
-					apiClient.Disconnect();
-				
-				apiClient.Connect();
+			// Clicking the button will make a one-time call to get the device's last known location
+			lastLocationButton.Click += delegate {
+				Android.Locations.Location location = LocationServices.FusedLocationApi.GetLastLocation (apiClient);
+				locationTextView.Text = "Last location:\n";
+				DisplayLocation(location);
 			};		
-		}
 
+			locationUpdateButton = FindViewById<Button> (Resource.Id.locationUpdateButton);
+
+			// Clicking the button will send a request for continuous updates
+			locationUpdateButton.Click += async delegate {
+				if (apiClient.IsConnected)
+				{
+					locationTextView.Text = "Requesting Location Updates";
+					var locRequest = new LocationRequest();
+
+					// Setting location priority to PRIORITY_HIGH_ACCURACY (100)
+					locRequest.SetPriority(100);
+
+					// Setting interval between updates, in milliseconds
+					// NOTE: the default FastestInterval is 1 minute. If you want to receive location updates more than 
+					// once a minute, you _must_ also change the FastestInterval to be less than or equal to your Interval
+					locRequest.SetFastestInterval(500);
+					locRequest.SetInterval(1000);
+
+					// pass in a location request and LocationListener
+					await LocationServices.FusedLocationApi.RequestLocationUpdates (apiClient, locRequest, this);
+					// In OnLocationChanged (below), we will make calls to update the UI
+					// with the new location data
+				}
+				else
+				{
+					locationTextView.Text = "Client API not connected";
+				}
+			};
+		}
 
 		// Interface implementations
 
 		// Implementation for IConnectionCallbacks
 		public void OnConnected (Bundle connectionHint)
 		{
-			locationTextView.Text = "Getting last location";
-			Android.Locations.Location location = LocationServices.FusedLocationApi.GetLastLocation (apiClient);
-			if (location != null)
-			{
-				locationTextView.Text = "Last location:\n";
-				locationTextView.Text += "Latitude: " + location.Latitude.ToString() + "\n";
-				locationTextView.Text += "Longitude: " + location.Longitude.ToString() + "\n";
-				locationTextView.Text += "Provider: " + location.Provider.ToString();
-			}
-			else
-			{
-				locationTextView.Text = "No location info available";
-			}
-			// apiClient.Disconnect ();
+			locationTextView.Text = "Connected!";
 		}
 
 
@@ -77,12 +91,27 @@ namespace FusedLocationProviderDemo
 
 
 		// ILocationListener
+		// This method returns changes in the user's location if they've been requested
 		public void OnLocationChanged (Android.Locations.Location location)
 		{
-			// This method returns changes in the user's location if they've been requested
-			locationTextView.Text = "Latitude: " + location.Latitude.ToString() + "\n";
-			locationTextView.Text += "Longitude: " + location.Longitude.ToString() + "\n";
-			locationTextView.Text += "Provider: " + location.Provider.ToString();
+
+			locationTextView.Text = "Location updates:\n";
+			DisplayLocation (location);
+		}
+
+		private void DisplayLocation(Android.Locations.Location location)
+		{
+			if (location != null)
+			{
+				locationTextView.Text += "Latitude: " + location.Latitude.ToString() + "\n";
+				locationTextView.Text += "Longitude: " + location.Longitude.ToString() + "\n";
+				locationTextView.Text += "Provider: " + location.Provider.ToString();
+			}
+			else
+			{
+				locationTextView.Text = "No location info available";
+			}
+
 		}
 	}
 }

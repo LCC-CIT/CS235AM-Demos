@@ -4,13 +4,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <Button
-        android:id="@+id/myButton"
+        android:id="@+id/lastLocationButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Connect to Google Play Services" />
+        android:text="Get last location" />
+    <Button
+        android:id="@+id/locationUpdateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get location updates" />
     <TextView
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/locationTextView" />
+        android:id="@+id/locationTextView"
+        android:text="Not connected yet" />
 </LinearLayout>
