@@ -37,6 +37,10 @@ only want code for one app.
 * Apps that consume a WebService
   * Stocks+WebService - Not finished. Can someone help me find a free Stock price Web Service?
   * Weather-WebServiceDemo - SOAP and REST web services are both working in the Console project
+* Apps that demonstrate getting locaiton information
+  * GeolocationDemo
+    * FusedLocationProvider - Demonstrates getting location using the Google Play Services Fused Location Provider API
+    * XamarinGeolocator - Demonstrates getting location using the Xamarin cross-platform Geolocator plug-in
 
 I wrote these apps for use with a class I teach at Lane Community College, CS235AM, Intermediate Mobile Applications Development: Android. Read more about the class and find out how to enroll here: https://birdsbits.wordpress.com/2014/09/09/xamarin-android-course/
 
