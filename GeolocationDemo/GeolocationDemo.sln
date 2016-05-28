@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FusedLocationProviderDemo", "FusedLoationProvider\FusedLocationProviderDemo.csproj", "{E0487D35-C8D0-4BAE-B00E-5FF1A4E80CCF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinGeolocatorDemo", "XamarinGeolocator\XamarinGeolocatorDemo.csproj", "{5BCDD098-550B-4368-A6C5-9D12EB2C44D3}"
@@ -16,16 +18,19 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5BCDD098-550B-4368-A6C5-9D12EB2C44D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5BCDD098-550B-4368-A6C5-9D12EB2C44D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5BCDD098-550B-4368-A6C5-9D12EB2C44D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5BCDD098-550B-4368-A6C5-9D12EB2C44D3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E0487D35-C8D0-4BAE-B00E-5FF1A4E80CCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E0487D35-C8D0-4BAE-B00E-5FF1A4E80CCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0487D35-C8D0-4BAE-B00E-5FF1A4E80CCF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{E0487D35-C8D0-4BAE-B00E-5FF1A4E80CCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0487D35-C8D0-4BAE-B00E-5FF1A4E80CCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BCDD098-550B-4368-A6C5-9D12EB2C44D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BCDD098-550B-4368-A6C5-9D12EB2C44D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BCDD098-550B-4368-A6C5-9D12EB2C44D3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5BCDD098-550B-4368-A6C5-9D12EB2C44D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BCDD098-550B-4368-A6C5-9D12EB2C44D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = GeolocationDemo\GeolocationDemo.csproj
