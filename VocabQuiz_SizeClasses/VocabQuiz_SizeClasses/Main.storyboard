@@ -19,7 +19,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="200.5" y="139.5" width="199" height="21"/>
+                                <rect key="frame" x="60" y="79.5" width="199" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -29,7 +29,7 @@
                                 </constraints>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the best answer:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="200.5" y="187.5" width="200" height="21"/>
+                                <rect key="frame" x="60" y="127.5" width="200" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -39,7 +39,7 @@
                                 </constraints>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="200.5" y="233" width="200" height="30"/>
+                                <rect key="frame" x="60" y="173" width="200" height="30"/>
                                 <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="0" blue="1" alpha="1"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -51,7 +51,7 @@
                                 </constraints>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="26" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="200.5" y="289" width="200" height="30"/>
+                                <rect key="frame" x="60" y="229" width="200" height="30"/>
                                 <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="0" blue="1" alpha="1"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -63,7 +63,7 @@
                                 </constraints>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="30" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="200.5" y="343" width="200" height="30"/>
+                                <rect key="frame" x="60" y="283" width="200" height="30"/>
                                 <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="0" blue="1" alpha="1"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -75,7 +75,7 @@
                                 </constraints>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="34" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="200.5" y="398" width="200" height="30"/>
+                                <rect key="frame" x="60" y="338" width="200" height="30"/>
                                 <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="0" blue="1" alpha="1"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -87,7 +87,7 @@
                                 </constraints>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="76" translatesAutoresizingMaskIntoConstraints="NO" text="Right / Wrong">
-                                <rect key="frame" x="200.5" y="461.5" width="200" height="21"/>
+                                <rect key="frame" x="60" y="401.5" width="200" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -98,8 +98,6 @@
                             </label>
                         </subviews>
                         <constraints>
-                            <constraint id="60" firstItem="8bC-Xf-vdC" firstAttribute="centerY" secondItem="3" secondAttribute="centerY" constant="150"/>
-                            <constraint id="61" firstItem="8bC-Xf-vdC" firstAttribute="centerX" secondItem="3" secondAttribute="centerX"/>
                             <constraint id="62" firstItem="30" firstAttribute="leading" secondItem="34" secondAttribute="leading"/>
                             <constraint id="63" firstItem="26" firstAttribute="leading" secondItem="34" secondAttribute="leading"/>
                             <constraint id="64" firstItem="5" firstAttribute="leading" secondItem="34" secondAttribute="leading"/>
@@ -112,6 +110,8 @@
                             <constraint id="71" firstItem="34" firstAttribute="centerY" secondItem="30" secondAttribute="centerY" constant="55"/>
                             <constraint id="79" firstItem="76" firstAttribute="centerY" secondItem="34" secondAttribute="centerY" constant="59"/>
                             <constraint id="80" firstItem="76" firstAttribute="leading" secondItem="34" secondAttribute="leading"/>
+                            <constraint id="85" firstItem="8bC-Xf-vdC" firstAttribute="centerY" secondItem="5" secondAttribute="centerY" constant="52"/>
+                            <constraint id="86" firstItem="5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
                         </constraints>
                     </view>
                     <connections>
@@ -128,4 +128,8 @@
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
     </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination"/>
+        <simulatedOrientationMetrics key="orientation"/>
+    </simulatedMetricsContainer>
 </document>
