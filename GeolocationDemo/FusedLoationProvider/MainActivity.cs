@@ -3,7 +3,6 @@ using Android.Widget;
 using Android.OS;
 using Android.Gms.Location;
 using Android.Gms.Common.Apis;
-//using Android.Util;
 
 namespace FusedLocationProviderDemo
 {
