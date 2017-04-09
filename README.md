@@ -11,7 +11,7 @@ need to download or clone the whole repository even if you only want code for on
 		* ClickCounter-Code - UI created in C# code
 		* ClickCounter-XML - UI declared in XML
 * Apps with multiple screens using Intent objects
-	* AgeCalc
+	* AgeCalc - Two activities, TextEdit, and a DatePicker
   	* MathFlashCards (4 projects)
   		* v0: Two activities with just one pair of layouts for portrait orientation
     	* v1: Same as v0, but with LaunchMode of FrontActivity set to SingleInstance
