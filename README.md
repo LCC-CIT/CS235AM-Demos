@@ -9,11 +9,9 @@ only want code for one app.
 
 * Apps with multiple screens using Intent objects
   * AgeCalc
-  * MathFlashCards (4 projects)
+  * MathFlashCards- 2 Screens (4 projects)
     * v0: Two activities with just one pair of layouts for portrait orientation
     * v1: Same as v0, but with LaunchMode of FrontActivity set to SingleInstance
-    * v2: Same as v1, but using fragments for large and normal screen sizes and both orientations
-    * v3: Same as v2, but fragments are loaded programmatically instead of statically
   * GuessMyNumber (not working yet)
 * App that saves activity state using OnSaveInstanceState
  * ToDo-SaveInstanceState, uses XmlSerializer to save and restore object state
@@ -29,7 +27,9 @@ only want code for one app.
     * RpsDemo-RelativeLayouts
 * Apps that use Fragments
   * HelloFragment
-  * MathFlashCards - see v2 and v3 of this solution above
+  * MathFlashCards- Fragments
+    * v2: Uses fragments for large and normal screen sizes and both orientations
+    * v3: Same as v2, but fragments are loaded programmatically instead of statically
   * RpsFragDemo
 * Apps that use an SQLite Database and SQLite.Net ORM
   * DataAccessDemo - Displays stock price history in a ListView

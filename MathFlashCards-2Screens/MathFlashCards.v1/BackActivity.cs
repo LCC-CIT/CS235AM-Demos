@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-using Android.App;
+﻿using Android.App;
 using Android.Content;
 using Android.OS;
-using Android.Runtime;
-using Android.Views;
 using Android.Widget;
 
 namespace MathFlashCards
@@ -49,7 +43,7 @@ namespace MathFlashCards
 		protected override void OnNewIntent (Intent intent)
 		{
 			base.OnNewIntent (intent);
-			//Intent = intent;
+			Intent = intent;
 		}
 	}
 }

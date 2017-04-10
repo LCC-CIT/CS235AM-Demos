@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathFlashCards.v2", "MathFlashCards.v2\MathFlashCards.v2.csproj", "{26DF68FF-25C2-437D-AFAD-9C998B280E50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathFlashCards.v3", "MathFlashCards.v3\MathFlashCards.v3.csproj", "{6C2C9385-F8A4-4539-A7B3-45835BB7F4F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{65222EF4-FE81-4DEB-A0A5-B826B4B58C5A}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26DF68FF-25C2-437D-AFAD-9C998B280E50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26DF68FF-25C2-437D-AFAD-9C998B280E50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26DF68FF-25C2-437D-AFAD-9C998B280E50}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{26DF68FF-25C2-437D-AFAD-9C998B280E50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26DF68FF-25C2-437D-AFAD-9C998B280E50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26DF68FF-25C2-437D-AFAD-9C998B280E50}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6C2C9385-F8A4-4539-A7B3-45835BB7F4F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C2C9385-F8A4-4539-A7B3-45835BB7F4F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C2C9385-F8A4-4539-A7B3-45835BB7F4F0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6C2C9385-F8A4-4539-A7B3-45835BB7F4F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C2C9385-F8A4-4539-A7B3-45835BB7F4F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C2C9385-F8A4-4539-A7B3-45835BB7F4F0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
