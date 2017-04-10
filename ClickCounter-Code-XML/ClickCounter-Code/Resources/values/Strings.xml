@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">ClickCounter-Code</string>
+	<string name="label_text">0 taps</string>
+	<string name="button_text">Tap me to add one!</string>
+</resources>

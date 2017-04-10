@@ -38,7 +38,7 @@ namespace MathFlashCards
 
 
 		// This is called every time the "Show Front" button is clicked, or
-		// the system back button is clicked (when the BackActivity is running).
+		// the back button at the bottom of the screen is tapped (when the BackActivity is running).
 		protected override void OnResume ()
 		{
 			base.OnResume ();

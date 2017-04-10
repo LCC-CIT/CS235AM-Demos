@@ -41,8 +41,8 @@ namespace MathFlashCards
 		}
 
 
-		// This is called every time the system back button is clicked, and
-		// it is called after onCreate the first time the activity is launched
+		// This is called every time the back button at the bottom of the screen is tapped,
+		// and it is called after onCreate the first time the activity is launched
 		protected override void OnResume ()
 		{
 			base.OnResume ();
