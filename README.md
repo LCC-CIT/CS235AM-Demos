@@ -12,7 +12,8 @@ only want code for one app.
   * MathFlashCards- 2 Screens (4 projects)
     * v0: Two activities with just one pair of layouts for portrait orientation
     * v1: Same as v0, but with LaunchMode of FrontActivity set to SingleInstance
-  * GuessMyNumber (not working yet)
+    * v2: Uses StartActivityForResult, and overrides OnActivityResult to get a result from a second activity
+  * GuessMyNumber (not working yet)
 * App that saves activity state using OnSaveInstanceState
  * ToDo-SaveInstanceState, uses XmlSerializer to save and restore object state
 * Apps that use a ListActivity with fast scrolling
