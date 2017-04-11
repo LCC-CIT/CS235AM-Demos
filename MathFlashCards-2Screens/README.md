@@ -13,7 +13,9 @@ Concepts demonstrated:
 Concepts demonstrated:
   * Managing activity launch mode
   * Using activity life-cycle callbacks
-
+* v2 - Uses StartActivityForResult in the first activity
+  * The second activity has buttons for "I was right" and "I was wrong". These use the SetResult and Finish methods to return a result.
+  * The first activity overrides OnActivityResult to get back the result.
 Note: This app is just one app in the class demo repository.
 To get the source code for this app you will need to
 clone or download the whole repository.
