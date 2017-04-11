@@ -4,8 +4,10 @@ using Android.OS;
 using Android.Content;
 
 // MathFlashCards.v0
-// This version doesn't have a button on BackActivity's UI
+// This version doesn't have a button widget on BackActivity's UI,
+// and doesn't return data to the FrontActivity.
 // By Brian Bird, April 4, 2016
+// Revised April 10, 2017 to add a NavBar with an "up" button
 
 namespace MathFlashCards
 {
