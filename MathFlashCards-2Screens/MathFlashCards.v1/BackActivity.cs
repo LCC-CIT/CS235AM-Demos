@@ -3,6 +3,8 @@ using Android.Content;
 using Android.OS;
 using Android.Widget;
 
+// MathFlashCards v1
+
 namespace MathFlashCards
 {
 	// the LaunchMode is SingleInstance, so we will only ever get one instance 

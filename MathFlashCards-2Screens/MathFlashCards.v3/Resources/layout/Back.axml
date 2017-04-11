@@ -9,4 +9,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/answerTextView" />
+    <Button
+        android:text="I was right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rightButton" />
+    <Button
+        android:text="I was wrong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wrongButton" />
 </LinearLayout>

@@ -13,7 +13,11 @@ namespace MathFlashCards
     public class FrontActivity : Activity
     {
         public const string EXTRA_ANSWER = "Answer";
+        public const string EXTRA_RIGHT = "Right";
+        const int RESULT_REQUEST = 0;  // sub-activity result request code
         MathQuiz quiz = new MathQuiz();
+        int total = 0;
+        int right = 0;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -33,13 +37,10 @@ namespace MathFlashCards
                 // Note: Intent is both a class and a property name, be sure you have a using statement
 
                 back.PutExtra(EXTRA_ANSWER, quiz.Sum);
-                StartActivity(back);
+                StartActivityForResult(back, 0);
             };
         }
 
-
-        // This is called every time the back button at the bottom of the screen is tapped,
-        // and it is called after onCreate the first time the activity is launched
         protected override void OnResume()
         {
             base.OnResume();
@@ -52,7 +53,23 @@ namespace MathFlashCards
 
             var secondNumberTextView = FindViewById<TextView>(Resource.Id.secondNumberTextView);
             secondNumberTextView.Text = quiz.SecondNumber.ToString();
+        }
 
+        protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
+        {
+            if (requestCode == RESULT_REQUEST)
+            {
+                if (resultCode == Result.Ok)
+                {
+                    total++;
+                    if(data.GetBooleanExtra(EXTRA_RIGHT, false))
+                    {
+                        right++;
+                    }
+                    var scoreTextView = FindViewById<TextView>(Resource.Id.scoreTextView);
+                    scoreTextView.Text = string.Format("{0} right out of {1}", right, total);
+                }
+            }
         }
     }
 }
