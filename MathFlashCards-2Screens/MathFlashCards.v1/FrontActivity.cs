@@ -7,6 +7,7 @@ using Android.Content;
 // This version has a button on the BackActivity UI to 
 // take you back to the front activity and uses LaunchMode = SingleInstance
 // By Brian Bird, April 6, 2016
+// This approach is now deprecated and Google reccomends the approach used in MathFlashCards.v0 - April 10, 2017
 
 namespace MathFlashCards
 {

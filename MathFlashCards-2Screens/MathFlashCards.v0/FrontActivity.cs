@@ -11,7 +11,7 @@ using Android.Content;
 
 namespace MathFlashCards
 {
-	[Activity (Label = "Front", MainLauncher = true, Icon = "@mipmap/icon")]
+	[Activity (Label = "MathFlashCards.v0", MainLauncher = true, Icon = "@mipmap/icon")]
 	public class FrontActivity : Activity
 	{
 		public const string EXTRA_ANSWER = "Answer";
@@ -28,12 +28,11 @@ namespace MathFlashCards
 
 			quiz.MakeRandomNumbers ();
 
-			// Show the BackActivity and send it the answer
+			// Start the BackActivity and send it the answer
 			Button button = FindViewById<Button> (Resource.Id.myButton);
-			
 			button.Click += delegate {
 				var back = new Intent(this, typeof(BackActivity));
-				// Note: Intent is both a class and a property name, be sure you have a using statement
+				// Note: Intent is both a class and a property name, be sure you have a using statement for Android.Content
 
 				back.PutExtra(EXTRA_ANSWER, quiz.Sum);
 				StartActivity(back);
@@ -55,7 +54,6 @@ namespace MathFlashCards
 
 			var secondNumberTextView = FindViewById<TextView> (Resource.Id.secondNumberTextView);
 			secondNumberTextView.Text = quiz.SecondNumber.ToString();
-
 		}
 	}
 }

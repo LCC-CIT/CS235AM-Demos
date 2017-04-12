@@ -9,7 +9,7 @@ namespace MathFlashCards
 {
 	// the LaunchMode is SingleInstance, so we will only ever get one instance 
 	// of this activity in the system back-stack
-	[Activity (Label = "Back", LaunchMode = Android.Content.PM.LaunchMode.SingleInstance)]			
+	[Activity (Label = "Card Back", LaunchMode = Android.Content.PM.LaunchMode.SingleInstance)]			
 	public class BackActivity : Activity
 	{
 		// This method is only called the first time this activity is launched
