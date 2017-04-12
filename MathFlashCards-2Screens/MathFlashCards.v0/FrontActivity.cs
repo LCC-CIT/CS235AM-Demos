@@ -11,8 +11,6 @@ using Android.Content;
 
 namespace MathFlashCards
 {
-	// No launch mode is specified, but there is no other activity that starts this activity
-	// so duplicagte instances won't be created
 	[Activity (Label = "Front", MainLauncher = true, Icon = "@mipmap/icon")]
 	public class FrontActivity : Activity
 	{
