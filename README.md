@@ -7,11 +7,11 @@ only want code for one app.
 
 ##Directory
 
-* Apps with multiple screens using Intent objects
+* __Apps with multiple screens using Intent objects__
   * AgeCalc
   * MathFlashCards- 2 Screens (4 projects)
     * v0: Two activities with just one pair of layouts for portrait orientation
-    * v1: Same as v0, but with LaunchMode of FrontActivity set to SingleInstance
+    * v1: Same as v0, but with LaunchMode of FrontActivity set to SingleInstance - this approach is now depricated, use the approach in v0 instead.
     * v2: Uses StartActivityForResult, and overrides OnActivityResult to get a result from a second activity
   * GuessMyNumber (not working yet)
 * App that saves activity state using OnSaveInstanceState
