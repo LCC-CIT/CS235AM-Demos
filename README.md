@@ -13,7 +13,7 @@ only want code for one app.
     * v0: Two activities with just one pair of layouts for portrait orientation
     * v1: Same as v0, but with LaunchMode of FrontActivity set to SingleInstance - this approach is now depricated, use the approach in v0 instead.
     * v2: Uses StartActivityForResult, and overrides OnActivityResult to get a result from a second activity
-  * GuessMyNumber (not working yet)
+    * GuessMyNumber (not working yet)
 * __App that saves activity state using OnSaveInstanceState__
   * ToDo-SaveInstanceState, uses XmlSerializer to save and restore object state
 * __Apps that use a ListActivity with fast scrolling__
