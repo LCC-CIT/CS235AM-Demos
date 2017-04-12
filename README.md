@@ -5,7 +5,7 @@ Note: All these apps are in one repository, so you will
 need to download or clone the whole repository even if you
 only want code for one app.
 
-##Directory
+## Directory
 
 * __Apps with multiple screens using Intent objects__
   * AgeCalc
@@ -14,31 +14,31 @@ only want code for one app.
     * v1: Same as v0, but with LaunchMode of FrontActivity set to SingleInstance - this approach is now depricated, use the approach in v0 instead.
     * v2: Uses StartActivityForResult, and overrides OnActivityResult to get a result from a second activity
   * GuessMyNumber (not working yet)
-* App that saves activity state using OnSaveInstanceState
- * ToDo-SaveInstanceState, uses XmlSerializer to save and restore object state
-* Apps that use a ListActivity with fast scrolling
+* __App that saves activity state using OnSaveInstanceState__
+  * ToDo-SaveInstanceState, uses XmlSerializer to save and restore object state
+* __Apps that use a ListActivity with fast scrolling__
   * ListActivityDemo-VocabularyParseSectionIndex, 4 projects:
     * CustomAdapterDemo: Custom adapter class defined and used for string array
     * ListActivity+SimpleAdapter+XmlFile: Custom adapter for List<IDictionary<string, object>>, XML parser 
     * ListActivityDemo: Uses pre-defined ArrayAdapter class for an array of Objects
     * ListAndParser: Uses a custom adapter with a section indexer
-* Apps that have both portrait and landscape layouts
+* __Apps that have both portrait and landscape layouts__
   * RpsLayoutDemo - Rock, Paper, Scissors game - 2 projects:
     * RpsDemo-LinearLayouts
     * RpsDemo-RelativeLayouts
-* Apps that use Fragments
+* __Apps that use Fragments__
   * HelloFragment
   * MathFlashCards- Fragments
     * v2: Uses fragments for large and normal screen sizes and both orientations
     * v3: Same as v2, but fragments are loaded programmatically instead of statically
   * RpsFragDemo
-* Apps that use an SQLite Database and SQLite.Net ORM
+* __Apps that use an SQLite Database and SQLite.Net ORM__
   * DataAccessDemo - Displays stock price history in a ListView
   * DataAccessExercise - built on DataAccessDemo, includes a Spinner, DatePicker and complex queries
-* Apps that consume a WebService
+* __Apps that consume a WebService__
   * Stocks+WebService - Not finished. Can someone help me find a free Stock price Web Service?
   * Weather-WebServiceDemo - SOAP and REST web services are both working in the Console project
-* Apps that demonstrate getting locaiton information
+* __Apps that demonstrate getting locaiton information__
   * GeolocationDemo
     * FusedLocationProvider - Demonstrates getting location using the Google Play Services Fused Location Provider API
     * XamarinGeolocator - Demonstrates getting location using the Xamarin cross-platform Geolocator plug-in
