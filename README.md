@@ -14,7 +14,8 @@ only want code for one app.
     * v1: Same as v0, but with LaunchMode of FrontActivity set to SingleInstance - this approach is now depricated, use the approach in v0 instead.
     * v2: Uses StartActivityForResult, and overrides OnActivityResult to get a result from a second activity
     * GuessMyNumber (not working yet)
-* __App that saves activity state using OnSaveInstanceState__
+* __Apps that save activity state using OnSaveInstanceState__
+  * ClickCounter-SaveState, stores an int in a Bundle object
   * ToDo-SaveInstanceState, uses XmlSerializer to save and restore object state
 * __Apps that use a ListActivity with fast scrolling__
   * ListActivityDemo-VocabularyParseSectionIndex, 4 projects:
