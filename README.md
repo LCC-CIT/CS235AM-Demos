@@ -17,12 +17,12 @@ only want code for one app.
 * __Apps that save activity state using OnSaveInstanceState__
   * ClickCounter-SaveState, stores an int in a Bundle object
   * ToDo-SaveInstanceState, uses XmlSerializer to save and restore object state
-* __Apps that use a ListActivity with fast scrolling__
+* __Apps that use a ListActivity__
   * ListActivityDemo-VocabularyParseSectionIndex, 4 projects:
-    * CustomAdapterDemo: Custom adapter class defined and used for string array
-    * ListActivity+SimpleAdapter+XmlFile: Custom adapter for List<IDictionary<string, object>>, XML parser 
-    * ListActivityDemo: Uses pre-defined ArrayAdapter class for an array of Objects
-    * ListAndParser: Uses a custom adapter with a section indexer
+    * CustomAdapterDemo: App with a ListView and a custom adapter class that inherits from BaseAdapter<VocabItem>
+    * ListActivity+SimpleAdapter+XmlFile: Custom adapter for List\<IDictionary\<string, object\>\>.The adapter is populated with data parsed from an XML file.
+    * ListActivityDemo: Uses the Android ArrayAdapter class for an array of custom objects
+    * ListAndParser: Uses a custom adapter with a section indexer. The adapter is populated with data parsed from a text file.
 * __Apps that have both portrait and landscape layouts__
   * RpsLayoutDemo - Rock, Paper, Scissors game - 2 projects:
     * RpsDemo-LinearLayouts
