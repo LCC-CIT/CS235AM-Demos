@@ -20,7 +20,7 @@ only want code for one app.
 * __Apps that use a ListActivity__
   * ListActivityDemo-VocabularyParseSectionIndex, 4 projects:
     * CustomAdapterDemo: App with a ListView and a custom adapter class that inherits from BaseAdapter<VocabItem>
-    * ListActivity+SimpleAdapter+XmlFile: Custom adapter for List\<IDictionary\<string, object\>\>.The adapter is populated with data parsed from an XML file.
+    * ListActivity+SimpleAdapter+XmlFile: Custom adapter for List\<IDictionary\<string, object\>\>.  The adapter is populated with data parsed from an XML file.
     * ListActivityDemo: Uses the Android ArrayAdapter class for an array of custom objects
     * ListAndParser: Uses a custom adapter with a section indexer. The adapter is populated with data parsed from a text file.
 * __Apps that have both portrait and landscape layouts__
