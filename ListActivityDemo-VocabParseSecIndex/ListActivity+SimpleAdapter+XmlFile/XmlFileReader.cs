@@ -70,7 +70,7 @@ namespace ListActivitySimpleAdapterXmlFile
 						case POS:
 							// Add part of speech
 							if (reader.Read () && word != null) {
-								word.Add (ENGLISH, reader.Value.Trim ());
+								word.Add (POS, reader.Value.Trim ());
 							}
 							break;
 						}

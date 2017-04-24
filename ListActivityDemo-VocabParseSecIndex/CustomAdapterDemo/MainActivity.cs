@@ -1,7 +1,4 @@
-using System;
 using Android.App;
-using Android.Content;
-using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
@@ -11,7 +8,7 @@ namespace CustomAdapterDemo
 	[Activity (Label = "CustomAdapterDemo", MainLauncher = true)]
 	public class MainActivity : ListActivity
 	{
-		VocabItem[] vocab;
+		VocabItem[] vocab;  // array of VocabItem objects
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -28,7 +25,6 @@ namespace CustomAdapterDemo
 	//		SetContentView (Resource.Layout.Main);
 
 			ListAdapter = new VocabAdapter (this, vocab);
-
 		}
 	}
 
