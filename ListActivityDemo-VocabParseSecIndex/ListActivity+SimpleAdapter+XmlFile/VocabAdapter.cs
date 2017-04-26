@@ -14,8 +14,7 @@ namespace ListActivitySimpleAdapterXmlFile
 
 		public VocabAdapter (Context context, 
 			List<IDictionary<string, object>> data, 
-			Int32 resource, 
-			String[] from, 
+			Int32 resource, String[] from, 
 			Int32[] to) : base(context, data, resource, from, to)
 		{
 			dataList = data;
@@ -23,6 +22,8 @@ namespace ListActivitySimpleAdapterXmlFile
 			dataList.Sort((x, y) => String.Compare((string)x[XmlVocabFileParser.POS], (string)y[XmlVocabFileParser.POS]));
 			BuildSectionIndex ();
 		}
+
+        // ---- Implementation of ISectionIndexer  -------
 
 		public int GetPositionForSection(int section)
 		{
@@ -41,8 +42,6 @@ namespace ListActivitySimpleAdapterXmlFile
 
 		private void BuildSectionIndex()
 		{
-
-
 			partOfSpeechIndex = new Dictionary<string, int>();		// Dictionaray will contain section names
 			for (var i = 0; i < Count; i++)
 			{

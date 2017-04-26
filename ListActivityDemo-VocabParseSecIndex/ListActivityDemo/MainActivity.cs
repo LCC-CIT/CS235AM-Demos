@@ -25,35 +25,15 @@ namespace ListActivityDemo
 			     vocab);
 		}
 
+        // Row click event handler in ListActivity
 		protected override void OnListItemClick(ListView l,
-		                                        View v,
-		                                        int position,
-		                                        long id)
+		     View v, int position, long id)
 		{
 			string word = vocab [position].English;
-			Android.Widget.Toast.MakeText(this,
-			         word,
-			         Android.Widget.ToastLength.Short).Show();
+			Android.Widget.Toast.MakeText(this, word,
+			    Android.Widget.ToastLength.Short).Show();
 		}
 
-	}
-
-
-	public class VocabItem
-	{
-		public string Spanish { get; set; }
-		public string English { get; set; }
-
-		public VocabItem(string s, string e)
-		{
-			Spanish = s;
-			English = e;
-		}
-
-		public override string ToString ()
-		{
-			return Spanish;
-		}
 	}
 }
 
