@@ -1,12 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using Android.Content;
 
 namespace ListAndParser
 {
 	/// <summary>
-	/// Contains methods for parsing csd text files
+	/// Contains methods for parsing text files using any delimiter and with any number of fields per line
 	/// </summary>
 	public class TextParser
 	{

@@ -4,6 +4,7 @@ using Android.OS;
 using Android.Views;
 using System.Collections.Generic;
 using Android.Runtime;
+using System;
 
 namespace ListActivitySimpleAdapterXmlFile
 {
@@ -18,6 +19,14 @@ namespace ListActivitySimpleAdapterXmlFile
 			// Read and prase the vocabulary file and provide the adapter with the data
 			var reader = new XmlVocabFileParser(Assets.Open(@"spanish-english.xml"));
 			var dataList = reader.VocabList;
+
+			// Sort the List of Dictionary objects. Sort primarily on part of speech, secondarily on Spanish
+			// To do this we must provide a comparator for List.Sort
+			// Note that the List must be sorted in order for the section indexer to work properly
+			dataList.Sort((x, y) => String.Compare((string)x[XmlVocabFileParser.POS] + (string)x[XmlVocabFileParser.SPANISH], 
+			      	(string)y[XmlVocabFileParser.POS] + (string)y[XmlVocabFileParser.SPANISH],	  		
+					StringComparison.Ordinal));      
+
             // constructor takes: reference to this Activity, List of Dictionary objects, row layout, 
 			ListAdapter = new VocabAdapter (this, dataList,
 				Android.Resource.Layout.SimpleListItem1,
