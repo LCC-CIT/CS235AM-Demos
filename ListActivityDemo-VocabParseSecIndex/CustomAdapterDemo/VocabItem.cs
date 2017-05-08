@@ -1,5 +1,3 @@
-using System;
-
 namespace CustomAdapterDemo
 {
 	public class VocabItem
@@ -21,6 +19,7 @@ namespace CustomAdapterDemo
 			PartOfSpeech = pos;
 		}
 
+        // More or less arbitrary choice to just use the Spanish word
 		public override string ToString ()
 		{
 			return Spanish;

@@ -15,7 +15,7 @@ This solution contains 4 projects:
     * a ListActivity
     * a row click-event handler
     * fast scrolling and a section indexer
-    * a custom adapter that inherits from SimpleAdapter and uses a List of Dictionary objects
+    * a custom adapter that inherits from SimpleAdapter and uses a List of C# Dictionarly objects, List\<IDictionary\<string, object\>\>
     * a custom XML file parser that uses the .NET XmlReader
 
 Note: This app is just one app in the class demo repository.
