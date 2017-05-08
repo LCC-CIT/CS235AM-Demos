@@ -37,6 +37,8 @@ namespace MathFlashCards
         private void ResultToFront(bool right)
         {
             var toFront = new Intent(this, typeof(FrontActivity));
+	    // Note: both buttons use the same key in the intent because they
+            // are just setting two different values for the same data item.
             toFront.PutExtra(FrontActivity.EXTRA_RIGHT, right);
             SetResult(Result.Ok, toFront);
             Finish();
