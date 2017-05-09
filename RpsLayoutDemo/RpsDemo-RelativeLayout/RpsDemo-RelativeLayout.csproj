@@ -75,9 +75,9 @@
     <AndroidResource Include="..\RpsDemo-LinearLayouts\Resources\drawable\Scissors.png">
       <Link>Resources\drawable\Scissors.png</Link>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\activity_main.xml" />
+    <AndroidResource Include="Resources\layout\activity_main.axml" />
     <AndroidResource Include="Resources\values\dimens.xml" />
-    <AndroidResource Include="Resources\layout-land\activity_main.xml" />
+    <AndroidResource Include="Resources\layout-land\activity_main.axml" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
