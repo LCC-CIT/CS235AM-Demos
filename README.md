@@ -30,9 +30,11 @@ only want code for one app.
 * __Apps that use Fragments__
   * HelloFragment
   * MathFlashCards- Fragments
-    * v2: Uses fragments for large and normal screen sizes and both orientations
-    * v3: Same as v2, but fragments are loaded programmatically instead of statically
+  		* v2: Uses fragments for large and normal screen sizes and both orientations
+    	* v3: Same as v2, but fragments are loaded programmatically instead of statically
   * RpsFragDemo
+  * Fragment Demo - Vocab  
+ Uses the ListFragment class rather than fragments defined in .axml
 * __Apps that use an SQLite Database and SQLite.Net ORM__
   * DataAccessDemo - Displays stock price history in a ListView
   * DataAccessExercise - built on DataAccessDemo, includes a Spinner, DatePicker and complex queries
@@ -44,7 +46,9 @@ only want code for one app.
     * FusedLocationProvider - Demonstrates getting location using the Google Play Services Fused Location Provider API
     * XamarinGeolocator - Demonstrates getting location using the Xamarin cross-platform Geolocator plug-in
 
-I wrote these apps for use with a class I teach at Lane Community College, CS235AM, Intermediate Mobile Applications Development: Android. Read more about the class and find out how to enroll here: https://birdsbits.wordpress.com/2014/09/09/xamarin-android-course/
+----
+
+I wrote these apps for use with a class I teach at Lane Community College, CS235AM, Intermediate Mobile Applications Development: Android. Read more about the class and find out how to enroll here: <https://birdsbits.wordpress.com/2014/09/09/xamarin-android-course>
 
 Read the rest of my blog, BirdsBits, here:
-https://birdsbits.wordpress.com
+<https://birdsbits.wordpress.com>
