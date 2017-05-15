@@ -1,10 +1,11 @@
 ﻿using System;
 using Android.App;
 using Android.Content;
-using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+
+/* Written by Brian Bird, 2015, revised 2017 */
 
 namespace RpsDemo.DynamicFrag
 {

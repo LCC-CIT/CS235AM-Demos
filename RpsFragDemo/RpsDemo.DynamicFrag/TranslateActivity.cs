@@ -1,19 +1,9 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
+﻿using Android.App;
 using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 
 namespace RpsDemo.DynamicFrag
 {
-	[Activity (Label = "TranslateActivity")]			
+	[Activity (Label = "TranslateActivity", ParentActivity = typeof(MainActivity))]			
 	public class TranslateActivity : Activity
 	{
 		protected override void OnCreate (Bundle bundle)
@@ -21,6 +11,7 @@ namespace RpsDemo.DynamicFrag
 			base.OnCreate (bundle);
 
 			SetContentView (Resource.Layout.Translate);
+            ActionBar.SetDisplayShowHomeEnabled(true);  // Enable the "up" button
 
 			FragmentTransaction ft = FragmentManager.BeginTransaction ();
 			var frag = FragmentManager.FindFragmentById (Resource.Id.fragContainer); 

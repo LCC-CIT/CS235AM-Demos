@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/linearLayout1">
+    <!-- fragContainer1 holds handFrag.axml -->
         <FrameLayout
             android:minWidth="25px"
             android:minHeight="25px"
@@ -21,6 +22,7 @@
             android:layout_gravity="center"
             android:layout_weight="3"
             android:id="@+id/fragContainer1" />
+    <!-- fragContainer2 holds TextFrag.axml -->
         <FrameLayout
             android:minWidth="25px"
             android:minHeight="25px"

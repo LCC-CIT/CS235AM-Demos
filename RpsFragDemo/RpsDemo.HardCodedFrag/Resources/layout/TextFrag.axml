@@ -10,5 +10,8 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/handTextView" />
+        android:id="@+id/handTextView"
+        android:textSize="50dp"
+        android:gravity="center"
+        android:textStyle="bold" />
 </LinearLayout>
