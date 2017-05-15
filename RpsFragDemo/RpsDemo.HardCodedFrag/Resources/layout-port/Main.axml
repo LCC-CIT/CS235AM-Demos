@@ -14,15 +14,16 @@
             class="RpsDemo.HardCodedFrag.HandFrag"
             android:id="@+id/hand_frag"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="3" />
         <Button
-            android:text="Translate"
+            android:text="Show Text"
             android:id="@+id/translateButton"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:textSize="25dp" />
     </LinearLayout>
 </FrameLayout>
