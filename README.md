@@ -33,8 +33,7 @@ only want code for one app.
   		* v2: Uses fragments for large and normal screen sizes and both orientations
     	* v3: Same as v2, but fragments are loaded programmatically instead of statically
   * RpsFragDemo
-  * Fragment Demo - Vocab  
- Uses the ListFragment class rather than fragments defined in .axml
+  * Fragment Demo - Vocab: Uses the ListFragment class rather than fragments defined in .axml
 * __Apps that use an SQLite Database and SQLite.Net ORM__
   * DataAccessDemo - Displays stock price history in a ListView
   * DataAccessExercise - built on DataAccessDemo, includes a Spinner, DatePicker and complex queries
