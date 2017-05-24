@@ -34,7 +34,7 @@ only want code for one app.
     	* v3: Same as v2, but fragments are loaded programmatically instead of statically
   * RpsFragDemo
   * Fragment Demo - Vocab: Uses the ListFragment class rather than fragments defined in .axml
-  * This a modified version of the source code for the Xamarin Fragment Walkthrough. It has been updated to work with the latest (circa 2017) version of Xamarin.Android and it loads different UI layouts based on orientation rather than screen size.
+  * FragmentsWalkthrough_port+land - This a modified version of the source code for the Xamarin Fragment Walkthrough. It has been updated to work with the 2017 version of Xamarin.Android and it loads different UI layouts based on orientation rather than screen size.
     * Honeycomb is the project that deomonstrates the use of fragments on devices running Android 3.1 (Honeycomb) or higher.
     * SupportLibFragments is the project that shows how to use fragments with a support package for devices running Android 1.6 (Donut) or higher.
 * __Apps that use an SQLite Database and SQLite.Net ORM__
