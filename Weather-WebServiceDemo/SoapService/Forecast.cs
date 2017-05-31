@@ -1,10 +1,10 @@
 ﻿using System;
-using SoapPractice.graphical.weather.gov;
 using Parser;
+using SoapService.graphical.weather.gov;
 
 namespace SoapService
 {
-	class Forecast
+	public class Forecast
 	{
 		ndfdXML soapService = new ndfdXML();
 

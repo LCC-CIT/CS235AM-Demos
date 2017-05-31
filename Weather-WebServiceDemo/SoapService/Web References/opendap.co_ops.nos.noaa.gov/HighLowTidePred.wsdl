@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<wsdl:definitions xmlns:intf="http://opendap.co-ops.nos.noaa.gov/axis/webservices/highlowtidepred/wsdl" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:impl="http://opendap.co-ops.nos.noaa.gov/axis/webservices/highlowtidepred/wsdl" targetNamespace="http://opendap.co-ops.nos.noaa.gov/axis/webservices/highlowtidepred/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+<wsdl:definitions xmlns:intf="https://opendap.co-ops.nos.noaa.gov/axis/webservices/highlowtidepred/wsdl" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:impl="https://opendap.co-ops.nos.noaa.gov/axis/webservices/highlowtidepred/wsdl" targetNamespace="https://opendap.co-ops.nos.noaa.gov/axis/webservices/highlowtidepred/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:types>
-    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://opendap.co-ops.nos.noaa.gov/axis/webservices/highlowtidepred/wsdl">
-      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
-      <xsd:import namespace="http://schemas.xmlsoap.org/wsdl/" />
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="https://opendap.co-ops.nos.noaa.gov/axis/webservices/highlowtidepred/wsdl">
       <xsd:element name="Parameters">
         <xsd:complexType>
           <xsd:sequence>
@@ -107,7 +105,7 @@
   </wsdl:binding>
   <wsdl:service name="highlowtidepredService">
     <wsdl:port name="highlowtidepred" binding="impl:highlowtidepredSoapBinding">
-      <wsdlsoap:address location="http://opendap.co-ops.nos.noaa.gov/axis/services/highlowtidepred" />
+      <wsdlsoap:address location="https://opendap.co-ops.nos.noaa.gov/axis/services/highlowtidepred" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>
