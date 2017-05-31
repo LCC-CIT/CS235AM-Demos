@@ -1,6 +1,7 @@
-This app will be an extension of the DataAccesDemo and DataAccessExercise. It will have a Web service that reads historical stock prices.
 
 __This app isn't finished yet!__
+The console app works and reads the weather forecast using either the REST or SOAP protocols (or at leat it did in 2016).
+The Android project still needs to be finished.
 
 Note: This app is just one app in the class demo repository.
 To get the source code for this app you will need to
