@@ -1,15 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Droid", "Weather.Droid\Weather.Droid.csproj", "{F197F00B-67C2-465B-9CEE-0611AF4021D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoapService", "SoapService\SoapService.csproj", "{D65203FD-27D7-41DA-902E-0219D81B8D19}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Dos", "Weather.Dos\Weather.Dos.csproj", "{C340706E-2F79-4EE2-B916-BCE71B81D7FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestService", "RestService\RestService.csproj", "{BD3FFDEC-0D14-4D33-A171-CD8F7ED5E72D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Rest", "RestService\Weather.Rest.csproj", "{BD3FFDEC-0D14-4D33-A171-CD8F7ED5E72D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,28 +17,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BD3FFDEC-0D14-4D33-A171-CD8F7ED5E72D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BD3FFDEC-0D14-4D33-A171-CD8F7ED5E72D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BD3FFDEC-0D14-4D33-A171-CD8F7ED5E72D}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{BD3FFDEC-0D14-4D33-A171-CD8F7ED5E72D}.Debug|x86.Build.0 = Debug|Any CPU
-		{BD3FFDEC-0D14-4D33-A171-CD8F7ED5E72D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BD3FFDEC-0D14-4D33-A171-CD8F7ED5E72D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BD3FFDEC-0D14-4D33-A171-CD8F7ED5E72D}.Release|x86.ActiveCfg = Release|Any CPU
-		{BD3FFDEC-0D14-4D33-A171-CD8F7ED5E72D}.Release|x86.Build.0 = Release|Any CPU
-		{C340706E-2F79-4EE2-B916-BCE71B81D7FF}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{C340706E-2F79-4EE2-B916-BCE71B81D7FF}.Debug|Any CPU.Build.0 = Debug|x86
-		{C340706E-2F79-4EE2-B916-BCE71B81D7FF}.Debug|x86.ActiveCfg = Debug|x86
-		{C340706E-2F79-4EE2-B916-BCE71B81D7FF}.Debug|x86.Build.0 = Debug|x86
-		{C340706E-2F79-4EE2-B916-BCE71B81D7FF}.Release|Any CPU.ActiveCfg = Release|x86
-		{C340706E-2F79-4EE2-B916-BCE71B81D7FF}.Release|x86.ActiveCfg = Release|x86
-		{C340706E-2F79-4EE2-B916-BCE71B81D7FF}.Release|x86.Build.0 = Release|x86
-		{D65203FD-27D7-41DA-902E-0219D81B8D19}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{D65203FD-27D7-41DA-902E-0219D81B8D19}.Debug|Any CPU.Build.0 = Debug|x86
-		{D65203FD-27D7-41DA-902E-0219D81B8D19}.Debug|x86.ActiveCfg = Debug|x86
-		{D65203FD-27D7-41DA-902E-0219D81B8D19}.Debug|x86.Build.0 = Debug|x86
-		{D65203FD-27D7-41DA-902E-0219D81B8D19}.Release|Any CPU.ActiveCfg = Release|x86
-		{D65203FD-27D7-41DA-902E-0219D81B8D19}.Release|x86.ActiveCfg = Release|x86
-		{D65203FD-27D7-41DA-902E-0219D81B8D19}.Release|x86.Build.0 = Release|x86
 		{F197F00B-67C2-465B-9CEE-0611AF4021D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F197F00B-67C2-465B-9CEE-0611AF4021D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F197F00B-67C2-465B-9CEE-0611AF4021D0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
@@ -51,6 +27,24 @@ Global
 		{F197F00B-67C2-465B-9CEE-0611AF4021D0}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{F197F00B-67C2-465B-9CEE-0611AF4021D0}.Release|x86.ActiveCfg = Release|Any CPU
 		{F197F00B-67C2-465B-9CEE-0611AF4021D0}.Release|x86.Build.0 = Release|Any CPU
+		{C340706E-2F79-4EE2-B916-BCE71B81D7FF}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{C340706E-2F79-4EE2-B916-BCE71B81D7FF}.Debug|Any CPU.Build.0 = Debug|x86
+		{C340706E-2F79-4EE2-B916-BCE71B81D7FF}.Debug|x86.ActiveCfg = Debug|x86
+		{C340706E-2F79-4EE2-B916-BCE71B81D7FF}.Debug|x86.Build.0 = Debug|x86
+		{C340706E-2F79-4EE2-B916-BCE71B81D7FF}.Release|Any CPU.ActiveCfg = Release|x86
+		{C340706E-2F79-4EE2-B916-BCE71B81D7FF}.Release|x86.ActiveCfg = Release|x86
+		{C340706E-2F79-4EE2-B916-BCE71B81D7FF}.Release|x86.Build.0 = Release|x86
+		{BD3FFDEC-0D14-4D33-A171-CD8F7ED5E72D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD3FFDEC-0D14-4D33-A171-CD8F7ED5E72D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD3FFDEC-0D14-4D33-A171-CD8F7ED5E72D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BD3FFDEC-0D14-4D33-A171-CD8F7ED5E72D}.Debug|x86.Build.0 = Debug|Any CPU
+		{BD3FFDEC-0D14-4D33-A171-CD8F7ED5E72D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD3FFDEC-0D14-4D33-A171-CD8F7ED5E72D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD3FFDEC-0D14-4D33-A171-CD8F7ED5E72D}.Release|x86.ActiveCfg = Release|Any CPU
+		{BD3FFDEC-0D14-4D33-A171-CD8F7ED5E72D}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		Policies = $0
@@ -63,8 +57,5 @@ Global
 		$2.inheritsSet = VisualStudio
 		$2.inheritsScope = text/plain
 		StartupItem = DataAccess-Android\DataAccess-Android.csproj
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

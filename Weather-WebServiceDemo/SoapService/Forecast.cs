@@ -1,14 +1,14 @@
 ﻿using System;
 using Parser;
-using SoapService.NdfdSoapService;
+using SoapService.ndfd;
 
 namespace SoapService
 {
 	public class Forecast
 	{
-        ndfdXMLPortTypeClient soapService = new ndfdXMLPortTypeClient();
+        ndfdXMLPortTypeClient soapService = new ndfdXMLPortTypeClient("ndfdXMLPort");
 
-		public string get7DayLowAndHigh(string zip, DateTime beginDateTime) {
+        public string get7DayLowAndHigh(string zip, DateTime beginDateTime) {
 			// Get latitude and longitude from zip code
 			string latLonXml = soapService.LatLonListZipCode(zip);
 			string latLon = XmlParser.ParseZipXml (latLonXml);

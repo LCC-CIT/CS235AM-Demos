@@ -1,5 +1,5 @@
-﻿using System;
-using SoapService;
+﻿using Weather.Rest;
+using System;
 
 namespace Weather.Dos
 {
@@ -7,12 +7,16 @@ namespace Weather.Dos
 	{
 		public static void Main (string[] args)
 		{
-            var forecast = new SoapService.Forecast ();
-            // var forecast = new RestService.Forecast();
+            var weatherService = new WeatherService();
+            string response = weatherService.Get3DayForecast("Eugene", "OR", ForecastFormat.xml);
+            var forecasts = weatherService.Parse3DayForecastXML(response);
+            foreach(Forecast f in forecasts)
+            {
+                Console.WriteLine(f.Title);
+                Console.WriteLine(f.ForecastText);
+                Console.WriteLine("--------------------------------------");
+            }
 
-			Console.WriteLine (forecast.get7DayLowAndHigh("97405", DateTime.Now));
-
-
-		}
+        }
 	}
 }
