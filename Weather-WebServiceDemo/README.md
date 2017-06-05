@@ -1,6 +1,8 @@
 
 __This app isn't finished yet!__
 The console app works and reads the weather forecast using either the REST or SOAP protocols (or at leat it did in 2016).
+The weather data is provided by the NOAA National Digital Forecast Database web service, https://graphical.weather.gov/xml/ 
+
 The Android project still needs to be finished.
 
 Note: This app is just one app in the class demo repository.
