@@ -3,3 +3,8 @@ C:\Users\brian\Repos\CS235AM-Demos\Weather-WebServiceDemo\RestService\obj\Debug\
 C:\Users\brian\Repos\CS235AM-Demos\Weather-WebServiceDemo\RestService\obj\Debug\ClassLibrary1.pdb
 C:\Users\brian\Repos\CS235AM-Demos\Weather-WebServiceDemo\RestService\bin\Debug\ClassLibrary1.dll
 C:\Users\brian\Repos\CS235AM-Demos\Weather-WebServiceDemo\RestService\bin\Debug\ClassLibrary1.pdb
+C:\Users\Student\Documents\GitHub\CS235AM-Demos\Weather-WebServiceDemo\RestService\bin\Debug\ClassLibrary1.dll
+C:\Users\Student\Documents\GitHub\CS235AM-Demos\Weather-WebServiceDemo\RestService\bin\Debug\ClassLibrary1.pdb
+C:\Users\Student\Documents\GitHub\CS235AM-Demos\Weather-WebServiceDemo\RestService\obj\Debug\Weather.Rest.csprojResolveAssemblyReference.cache
+C:\Users\Student\Documents\GitHub\CS235AM-Demos\Weather-WebServiceDemo\RestService\obj\Debug\ClassLibrary1.dll
+C:\Users\Student\Documents\GitHub\CS235AM-Demos\Weather-WebServiceDemo\RestService\obj\Debug\ClassLibrary1.pdb

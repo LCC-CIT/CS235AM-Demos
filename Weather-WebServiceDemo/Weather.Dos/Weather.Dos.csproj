@@ -42,12 +42,12 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\RestService\Weather.Rest.csproj">
-      <Project>{BD3FFDEC-0D14-4D33-A171-CD8F7ED5E72D}</Project>
-      <Name>Weather.Rest</Name>
-    </ProjectReference>
+    <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
+    <ProjectReference Include="..\RestService\Weather.Rest.csproj">
+      <Project>{bd3ffdec-0d14-4d33-a171-cd8f7ed5e72d}</Project>
+      <Name>Weather.Rest</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>
