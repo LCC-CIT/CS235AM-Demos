@@ -1,0 +1,10 @@
+http://graphical.weather.gov/xml/SOAP_server/ndfdXMLclient.php
+?whichClient=NDFDgen
+&zipCodeList=97405
+&product=time-series
+&begin=2016-05-18T00%3A00%3A00
+&end=2016-05-25T00%3A00%3A00
+&Unit=e
+&maxt=maxt
+&mint=mint
+&Submit=Submit
