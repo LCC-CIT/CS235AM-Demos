@@ -10,7 +10,7 @@ namespace Weather.Rest
 	{
         public string Get3DayForecast(string city, string state, ForecastFormat format)
         {
-            string apiKey = "0e3e69302fba4e56";  // put your own API key here
+            string apiKey = "";  // put your own API key here
             string baseUri = "http://api.wunderground.com/api/";
             string query = "/forecast/q/" + state + "/" + city + "." + format.ToString();
             string uri = baseUri + apiKey + query;
