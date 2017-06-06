@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestService", "RestService\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Droid", "Weather.Droid\Weather.Droid.csproj", "{F197F00B-67C2-465B-9CEE-0611AF4021D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoapTest", "SoapTest\SoapTest.csproj", "{A47EC941-6C44-421F-BD78-75659039BF89}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,14 @@ Global
 		{F197F00B-67C2-465B-9CEE-0611AF4021D0}.Release|x86.ActiveCfg = Release|Any CPU
 		{F197F00B-67C2-465B-9CEE-0611AF4021D0}.Release|x86.Build.0 = Release|Any CPU
 		{F197F00B-67C2-465B-9CEE-0611AF4021D0}.Release|x86.Deploy.0 = Release|Any CPU
+		{A47EC941-6C44-421F-BD78-75659039BF89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A47EC941-6C44-421F-BD78-75659039BF89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A47EC941-6C44-421F-BD78-75659039BF89}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A47EC941-6C44-421F-BD78-75659039BF89}.Debug|x86.Build.0 = Debug|Any CPU
+		{A47EC941-6C44-421F-BD78-75659039BF89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A47EC941-6C44-421F-BD78-75659039BF89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A47EC941-6C44-421F-BD78-75659039BF89}.Release|x86.ActiveCfg = Release|Any CPU
+		{A47EC941-6C44-421F-BD78-75659039BF89}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
