@@ -40,5 +40,11 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Weather.Rest\Weather.Rest.csproj">
+      <Project>{bd3ffdec-0d14-4d33-a171-cd8f7ed5e72d}</Project>
+      <Name>Weather.Rest</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
