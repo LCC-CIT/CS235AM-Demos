@@ -1,9 +1,0 @@
-http://opendap.co-ops.nos.noaa.gov/axis/webservices/highlowtidepred/response.jsp
-?stationId=9434098
-&beginDate=20160518
-&endDate=20160618
-&datum=MLLW
-&unit=0
-&timeZone=0
-&format=xml
-&Submit=Submit
