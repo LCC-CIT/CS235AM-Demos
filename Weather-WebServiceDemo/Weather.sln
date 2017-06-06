@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Rest", "RestService
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoapTest", "..\Weather-NDFD-WebServiceDemo\SoapTest\SoapTest.csproj", "{A47EC941-6C44-421F-BD78-75659039BF89}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoapService", "..\Weather-NDFD-WebServiceDemo\SoapService\SoapService.csproj", "{D65203FD-27D7-41DA-902E-0219D81B8D19}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -52,6 +54,12 @@ Global
 		{A47EC941-6C44-421F-BD78-75659039BF89}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A47EC941-6C44-421F-BD78-75659039BF89}.Release|x86.ActiveCfg = Release|Any CPU
 		{A47EC941-6C44-421F-BD78-75659039BF89}.Release|x86.Build.0 = Release|Any CPU
+		{D65203FD-27D7-41DA-902E-0219D81B8D19}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{D65203FD-27D7-41DA-902E-0219D81B8D19}.Debug|x86.ActiveCfg = Debug|x86
+		{D65203FD-27D7-41DA-902E-0219D81B8D19}.Debug|x86.Build.0 = Debug|x86
+		{D65203FD-27D7-41DA-902E-0219D81B8D19}.Release|Any CPU.ActiveCfg = Release|x86
+		{D65203FD-27D7-41DA-902E-0219D81B8D19}.Release|x86.ActiveCfg = Release|x86
+		{D65203FD-27D7-41DA-902E-0219D81B8D19}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
