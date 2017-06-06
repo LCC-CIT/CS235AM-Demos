@@ -997,11 +997,11 @@ namespace Weather.Droid
 			// aapt resource value: 0x7f0a0013
 			public const int withText = 2131361811;
 			
-			// aapt resource value: 0x7f0a003d
-			public const int wuImageView = 2131361853;
-			
 			// aapt resource value: 0x7f0a003e
-			public const int wuTextView = 2131361854;
+			public const int wuImageView = 2131361854;
+			
+			// aapt resource value: 0x7f0a003d
+			public const int wuTextView = 2131361853;
 			
 			static Id()
 			{

@@ -11,16 +11,17 @@
         android:id="@+id/forecastListView"
         android:layout_gravity="fill_vertical"
         android:layout_weight="1" />
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wuTextView"
+        android:text="Data from Weather Underground"
+        android:gravity="center" />
     <ImageView
         android:src="@drawable/wundergroundlogo_4c_rev_horz"
         android:layout_width="match_parent"
         android:layout_height="50px"
         android:id="@+id/wuImageView"
         android:scaleType="fitCenter" />
-    <TextView
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/wuTextView"
-        android:text="Data from Weather Underground" />
 </LinearLayout>
