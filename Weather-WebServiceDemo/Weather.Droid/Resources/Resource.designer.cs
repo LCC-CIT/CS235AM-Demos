@@ -798,6 +798,9 @@ namespace Weather.Droid
 			// aapt resource value: 0x7f020056
 			public const int abc_textfield_searchview_right_holo_light = 2130837590;
 			
+			// aapt resource value: 0x7f020057
+			public const int wundergroundLogo_4c_rev_horz = 2130837591;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -883,6 +886,9 @@ namespace Weather.Droid
 			// aapt resource value: 0x7f0a002c
 			public const int expanded_menu = 2131361836;
 			
+			// aapt resource value: 0x7f0a003c
+			public const int forecastListView = 2131361852;
+			
 			// aapt resource value: 0x7f0a0000
 			public const int home = 2131361792;
 			
@@ -906,9 +912,6 @@ namespace Weather.Droid
 			
 			// aapt resource value: 0x7f0a0018
 			public const int middle = 2131361816;
-			
-			// aapt resource value: 0x7f0a003c
-			public const int myButton = 2131361852;
 			
 			// aapt resource value: 0x7f0a0012
 			public const int never = 2131361810;
@@ -993,6 +996,12 @@ namespace Weather.Droid
 			
 			// aapt resource value: 0x7f0a0013
 			public const int withText = 2131361811;
+			
+			// aapt resource value: 0x7f0a003d
+			public const int wuImageView = 2131361853;
+			
+			// aapt resource value: 0x7f0a003e
+			public const int wuTextView = 2131361854;
 			
 			static Id()
 			{

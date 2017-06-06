@@ -1,29 +1,35 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
+using Weather.Rest;
+using Android.Text;
+using Android.Text.Method;
 
 namespace Weather.Droid
 {
 	[Activity (Label = "Weather.Droid", MainLauncher = true, Icon = "@mipmap/icon")]
 	public class MainActivity : Activity
 	{
-		int count = 1;
 
 		protected override void OnCreate (Bundle savedInstanceState)
 		{
 			base.OnCreate (savedInstanceState);
+            SetContentView(Resource.Layout.Main);
 
-			// Set our view from the "main" layout resource
-			SetContentView (Resource.Layout.Main);
+            var wuTextView = FindViewById<TextView>(Resource.Id.wuTextView);
+            wuTextView.TextFormatted = Html.FromHtml(
+            "<a href=\"https://www.wunderground.com/?apiref=5cdccc9428586099\">Data from Weather Underground</a> ");
+            wuTextView.MovementMethod = LinkMovementMethod.Instance;
 
-			// Get our button from the layout resource,
-			// and attach an event to it
-			Button button = FindViewById<Button> (Resource.Id.myButton);
-			
-			button.Click += delegate {
-				button.Text = string.Format ("{0} clicks!", count++);
-			};
-		}
+            WeatherService weatherService = new WeatherService();
+            string response = weatherService.Get3DayForecast("Eugene", "OR", ForecastFormat.xml);
+            var forecasts = weatherService.Parse3DayForecastXML(response);
+
+            var forecastListView = FindViewById<ListView>(Resource.Id.forecastListView);
+            forecastListView.Adapter = new ArrayAdapter<Forecast>(this,
+                             Android.Resource.Layout.SimpleListItem1,
+                             forecasts);
+        }
 	}
 }
 
