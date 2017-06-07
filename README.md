@@ -1,3 +1,4 @@
+
 # CS235AM-Demos
 Demo Xamarin Android apps for CS235AM at LCC
 
@@ -42,7 +43,8 @@ only want code for one app.
   * DataAccessExercise - built on DataAccessDemo, includes a Spinner, DatePicker and complex queries
 * __Apps that consume a WebService__
   * Stocks+WebService - Not finished. Can someone help me find a free Stock price Web Service?
-  * Weather-WebServiceDemo - SOAP and REST web services are both working in the Console project
+  * Weather-WebServiceDemo - Gets weather data from the [Weather Underground](https://www.wunderground.com/?apiref=5cdccc9428586099) using a REST web service. Android and Console apps both work!
+  * Weather-NDFD-WebServiceDemo - Gets weather data from the NOAA NDFD using both SOAP and REST web services. Not working.
 * __Apps that demonstrate getting locaiton information__
   * GeolocationDemo
     * FusedLocationProvider - Demonstrates getting location using the Google Play Services Fused Location Provider API
