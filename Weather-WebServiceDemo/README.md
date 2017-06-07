@@ -10,8 +10,8 @@ __Weather.Dos:__ A console app used to test the Weather.Rest project
 __Weather.Droid:__ An Android app that displays a weather forecast using the Weather.Rest library  
 
 
-The weather data is provided by [Weather Underground](https://www.wunderground.com). 
-To use the Weather Undergroud API, you will need to obtain a key. A [free key](https://www.wunderground.com/weather/api/) is avialable. 
+The weather data is provided by [Weather Underground](https://www.wunderground.com/?apiref=5cdccc9428586099). 
+To use the Weather Undergroud API, you will need to obtain a key. A [free key](https://www.wunderground.com/?apiref=5cdccc9428586099/api/) is avialable. 
 
 -------------------------- 
 
