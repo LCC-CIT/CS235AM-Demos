@@ -1,4 +1,3 @@
-
 These projects demonstrate calling a REST web service, parsing the results and displaying them. There are three projects:
 
   * __Weather.Rest:__ A class library that calls a REST web service, can get either an XML or JSON result, and parses the result. This project uses:
