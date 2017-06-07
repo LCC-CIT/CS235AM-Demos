@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
@@ -32,15 +33,15 @@ namespace Weather.Rest
         }
 
 
-        public List<Forecast> Parse3DayForecastXML(string xml)
+        public List<ShortForecast> ParseForecastXML(string xml)
         {
-            var forecasts = new List<Forecast>();
+            var forecasts = new List<ShortForecast>();
             const string TITLE = "title";
             const string TEXT = "fcttext";
 
             using (XmlReader reader = XmlReader.Create(new StringReader(xml)))
             {
-                Forecast forecast = null;
+                ShortForecast forecast = null;
                 // Parse the file and save data for each of the nodes.
                 while (reader.Read())
                 {
@@ -50,7 +51,7 @@ namespace Weather.Rest
                             if (reader.Name.Equals(TITLE))
                             {
                                 reader.Read();
-                                forecast = new Forecast();
+                                forecast = new ShortForecast();
                                 forecast.Title = reader.Value;
                             }
                             else if (reader.Name.Equals(TEXT))
@@ -63,6 +64,17 @@ namespace Weather.Rest
                     }
                 }
             }
+            return forecasts;
+        }
+
+
+        public List<ShortForecast> ParseForecastJson(string json)
+        {
+            var forecasts = new List<ShortForecast>();
+            var forecastRoot = JsonConvert.DeserializeObject<ForecastRoot>(json);
+
+            foreach (var f in forecastRoot.forecast.txt_forecast.forecastday)
+                forecasts.Add(new ShortForecast { Title = f.title, ForecastText = f.fcttext });
             return forecasts;
         }
     }

@@ -22,11 +22,13 @@ namespace Weather.Droid
             wuTextView.MovementMethod = LinkMovementMethod.Instance;
 
             WeatherService weatherService = new WeatherService();
-            string response = weatherService.Get3DayForecast("Eugene", "OR", ForecastFormat.xml);
-            var forecasts = weatherService.Parse3DayForecastXML(response);
+            // string response = weatherService.Get3DayForecast("Eugene", "OR", ForecastFormat.xml);
+            // var forecasts = weatherService.ParseForecastXML(response);
+            string response = weatherService.Get3DayForecast("Eugene", "OR", ForecastFormat.json);
+            var forecasts = weatherService.ParseForecastJson(response);
 
             var forecastListView = FindViewById<ListView>(Resource.Id.forecastListView);
-            forecastListView.Adapter = new ArrayAdapter<Forecast>(this,
+            forecastListView.Adapter = new ArrayAdapter<ShortForecast>(this,
                              Android.Resource.Layout.SimpleListItem1,
                              forecasts);
         }
