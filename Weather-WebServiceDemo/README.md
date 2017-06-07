@@ -4,7 +4,9 @@ These projects demonstrate calling a REST web service, parsing the results and d
     * The WebClient class from the .NET Library
     * The XmlReader class from the .NET Library
     * The JsonConvert class from Newtonsoft (available through Nuget)
+    
   * __Weatehr.Dos:__ A console app used to test the Weather.Rest project
+  
   * __Weather.Droid:__ An Android app that displays a weather forecast using the Weather.Rest library 
     
 The weather data is provided by [Weather Underground](https://www.wunderground.com). 
