@@ -2,7 +2,7 @@ This is an example of a multi-screen app. It simulates flash cards.
 A math problem is displayed. When the user presses "Show answer", another activity
 is launched and the answer is shown (as if they had turned over the card to see the answer).
 
-There are four versions of this app:
+There are three versions of this app:
 * __v0__ - Demonstrates sending an intent containing data when starting another activity. It has a button on the first activity that launches the second activity. To go back to the first activity, use the system back button, **or** the "up" button on the ActionBar.<br>
 Concepts demonstrated:
   * Starting a new activity using an intent
@@ -23,4 +23,4 @@ To get the source code for this app you will need to
 clone or download the whole repository.
 
 This demo was written by Brian Bird for CS235AM, Android App Development, at Lane Community College.
-Read more about the course here: https://birdsbits.wordpress.com/2014/09/09/xamarin-android-course
+Read more about the course here: https://birdsbits.blog/2014/09/09/xamarin-android-course
