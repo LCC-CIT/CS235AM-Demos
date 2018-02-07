@@ -88,26 +88,26 @@ namespace RpsDemoRelativeLayout
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f070006
-			public const int compMoveTextView = 2131165190;
+			// aapt resource value: 0x7f070005
+			public const int compMoveTextView = 2131165189;
 			
 			// aapt resource value: 0x7f070000
 			public const int playButton = 2131165184;
 			
-			// aapt resource value: 0x7f070002
-			public const int rpsEditText = 2131165186;
-			
-			// aapt resource value: 0x7f070001
-			public const int rpsImage = 2131165185;
+			// aapt resource value: 0x7f070004
+			public const int rpsEditText = 2131165188;
 			
 			// aapt resource value: 0x7f070003
-			public const int textView = 2131165187;
+			public const int rpsImage = 2131165187;
 			
-			// aapt resource value: 0x7f070005
-			public const int textView2 = 2131165189;
+			// aapt resource value: 0x7f070001
+			public const int textView = 2131165185;
 			
-			// aapt resource value: 0x7f070004
-			public const int winnerTextView = 2131165188;
+			// aapt resource value: 0x7f070002
+			public const int textView2 = 2131165186;
+			
+			// aapt resource value: 0x7f070006
+			public const int winnerTextView = 2131165190;
 			
 			static Id()
 			{

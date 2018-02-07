@@ -1,7 +1,6 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
-using Android.Content;
 
 // MathFlashCards.v3
 // This version doesn't have a button on BackActivity's UI
