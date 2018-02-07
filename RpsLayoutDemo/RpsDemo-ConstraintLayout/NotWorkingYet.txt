@@ -1,0 +1,1 @@
+﻿As of 2/7/2018, the UI designer in VS 2017 for Mac doesn't support constraint layouts.

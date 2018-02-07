@@ -1,20 +1,10 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
+﻿using Android.App;
 using Android.OS;
-using Android.Runtime;
-using Android.Util;
 using Android.Views;
-using Android.Widget;
 
 namespace MathFlashCards
 {
-	public class FrontFragment : Fragment
+    public class FrontFragment : Fragment
 	{
 		public override void OnCreate (Bundle savedInstanceState)
 		{
