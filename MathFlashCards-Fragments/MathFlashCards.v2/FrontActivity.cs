@@ -2,6 +2,8 @@
 using Android.Widget;
 using Android.OS;
 using Android.Content;
+using Android.Content.Res;
+using Android.Content.PM;
 
 // MathFlashCards.v2
 // This version uses fragments that are specified in the AXML layouts for
@@ -19,6 +21,13 @@ namespace MathFlashCards
 		protected override void OnCreate (Bundle savedInstanceState)
 		{
 			base.OnCreate (savedInstanceState);
+
+            // Only use landscape orientation for large (tablet) screens
+            // This is becuase my one layout for large sceens looks better in landscape
+            if ((Application.ApplicationContext.Resources.Configuration.ScreenLayout & ScreenLayout.SizeMask) == ScreenLayout.SizeLarge)
+            {
+                RequestedOrientation = ScreenOrientation.Landscape;
+            }
 
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.FrontActivity);
