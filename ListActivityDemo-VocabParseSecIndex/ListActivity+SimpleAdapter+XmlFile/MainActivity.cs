@@ -29,9 +29,9 @@ namespace ListActivitySimpleAdapterXmlFile
 
             // constructor takes: reference to this Activity, List of Dictionary objects, row layout, 
 			ListAdapter = new VocabAdapter (this, dataList,
-				Android.Resource.Layout.SimpleListItem1,
-				new string[] {XmlVocabFileParser.SPANISH},
-				new int[] {Android.Resource.Id.Text1}
+				Resource.Layout.ListItem,
+				new string[] {XmlVocabFileParser.SPANISH, XmlVocabFileParser.POS},
+				new int[] {Resource.Id.spanishTextView, Resource.Id.posTextView}
 			);
 
 			// This is all you need to do to enable fast scrolling
@@ -45,9 +45,8 @@ namespace ListActivitySimpleAdapterXmlFile
 		{
             // Get the English word and part of speech for the spanish word that was clicked on
 			string word = (string)((JavaDictionary<string,object>)ListView.GetItemAtPosition(position))[XmlVocabFileParser.ENGLISH];
-			string pos = (string)((JavaDictionary<string,object>)ListView.GetItemAtPosition(position))[XmlVocabFileParser.POS];
 			Android.Widget.Toast.MakeText(this,
-				word + ", " + pos,
+				word,
 				Android.Widget.ToastLength.Short).Show();
 		}
 

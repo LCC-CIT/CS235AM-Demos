@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fbe861ec-38ab-434c-a785-e202650d261b" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/Resources/layout/ListItem.axml" />
+      <change beforePath="$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/ListActivity+SimpleAdapter+XmlFile.csproj" afterPath="$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/ListActivity+SimpleAdapter+XmlFile.csproj" />
+      <change beforePath="$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/MainActivity.cs" afterPath="$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/MainActivity.cs" />
+      <change beforePath="$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/Resources/Resource.designer.cs" afterPath="$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/Resources/Resource.designer.cs" />
+      <change beforePath="$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/XmlFileReader.cs" afterPath="$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/XmlFileReader.cs" />
+      <change beforePath="$PROJECT_DIR$/ListActivityDemo.sln" afterPath="$PROJECT_DIR$/ListActivityDemo.sln" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ListItem.axml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/Resources/layout/ListItem.axml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainActivity.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/MainActivity.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="431">
+              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+              <folding>
+                <marker date="1519100570000" expanded="false" signature="6:150" ph="..." />
+                <marker date="1519100570000" expanded="true" signature="194:2087" ph="{...}" />
+                <marker date="1519100570000" expanded="true" signature="333:2082" ph="{...}" />
+                <marker date="1519100570000" expanded="true" signature="446:1601" ph="{...}" />
+                <marker date="1519100570000" expanded="true" signature="675:921" ph="/* Sort the List of Dictionary objects. Sort primarily on part of speech, secondarily on Spanish ... */" />
+                <marker date="1519100570000" expanded="true" signature="1755:2078" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/MainActivity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/Resources/Resource.designer.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/Resources/layout/ListItem.axml" />
+        <option value="$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/MainActivity.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="838" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="ListActivityDemo (4 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Project.ListActivity+SimpleAdapter+XmlFile">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+    </configuration>
+    <configuration name="ListActivity+SimpleAdapter+XmlFile" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/bin/Debug/ListActivitySimpleAdapterXmlFile.dll" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/bin/Debug" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/ListActivity+SimpleAdapter+XmlFile.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="XamarinAndroid" />
+      <option name="PROJECT_TFM" value="MonoAndroid,Version=v8.0" />
+    </configuration>
+    <configuration name="Android Default" type="XamarinAndroidProject" factoryName="Xamarin.Android">
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/ListActivityDemo/ListActivityDemo.csproj" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="DEPLOY_BEHAVIOUR_NAME" value="Default" />
+      <option name="DEPLOY_TARGET_BEHAVIOUR_NAME" value="Ask" />
+      <option name="DEFAULT_DEVICE_TO_RUN" value="" />
+      <option name="DEFAULT_EMULATOR_TO_RUN" value="" />
+    </configuration>
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue=".NET Project.Default" />
+      <item index="1" class="java.lang.String" itemvalue="Xamarin.Android.Android Default" />
+      <item index="2" class="java.lang.String" itemvalue=".NET Project.ListActivity+SimpleAdapter+XmlFile" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fbe861ec-38ab-434c-a785-e202650d261b" name="Default" comment="" />
+      <created>1519100084069</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1519100084069</updated>
+      <workItem from="1519100085666" duration="1259000" />
+      <workItem from="1519101361183" duration="112000" />
+      <workItem from="1519101477564" duration="90000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1461000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="838" extended-state="6" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32898173" sideWeight="0.50277776" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.49722221" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3994778" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/Resources/layout/ListItem.axml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/MainActivity.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="902">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <marker date="1519100570000" expanded="false" signature="6:150" ph="..." />
+            <marker date="1519100570000" expanded="true" signature="194:2087" ph="{...}" />
+            <marker date="1519100570000" expanded="true" signature="333:2082" ph="{...}" />
+            <marker date="1519100570000" expanded="true" signature="446:1601" ph="{...}" />
+            <marker date="1519100570000" expanded="true" signature="675:921" ph="/* Sort the List of Dictionary objects. Sort primarily on part of speech, secondarily on Spanish ... */" />
+            <marker date="1519100570000" expanded="true" signature="1755:2078" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/Resources/layout/ListItem.axml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/MainActivity.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="902">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <marker date="1519100570000" expanded="false" signature="6:150" ph="..." />
+            <marker date="1519100570000" expanded="true" signature="194:2087" ph="{...}" />
+            <marker date="1519100570000" expanded="true" signature="333:2082" ph="{...}" />
+            <marker date="1519100570000" expanded="true" signature="446:1601" ph="{...}" />
+            <marker date="1519100570000" expanded="true" signature="675:921" ph="/* Sort the List of Dictionary objects. Sort primarily on part of speech, secondarily on Spanish ... */" />
+            <marker date="1519100570000" expanded="true" signature="1755:2078" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/Resources/layout/ListItem.axml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/Resources/Resource.designer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1519100397000" expanded="true" signature="29:424" ph="/* ------------------------------------------------------------------------------ ... */" />
+            <marker date="1519100397000" expanded="true" signature="596:64086" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="725:64084" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="751:822" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="863:871" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="907:1609" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="1494:1568" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="1595:1605" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="1645:12366" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="12251:12325" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="12352:12362" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="12400:13232" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="13119:13193" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="13218:13228" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="13264:13814" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="13703:13777" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="13800:13810" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="13850:16245" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="16130:16204" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="16231:16241" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="16280:25823" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="25709:25783" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="25809:25819" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="25852:31597" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="31489:31563" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="31583:31593" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="31631:31871" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="31758:31832" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="31857:31867" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="31904:34686" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="34574:34648" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="34672:34682" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="34719:34939" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="34827:34901" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="34925:34935" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="34972:36630" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="36518:36592" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="36616:36626" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="36662:53355" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="53244:53318" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="53341:53351" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="53391:64081" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="53445:53769" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="55393:55409" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="55563:55683" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="56411:56427" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="56616:56702" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="57175:57210" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="57480:57498" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="57640:57692" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="58001:58092" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="58664:58928" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="60432:60553" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="61353:61433" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="61910:62069" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="62990:63093" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="63658:63708" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="63966:64040" ph="{...}" />
+            <marker date="1519100397000" expanded="true" signature="64067:64077" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/MainActivity.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <marker date="1519100570000" expanded="false" signature="6:150" ph="..." />
+            <marker date="1519100570000" expanded="true" signature="194:2087" ph="{...}" />
+            <marker date="1519100570000" expanded="true" signature="333:2082" ph="{...}" />
+            <marker date="1519100570000" expanded="true" signature="446:1601" ph="{...}" />
+            <marker date="1519100570000" expanded="true" signature="675:921" ph="/* Sort the List of Dictionary objects. Sort primarily on part of speech, secondarily on Spanish ... */" />
+            <marker date="1519100570000" expanded="true" signature="1755:2078" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

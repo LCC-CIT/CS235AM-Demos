@@ -12,7 +12,7 @@ namespace ListActivitySimpleAdapterXmlFile
 		public const string SPANISH = "spanish";
 		public const string ENGLISH = "english";
 		public const string POS = "pos"; // part of speech
-		public const string WORD = "word";
+		public const string WORD = "word";   // XML element containing spanish, english, and pos elements
 
 		// This list will be filled with dictionary objects
 		List<IDictionary<string,object>> vocabList;   // backing variable for VocabList property
