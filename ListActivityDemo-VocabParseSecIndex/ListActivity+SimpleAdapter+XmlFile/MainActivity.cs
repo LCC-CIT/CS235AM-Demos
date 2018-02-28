@@ -28,6 +28,7 @@ namespace ListActivitySimpleAdapterXmlFile
 					StringComparison.Ordinal));      
 
             // constructor takes: reference to this Activity, List of Dictionary objects, row layout, 
+			// array of dictionary keys, array of TextViews in row layout
 			ListAdapter = new VocabAdapter (this, dataList,
 				Resource.Layout.ListItem,
 				new string[] {XmlVocabFileParser.SPANISH, XmlVocabFileParser.POS},

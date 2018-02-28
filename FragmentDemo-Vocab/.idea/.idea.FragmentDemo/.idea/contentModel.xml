@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/Library/Caches/Rider2017.3/resharper-host/local/Transient/ReSharperHost/v11/SolutionCaches/_FragmentDemo.2056122667.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="FragmentDemo.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="VocabDemo" t="IncludeRecursive">
+        <e p="Assets" t="Include">
+          <e p="AboutAssets.txt" t="Include" />
+          <e p="Vocabulary.csd" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CategoriesFrag.cs" t="Include" />
+        <e p="MainActivity.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AndroidManifest.xml" t="Include" />
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Resources" t="Include">
+          <e p="AboutResources.txt" t="Include" />
+          <e p="drawable" t="Include">
+            <e p="Icon.png" t="Include" />
+          </e>
+          <e p="Layout" t="Include">
+            <e p="categoriesFrag.axml" t="Include" />
+          </e>
+          <e p="Layout-Large" t="Include">
+            <e p="categoriesFrag.axml" t="Include" />
+          </e>
+          <e p="Resource.designer.cs" t="Include" />
+          <e p="values" t="Include">
+            <e p="Strings.xml" t="Include" />
+          </e>
+        </e>
+        <e p="TextParser.cs" t="Include" />
+        <e p="VocabItem.cs" t="Include" />
+        <e p="VocabPractice.csproj" t="IncludeRecursive" />
+        <e p="WordsActivity.cs" t="Include" />
+        <e p="WordsFrag.cs" t="Include" />
+      </e>
+    </e>
+  </component>
+</project>
