@@ -8,7 +8,7 @@ using System;
 
 namespace ListActivitySimpleAdapterXmlFile
 {
-	[Activity (Label = "Spanish-English Vocabulary", MainLauncher = true, Icon = "@mipmap/icon")]
+	[Activity (Label = "Spanish-English Vocabulary", MainLauncher = true, Icon = "@mipmap/ic_launcher")]
 	public class MainActivity : ListActivity
 	{
         // Overriding OnCreate in the Activity super-class

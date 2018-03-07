@@ -13,6 +13,7 @@ This solution contains 4 projects:
     * a custom text file parser that can parse files with any delimeter, tab, comma, colon, etc.
   * __ListActivity+SimpleAdapter+XmlFile:__ An app that illustrates using an XML parser to add items from an XML file to a ListView adapter
     * a ListActivity
+    * a custom row layout, ListItem.axml
     * a row click-event handler
     * fast scrolling and a section indexer
     * a custom adapter that inherits from SimpleAdapter and uses a List of C# Dictionarly objects, List\<IDictionary\<string, object\>\>

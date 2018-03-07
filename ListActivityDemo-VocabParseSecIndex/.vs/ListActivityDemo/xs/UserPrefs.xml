@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{6766BD5D-2BFD-4342-89DA-BE28B64DB0B9}|Default" GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ListActivity+SimpleAdapter+XmlFile/MainActivity.cs">
+    <Files>
+      <File FileName="ListActivity+SimpleAdapter+XmlFile/obj/Debug/android/manifest/AndroidManifest.xml" Line="9" Column="1" />
+      <File FileName="ListActivity+SimpleAdapter+XmlFile/MainActivity.cs" Line="11" Column="90" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.ListActivityDemo PreferredExecutionTarget="Android.Nexus5-API23-x86_64" HideGettingStarted="True" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.CustomAdapterDemo HideGettingStarted="True" />
+  <MonoDevelop.Ide.ItemProperties.ListAndParser HideGettingStarted="True" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.ListActivity_22BSimpleAdapter_22BXmlFile AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Nexus5-API23-x86_64" HideGettingStarted="True" />
+</Properties>
