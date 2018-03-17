@@ -52,19 +52,19 @@
             <e p="ListItem.axml" t="Include" />
           </e>
           <e p="mipmap-hdpi" t="Include">
-            <e p="Icon.png" t="Include" />
+            <e p="ic_launcher.png" t="Include" />
           </e>
           <e p="mipmap-mdpi" t="Include">
-            <e p="Icon.png" t="Include" />
+            <e p="ic_launcher.png" t="Include" />
           </e>
           <e p="mipmap-xhdpi" t="Include">
-            <e p="Icon.png" t="Include" />
+            <e p="ic_launcher.png" t="Include" />
           </e>
           <e p="mipmap-xxhdpi" t="Include">
-            <e p="Icon.png" t="Include" />
+            <e p="ic_launcher.png" t="Include" />
           </e>
           <e p="mipmap-xxxhdpi" t="Include">
-            <e p="Icon.png" t="Include" />
+            <e p="ic_launcher.png" t="Include" />
           </e>
           <e p="Resource.designer.cs" t="Include" />
           <e p="values" t="Include">
@@ -75,9 +75,7 @@
         <e p="XmlFileReader.cs" t="Include" />
       </e>
       <e p="ListActivityDemo" t="IncludeRecursive">
-        <e p="Assets" t="Include">
-          <e p="AboutAssets.txt" t="Include" />
-        </e>
+        <e p="Assets" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="ListActivityDemo.csproj" t="IncludeRecursive" />
         <e p="MainActivity.cs" t="Include" />
@@ -127,7 +125,20 @@
         <e p="TextParser.cs" t="Include" />
         <e p="VocabAdapter.cs" t="Include" />
       </e>
-      <e p="packages" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive">
+        <e p="Xamarin.Android.Arch.Lifecycle.Runtime.1.0.3/proguard" t="Include">
+          <e p="proguard.txt" t="Include" />
+        </e>
+        <e p="Xamarin.Android.Support.Animated.Vector.Drawable.27.0.2/proguard" t="Include">
+          <e p="proguard.txt" t="Include" />
+        </e>
+        <e p="Xamarin.Android.Support.Core.UI.27.0.2/proguard" t="Include">
+          <e p="proguard.txt" t="Include" />
+        </e>
+        <e p="Xamarin.Android.Support.Media.Compat.27.0.2/proguard" t="Include">
+          <e p="proguard.txt" t="Include" />
+        </e>
+      </e>
       <e p="README.md" t="Include" />
       <e p="Solution Items" t="Include" />
     </e>

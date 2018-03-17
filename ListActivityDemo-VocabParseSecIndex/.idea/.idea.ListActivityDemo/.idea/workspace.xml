@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbe861ec-38ab-434c-a785-e202650d261b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/Resources/layout/ListItem.axml" />
-      <change beforePath="$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/ListActivity+SimpleAdapter+XmlFile.csproj" afterPath="$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/ListActivity+SimpleAdapter+XmlFile.csproj" />
-      <change beforePath="$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/MainActivity.cs" afterPath="$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/MainActivity.cs" />
-      <change beforePath="$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/Resources/Resource.designer.cs" afterPath="$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/Resources/Resource.designer.cs" />
-      <change beforePath="$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/XmlFileReader.cs" afterPath="$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/XmlFileReader.cs" />
-      <change beforePath="$PROJECT_DIR$/ListActivityDemo.sln" afterPath="$PROJECT_DIR$/ListActivityDemo.sln" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ListActivityDemo/.idea/contentModel.xml" afterPath="$PROJECT_DIR$/.idea/.idea.ListActivityDemo/.idea/contentModel.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ListActivityDemo/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.ListActivityDemo/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/.vs/ListActivityDemo/xs/UserPrefs.xml" afterPath="$PROJECT_DIR$/.vs/ListActivityDemo/xs/UserPrefs.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,25 +18,80 @@
       <file leaf-file-name="ListItem.axml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/Resources/layout/ListItem.axml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
+            <state relative-caret-position="0">
               <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainActivity.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/MainActivity.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
+            <state relative-caret-position="469">
               <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding>
-                <marker date="1519100570000" expanded="false" signature="6:150" ph="..." />
-                <marker date="1519100570000" expanded="true" signature="194:2087" ph="{...}" />
-                <marker date="1519100570000" expanded="true" signature="333:2082" ph="{...}" />
-                <marker date="1519100570000" expanded="true" signature="446:1601" ph="{...}" />
-                <marker date="1519100570000" expanded="true" signature="675:921" ph="/* Sort the List of Dictionary objects. Sort primarily on part of speech, secondarily on Spanish ... */" />
-                <marker date="1519100570000" expanded="true" signature="1755:2078" ph="{...}" />
+                <marker date="1520450520000" expanded="false" signature="6:150" ph="..." />
+                <marker date="1520450520000" expanded="true" signature="194:2159" ph="{...}" />
+                <marker date="1520450520000" expanded="true" signature="340:2154" ph="{...}" />
+                <marker date="1520450520000" expanded="true" signature="453:1673" ph="{...}" />
+                <marker date="1520450520000" expanded="true" signature="682:928" ph="/* Sort the List of Dictionary objects. Sort primarily on part of speech, secondarily on Spanish ... */" />
+                <marker date="1520450520000" expanded="true" signature="1189:1344" ph="/* constructor takes: reference to this Activity, List of Dictionary objects, row layout, ... */" />
+                <marker date="1520450520000" expanded="true" signature="1827:2150" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainActivity.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ListActivityDemo/MainActivity.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="24" column="24" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="24" selection-end-column="24" />
+              <folding>
+                <marker date="1519684667000" expanded="false" signature="6:79" ph="..." />
+                <marker date="1519684667000" expanded="true" signature="107:959" ph="{...}" />
+                <marker date="1519684667000" expanded="true" signature="213:957" ph="{...}" />
+                <marker date="1519684667000" expanded="true" signature="289:664" ph="{...}" />
+                <marker date="1519684667000" expanded="true" signature="808:953" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainActivity.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ListAndParser/MainActivity.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-309">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1493844802000" expanded="false" signature="6:152" ph="..." />
+                <marker date="1493844802000" expanded="true" signature="177:2360" ph="{...}" />
+                <marker date="1493844802000" expanded="true" signature="280:2357" ph="{...}" />
+                <marker date="1493844802000" expanded="true" signature="442:1858" ph="{...}" />
+                <marker date="1493844802000" expanded="true" signature="2145:2353" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VocabAdapter.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/VocabAdapter.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="12" column="51" lean-forward="true" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+              <folding>
+                <marker date="1493178693000" expanded="false" signature="6:92" ph="..." />
+                <marker date="1493178693000" expanded="true" signature="136:1852" ph="{...}" />
+                <marker date="1493178693000" expanded="true" signature="198:1850" ph="{...}" />
+                <marker date="1493178693000" expanded="true" signature="530:743" ph="{...}" />
+                <marker date="1493178693000" expanded="true" signature="852:910" ph="{...}" />
+                <marker date="1493178693000" expanded="true" signature="960:981" ph="{...}" />
+                <marker date="1493178693000" expanded="true" signature="1024:1059" ph="{...}" />
+                <marker date="1493178693000" expanded="true" signature="1095:1843" ph="{...}" />
+                <marker date="1493178693000" expanded="true" signature="1231:1428" ph="{...}" />
+                <marker date="1493178693000" expanded="true" signature="1374:1422" ph="{...}" />
+                <marker date="1493178693000" expanded="true" signature="1769:1839" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -52,7 +104,11 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/MainActivity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ListActivityDemo/MainActivity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ListActivityDemo/VocabItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/Resources/Resource.designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ListAndParser/MainActivity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/VocabAdapter.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -68,10 +124,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="838" />
+    <option name="width" value="1280" />
+    <option name="height" value="737" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -95,6 +151,21 @@
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="ListActivityDemo (4 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="ListActivityDemo (4 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="ListActivity+SimpleAdapter+XmlFile" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="ListActivityDemo (4 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="ListActivityDemo" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="ListActivityDemo (4 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="ListAndParser" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
           </expand>
           <select />
@@ -181,11 +252,12 @@
       <workItem from="1519100085666" duration="1259000" />
       <workItem from="1519101361183" duration="112000" />
       <workItem from="1519101477564" duration="90000" />
+      <workItem from="1520549663987" duration="1518000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1461000" />
+    <option name="totallyTimeSpent" value="2979000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -197,18 +269,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="838" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="737" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32898173" sideWeight="0.50277776" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32781956" sideWeight="0.50277776" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.49722221" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3994778" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -218,7 +292,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -244,15 +317,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/MainActivity.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="902">
+        <state relative-caret-position="1034">
           <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding>
-            <marker date="1519100570000" expanded="false" signature="6:150" ph="..." />
-            <marker date="1519100570000" expanded="true" signature="194:2087" ph="{...}" />
-            <marker date="1519100570000" expanded="true" signature="333:2082" ph="{...}" />
-            <marker date="1519100570000" expanded="true" signature="446:1601" ph="{...}" />
-            <marker date="1519100570000" expanded="true" signature="675:921" ph="/* Sort the List of Dictionary objects. Sort primarily on part of speech, secondarily on Spanish ... */" />
-            <marker date="1519100570000" expanded="true" signature="1755:2078" ph="{...}" />
+            <marker date="1520450520000" expanded="false" signature="6:150" ph="..." />
+            <marker date="1520450520000" expanded="true" signature="194:2159" ph="{...}" />
+            <marker date="1520450520000" expanded="true" signature="340:2154" ph="{...}" />
+            <marker date="1520450520000" expanded="true" signature="453:1673" ph="{...}" />
+            <marker date="1520450520000" expanded="true" signature="682:928" ph="/* Sort the List of Dictionary objects. Sort primarily on part of speech, secondarily on Spanish ... */" />
+            <marker date="1520450520000" expanded="true" signature="1189:1344" ph="/* constructor takes: reference to this Activity, List of Dictionary objects, row layout, ... */" />
+            <marker date="1520450520000" expanded="true" signature="1827:2150" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -270,12 +344,13 @@
         <state relative-caret-position="902">
           <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding>
-            <marker date="1519100570000" expanded="false" signature="6:150" ph="..." />
-            <marker date="1519100570000" expanded="true" signature="194:2087" ph="{...}" />
-            <marker date="1519100570000" expanded="true" signature="333:2082" ph="{...}" />
-            <marker date="1519100570000" expanded="true" signature="446:1601" ph="{...}" />
-            <marker date="1519100570000" expanded="true" signature="675:921" ph="/* Sort the List of Dictionary objects. Sort primarily on part of speech, secondarily on Spanish ... */" />
-            <marker date="1519100570000" expanded="true" signature="1755:2078" ph="{...}" />
+            <marker date="1520450520000" expanded="false" signature="6:150" ph="..." />
+            <marker date="1520450520000" expanded="true" signature="194:2159" ph="{...}" />
+            <marker date="1520450520000" expanded="true" signature="340:2154" ph="{...}" />
+            <marker date="1520450520000" expanded="true" signature="453:1673" ph="{...}" />
+            <marker date="1520450520000" expanded="true" signature="682:928" ph="/* Sort the List of Dictionary objects. Sort primarily on part of speech, secondarily on Spanish ... */" />
+            <marker date="1520450520000" expanded="true" signature="1189:1344" ph="/* constructor takes: reference to this Activity, List of Dictionary objects, row layout, ... */" />
+            <marker date="1520450520000" expanded="true" signature="1827:2150" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -283,6 +358,30 @@
     <entry file="file://$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/Resources/layout/ListItem.axml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
+          <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/MainActivity.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="902">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <marker date="1520450520000" expanded="false" signature="6:150" ph="..." />
+            <marker date="1520450520000" expanded="true" signature="194:2159" ph="{...}" />
+            <marker date="1520450520000" expanded="true" signature="340:2154" ph="{...}" />
+            <marker date="1520450520000" expanded="true" signature="453:1673" ph="{...}" />
+            <marker date="1520450520000" expanded="true" signature="682:928" ph="/* Sort the List of Dictionary objects. Sort primarily on part of speech, secondarily on Spanish ... */" />
+            <marker date="1520450520000" expanded="true" signature="1189:1344" ph="/* constructor takes: reference to this Activity, List of Dictionary objects, row layout, ... */" />
+            <marker date="1520450520000" expanded="true" signature="1827:2150" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/Resources/layout/ListItem.axml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
           <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
           <folding />
         </state>
@@ -292,81 +391,82 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ListActivityDemo/VocabItem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
           <folding>
-            <marker date="1519100397000" expanded="true" signature="29:424" ph="/* ------------------------------------------------------------------------------ ... */" />
-            <marker date="1519100397000" expanded="true" signature="596:64086" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="725:64084" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="751:822" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="863:871" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="907:1609" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="1494:1568" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="1595:1605" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="1645:12366" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="12251:12325" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="12352:12362" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="12400:13232" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="13119:13193" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="13218:13228" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="13264:13814" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="13703:13777" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="13800:13810" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="13850:16245" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="16130:16204" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="16231:16241" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="16280:25823" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="25709:25783" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="25809:25819" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="25852:31597" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="31489:31563" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="31583:31593" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="31631:31871" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="31758:31832" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="31857:31867" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="31904:34686" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="34574:34648" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="34672:34682" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="34719:34939" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="34827:34901" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="34925:34935" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="34972:36630" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="36518:36592" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="36616:36626" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="36662:53355" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="53244:53318" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="53341:53351" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="53391:64081" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="53445:53769" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="55393:55409" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="55563:55683" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="56411:56427" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="56616:56702" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="57175:57210" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="57480:57498" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="57640:57692" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="58001:58092" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="58664:58928" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="60432:60553" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="61353:61433" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="61910:62069" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="62990:63093" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="63658:63708" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="63966:64040" ph="{...}" />
-            <marker date="1519100397000" expanded="true" signature="64067:64077" ph="{...}" />
+            <marker date="1493178693000" expanded="true" signature="40:297" ph="{...}" />
+            <marker date="1493178693000" expanded="true" signature="69:295" ph="{...}" />
+            <marker date="1493178693000" expanded="true" signature="188:228" ph="{...}" />
+            <marker date="1493178693000" expanded="true" signature="265:292" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/MainActivity.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
+        <state relative-caret-position="469">
           <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding>
-            <marker date="1519100570000" expanded="false" signature="6:150" ph="..." />
-            <marker date="1519100570000" expanded="true" signature="194:2087" ph="{...}" />
-            <marker date="1519100570000" expanded="true" signature="333:2082" ph="{...}" />
-            <marker date="1519100570000" expanded="true" signature="446:1601" ph="{...}" />
-            <marker date="1519100570000" expanded="true" signature="675:921" ph="/* Sort the List of Dictionary objects. Sort primarily on part of speech, secondarily on Spanish ... */" />
-            <marker date="1519100570000" expanded="true" signature="1755:2078" ph="{...}" />
+            <marker date="1520450520000" expanded="false" signature="6:150" ph="..." />
+            <marker date="1520450520000" expanded="true" signature="194:2159" ph="{...}" />
+            <marker date="1520450520000" expanded="true" signature="340:2154" ph="{...}" />
+            <marker date="1520450520000" expanded="true" signature="453:1673" ph="{...}" />
+            <marker date="1520450520000" expanded="true" signature="682:928" ph="/* Sort the List of Dictionary objects. Sort primarily on part of speech, secondarily on Spanish ... */" />
+            <marker date="1520450520000" expanded="true" signature="1189:1344" ph="/* constructor takes: reference to this Activity, List of Dictionary objects, row layout, ... */" />
+            <marker date="1520450520000" expanded="true" signature="1827:2150" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ListActivityDemo/MainActivity.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="24" column="24" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="24" selection-end-column="24" />
+          <folding>
+            <marker date="1519684667000" expanded="false" signature="6:79" ph="..." />
+            <marker date="1519684667000" expanded="true" signature="107:959" ph="{...}" />
+            <marker date="1519684667000" expanded="true" signature="213:957" ph="{...}" />
+            <marker date="1519684667000" expanded="true" signature="289:664" ph="{...}" />
+            <marker date="1519684667000" expanded="true" signature="808:953" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ListAndParser/MainActivity.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-309">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1493844802000" expanded="false" signature="6:152" ph="..." />
+            <marker date="1493844802000" expanded="true" signature="177:2360" ph="{...}" />
+            <marker date="1493844802000" expanded="true" signature="280:2357" ph="{...}" />
+            <marker date="1493844802000" expanded="true" signature="442:1858" ph="{...}" />
+            <marker date="1493844802000" expanded="true" signature="2145:2353" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ListActivity+SimpleAdapter+XmlFile/VocabAdapter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="12" column="51" lean-forward="true" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+          <folding>
+            <marker date="1493178693000" expanded="false" signature="6:92" ph="..." />
+            <marker date="1493178693000" expanded="true" signature="136:1852" ph="{...}" />
+            <marker date="1493178693000" expanded="true" signature="198:1850" ph="{...}" />
+            <marker date="1493178693000" expanded="true" signature="530:743" ph="{...}" />
+            <marker date="1493178693000" expanded="true" signature="852:910" ph="{...}" />
+            <marker date="1493178693000" expanded="true" signature="960:981" ph="{...}" />
+            <marker date="1493178693000" expanded="true" signature="1024:1059" ph="{...}" />
+            <marker date="1493178693000" expanded="true" signature="1095:1843" ph="{...}" />
+            <marker date="1493178693000" expanded="true" signature="1231:1428" ph="{...}" />
+            <marker date="1493178693000" expanded="true" signature="1374:1422" ph="{...}" />
+            <marker date="1493178693000" expanded="true" signature="1769:1839" ph="{...}" />
           </folding>
         </state>
       </provider>
