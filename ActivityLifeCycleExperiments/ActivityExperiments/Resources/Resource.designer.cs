@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("ClickCounterXML.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("ActivityExperiments.Resource", IsApplication=true)]
 
-namespace ClickCounterXML
+namespace ActivityExperiments
 {
 	
 	
@@ -41,14 +41,39 @@ namespace ClickCounterXML
 			}
 		}
 		
+		public partial class Drawable
+		{
+			
+			// aapt resource value: 0x7f020000
+			public const int Icon = 2130837504;
+			
+			static Drawable()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Drawable()
+			{
+			}
+		}
+		
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050001
-			public const int aButton = 2131034113;
-			
 			// aapt resource value: 0x7f050000
-			public const int aLabel = 2131034112;
+			public const int backButton = 2131034112;
+			
+			// aapt resource value: 0x7f050003
+			public const int finishButton = 2131034115;
+			
+			// aapt resource value: 0x7f050002
+			public const int nextButton = 2131034114;
+			
+			// aapt resource value: 0x7f050004
+			public const int startButton = 2131034116;
+			
+			// aapt resource value: 0x7f050001
+			public const int stateTextView = 2131034113;
 			
 			static Id()
 			{
@@ -64,7 +89,10 @@ namespace ClickCounterXML
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Main = 2130903040;
+			public const int Demo = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public const int Main = 2130903041;
 			
 			static Layout()
 			{
@@ -76,33 +104,17 @@ namespace ClickCounterXML
 			}
 		}
 		
-		public partial class Mipmap
-		{
-			
-			// aapt resource value: 0x7f020000
-			public const int Icon = 2130837504;
-			
-			static Mipmap()
-			{
-				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
-			}
-			
-			private Mipmap()
-			{
-			}
-		}
-		
 		public partial class String
 		{
 			
+			// aapt resource value: 0x7f040001
+			public const int app_name = 2130968577;
+			
 			// aapt resource value: 0x7f040002
-			public const int app_name = 2130968578;
+			public const int back = 2130968578;
 			
 			// aapt resource value: 0x7f040000
-			public const int button_text = 2130968576;
-			
-			// aapt resource value: 0x7f040001
-			public const int label_text = 2130968577;
+			public const int start = 2130968576;
 			
 			static String()
 			{
