@@ -67,13 +67,13 @@
     <AndroidResource Include="Resources\layout\BackFragment.axml" />
     <AndroidResource Include="Resources\layout\BackActivity.axml" />
     <AndroidResource Include="Resources\layout\FrontFragment.axml" />
-    <AndroidResource Include="Resources\layout-normal\FrontActivity.axml" />
+    <AndroidResource Include="Resources\layout-small\FrontActivity.axml" />
+    <AndroidResource Include="Resources\layout-small-land\FrontActivity.axml" />
     <AndroidResource Include="Resources\layout-large\FrontActivity.axml" />
-    <AndroidResource Include="Resources\layout-normal-land\FrontActivity.axml" />
-    <AndroidResource Include="Resources\layout-large-land\FrontActivity.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
+    <Folder Include="Resources\layout-large\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

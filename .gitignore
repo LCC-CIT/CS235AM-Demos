@@ -1,7 +1,4 @@
-#################
-## Visual Studio and Xamarin Studio
-#################
-
+# Visual Studio, Visual Studio for Mac
 [Oo]bj
 [Bb]in
 *.user
@@ -10,22 +7,31 @@
 *.bak
 *.ncb
 *.log 
-[Tt]humbs.db 
-TipOfTheDay.Domain/Concrete/TipOfTheDayDatabase.dacpac
+*.dacpac
 *.mdf
 *.mdb
 *.ldf
-ListActivityDemo-VocabParseSecIndex/ListActivityDemo.userprefs
 *.userprefs
-
+*.Xamarin
 *.nupkg
 
+#JetBrains Rider IDE
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
+
+# Rider sensitive or high-churn files:
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+
+#Windows
 *.dll
+[Tt]humbs.db 
 
+#Mac OS
+.DS_Store
 
-GussMyNumber-2Screens/GussMyNumber-2Screens.userprefs
-
-AgeCalc-IntentDemo/IntentDemo.userprefs
-
-GussMyNumber-2Screens/GussMyNumber-2Screens/bin/Debug/System.ServiceModel.Internals.dll.mdb
-/Weather-WebServiceDemo

@@ -14,10 +14,6 @@ namespace RpsDemo.HardCodedFrag
 
 			SetContentView (Resource.Layout.Translate);
             ActionBar.SetDisplayHomeAsUpEnabled(true);
-
-			var name = Intent.GetStringExtra("hand_position_name");
-			TextView nameTextView = FindViewById<TextView> (Resource.Id.handTextView);
-			nameTextView.Text = name;
 		}
 	}
 }

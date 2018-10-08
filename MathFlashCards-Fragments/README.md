@@ -9,6 +9,8 @@ Concepts demonstrated:
   * Using activity life-cycle callbacks
   * Specifying fragment classes in the AXML layouts for the Activities
   * Loading different configurations of fragments based on screen size and orientation
+    * Small size works with Nexus 5 (4.95in, 1080 x 1920 XXHDPI)
+    * Large size works with Nexus 7, 2013 (7.02in, 1200 x 1920 XHDPI)
 * v3 - Same as v2, but fragments are loaded programmatically
   * Using the FragmentManager
   * Adding and removing fragments from Activities using a FragmentTransaction object
