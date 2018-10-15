@@ -23,18 +23,18 @@ namespace RpsDemoRelativeLayout
 			// Get a new random hand image
 			playButton.Click += delegate {
 				GameLogic game = new GameLogic ();
-                handShape compMove = game.ChooseHand();
+                HandShape compMove = game.ChooseHand();
                 compMoveTextView.Text = compMove.ToString();
 
 				switch(compMove)
 				{
-				case handShape.rock:
+				case HandShape.rock:
 					rpsImageView.SetImageResource(Resource.Drawable.Rock);
 					break;
-				case handShape.paper:
+				case HandShape.paper:
 					rpsImageView.SetImageResource(Resource.Drawable.Paper);
 					break;
-				case handShape.scissors:
+				case HandShape.scissors:
 					rpsImageView.SetImageResource(Resource.Drawable.Scissors);
 					break;
 				default:

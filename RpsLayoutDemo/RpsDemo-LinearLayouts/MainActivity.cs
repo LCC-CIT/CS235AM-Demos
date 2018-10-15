@@ -24,13 +24,13 @@ namespace RpsDemo
 			playButton.Click += delegate {
 				switch(game.ChooseHand())
 				{
-				case handShape.rock:
+				case HandShape.rock:
 					handImageView.SetImageResource(Resource.Drawable.Rock);
 					break;
-				case handShape.paper:
+				case HandShape.paper:
 					handImageView.SetImageResource(Resource.Drawable.Paper);
 					break;
-				case handShape.scissors:
+				case HandShape.scissors:
 					handImageView.SetImageResource(Resource.Drawable.Scissors);
 					break;
 				default:

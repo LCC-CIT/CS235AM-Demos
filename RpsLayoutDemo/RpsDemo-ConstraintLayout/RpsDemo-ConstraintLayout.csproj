@@ -68,6 +68,11 @@
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml" />
     <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\drawable\Paper.png" />
+    <AndroidResource Include="Resources\drawable\pebbles.jpg" />
+    <AndroidResource Include="Resources\drawable\Rock.png" />
+    <AndroidResource Include="Resources\drawable\Scissors.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\mipmap-hdpi\" />

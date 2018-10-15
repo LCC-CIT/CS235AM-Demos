@@ -25,13 +25,13 @@ namespace RpsDemoConstraintLayout
                 GameLogic game = new GameLogic();
                 switch (game.ChooseHand())
                 {
-                    case handShape.rock:
+                    case HandShape.rock:
                         rpsImageView.SetImageResource(Resource.Drawable.Rock);
                         break;
-                    case handShape.paper:
+                    case HandShape.paper:
                         rpsImageView.SetImageResource(Resource.Drawable.Paper);
                         break;
-                    case handShape.scissors:
+                    case HandShape.scissors:
                         rpsImageView.SetImageResource(Resource.Drawable.Scissors);
                         break;
                     default:

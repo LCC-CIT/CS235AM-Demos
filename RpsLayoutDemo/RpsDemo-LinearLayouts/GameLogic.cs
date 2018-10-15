@@ -3,20 +3,20 @@
 namespace RpsDemo
 {
 
-	public enum handShape {rock, paper, scissors}
+	public enum HandShape {rock, paper, scissors}
 
 	public class GameLogic
 	{
 		Random rand = new Random();
-		handShape androidHand;
+		HandShape androidHand;
 
 		/// <summary>
 		/// Randomly chooses a number to represent a hand position.
 		/// </summary>
 		/// <returns>1 for rock, 2 for paper, 3 for scissors.</returns>
-		public handShape ChooseHand()
+		public HandShape ChooseHand()
 		{
-			androidHand = (handShape)rand.Next(3);
+			androidHand = (HandShape)rand.Next(3);
 			return androidHand;  // produces random 0 through 2
 		}
 
@@ -25,11 +25,11 @@ namespace RpsDemo
 		public string didUserWin(string hand)
 		{
 			// Convert the user's hand shape choice to an enum
-			handShape userHand = (handShape)Enum.Parse (typeof(handShape), hand.ToLower());
+			HandShape userHand = (HandShape)Enum.Parse (typeof(HandShape), hand.ToLower());
 			if (userHand == androidHand)
 				return "Tie";
-			else if ((userHand == handShape.rock && androidHand == handShape.scissors) ||
-				(userHand > androidHand && !(androidHand == handShape.rock && userHand == handShape.scissors)))
+			else if ((userHand == HandShape.rock && androidHand == HandShape.scissors) ||
+				(userHand > androidHand && !(androidHand == HandShape.rock && userHand == HandShape.scissors)))
 				return "You win!";
 			else
 				return "Android wins";
