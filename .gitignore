@@ -1,8 +1,4 @@
-#################################
-#  Xamarin Android Development  #
-#################################
-
-# Visual Studio and Xamarin Studio
+# Visual Studio, Visual Studio for Mac
 [Oo]bj
 [Bb]in
 *.user

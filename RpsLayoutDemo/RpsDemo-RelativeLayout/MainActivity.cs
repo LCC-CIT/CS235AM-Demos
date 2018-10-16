@@ -16,21 +16,25 @@ namespace RpsDemoRelativeLayout
 
 			var playButton = FindViewById<Button> (Resource.Id.playButton);
 			var rpsImageView = FindViewById<ImageView> (Resource.Id.rpsImage);
+            var compMoveTextView = FindViewById<TextView>(Resource.Id.compMoveTextView);
 			var rpsEditText = FindViewById<EditText> (Resource.Id.rpsEditText);
 			var winnerTextView = FindViewById<TextView> (Resource.Id.winnerTextView);
 
 			// Get a new random hand image
 			playButton.Click += delegate {
 				GameLogic game = new GameLogic ();
-				switch(game.ChooseHand())
+                HandShape compMove = game.ChooseHand();
+                compMoveTextView.Text = compMove.ToString();
+
+				switch(compMove)
 				{
-				case handShape.rock:
+				case HandShape.rock:
 					rpsImageView.SetImageResource(Resource.Drawable.Rock);
 					break;
-				case handShape.paper:
+				case HandShape.paper:
 					rpsImageView.SetImageResource(Resource.Drawable.Paper);
 					break;
-				case handShape.scissors:
+				case HandShape.scissors:
 					rpsImageView.SetImageResource(Resource.Drawable.Scissors);
 					break;
 				default:
