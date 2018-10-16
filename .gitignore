@@ -39,3 +39,8 @@
 #Mac OS
 .DS_Store
 
+ClickCounter-Code-XML/.vs/ClickCounter-Code-XML/xs/sqlite3/db.lock
+ClickCounter-Code-XML/.vs/ClickCounter-Code-XML/xs/sqlite3/storage.ide
+ClickCounter-Code-XML/.vs/ClickCounter-Code-XML/xs/sqlite3/storage.ide-shm
+ClickCounter-Code-XML/.vs/ClickCounter-Code-XML/xs/sqlite3/storage.ide-wal
+ClickCounter-Code-XML/.vs/ClickCounter-Code-XML/xs/UserPrefs.xml
