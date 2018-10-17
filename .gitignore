@@ -14,6 +14,8 @@
 *.userprefs
 *.Xamarin
 *.nupkg
+.vs
+UserPrefs.xml
 
 #JetBrains Rider IDE
 .idea/**/workspace.xml
@@ -34,5 +36,3 @@
 
 #Mac OS
 .DS_Store
-
-RpsLayoutDemo/.vs/RpsDemo/xs/UserPrefs.xml
