@@ -1,7 +1,6 @@
 # Visual Studio, Visual Studio for Mac
 [Oo]bj
 [Bb]in
-packages
 *.user
 *.suo
 *.[Cc]ache

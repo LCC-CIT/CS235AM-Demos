@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{1F8D3439-3846-4036-AFB3-14DB430C14A1}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="RpsDemo-LinearLayouts/GameLogic.cs" Line="18" Column="4" />
+      <File FileName="RpsDemo-ConstraintLayout/MainActivity.cs" Line="18" Column="63" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.RpsDemo-LinearLayouts HideGettingStarted="True" />
+  <MultiItemStartupConfigurations />
+  <DisabledProjects>
+    <String>RpsDemo-ConstraintLayout/RpsDemo-ConstraintLayout.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.ItemProperties.RpsDemo-RelativeLayout AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_x86" HideGettingStarted="True" />
+</Properties>
