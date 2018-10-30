@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListActivityDemo", "ListActivityDemo\ListActivityDemo.csproj", "{B6676040-34A9-44BF-A868-79AB0064964C}"
 EndProject
@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomAdapterDemo", "Custom
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListAndParser", "ListAndParser\ListAndParser.csproj", "{4F5762BB-FB3B-43CA-B4C2-299C9568C715}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListActivity+SimpleAdapter+XmlFile", "ListActivity+SimpleAdapter+XmlFile\ListActivity+SimpleAdapter+XmlFile.csproj", "{6766BD5D-2BFD-4342-89DA-BE28B64DB0B9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleAdapter+XmlFile", "ListActivity+SimpleAdapter+XmlFile\SimpleAdapter+XmlFile.csproj", "{6766BD5D-2BFD-4342-89DA-BE28B64DB0B9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{99AA6BE3-3BA6-4445-ACED-27422FCDD526}"
 	ProjectSection(SolutionItems) = preProject
@@ -49,6 +49,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E0AA0692-4ACA-4167-B73E-90F9D957A0B2}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = ListAndParser\ListAndParser.csproj
