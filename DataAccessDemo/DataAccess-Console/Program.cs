@@ -76,7 +76,7 @@ namespace L2Ch3.ConsoleApp
 
 				// Use the Get method with a primary key
 			singleItem = db.Get<Stock> ("FB");
-			Console.WriteLine ("Stock Name for Symbol FB: {0}", singleItem.Symbol);
+			Console.WriteLine ("Stock Name for Symbol FB: {0}", singleItem.Name);
 
 			// Query using  SQL
 			var stocksStartingWithA = db.Query<Stock> ("SELECT * FROM Stocks WHERE Symbol LIKE ?", "A%"); 
