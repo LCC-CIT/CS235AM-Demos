@@ -2,12 +2,10 @@
 // Brian Bird, 5/20/13
 
 using System;
+using DataAccess.PortableDAL;
 using SQLite;
-using System.IO;
-//using DataAccess.DAL; 
-using DataAccess.DAL;
 
-namespace L2Ch3.ConsoleApp
+namespace DataAccess.ConsoleApp
 {
 	class MainClass
 	{
