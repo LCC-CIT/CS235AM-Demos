@@ -14,8 +14,8 @@
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AssemblyName>DataAccess-Android</AssemblyName>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
-    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -56,7 +56,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
-    <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
