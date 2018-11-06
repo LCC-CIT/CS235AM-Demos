@@ -1,7 +1,7 @@
 ﻿using Android.Database.Sqlite;
 using Android.Content;
 
-namespace DataAccessAndroidListView
+namespace DataAccess.Android.ListView
 {
 	// Use this class to directly open the database
 	// instead of using the SQLite-Net ORM
@@ -83,7 +83,7 @@ namespace DataAccessAndroidListView
      * system folder, from where it can be accessed and handled.
      * This is done by transfering bytestream.
      * */
-		private void copyDataBase() throws IOException{
+		private void copyDataBase() throws IOException {
 
 			//Open your local db as the input stream
 			InputStream myInput = myContext.getAssets().open(DB_NAME);
@@ -97,7 +97,7 @@ namespace DataAccessAndroidListView
 			//transfer bytes from the inputfile to the outputfile
 			byte[] buffer = new byte[1024];
 			int length;
-			while ((length = myInput.read(buffer))>0){
+			while ((length = myInput.read(buffer))>0) {
 				myOutput.write(buffer, 0, length);
 			}
 
