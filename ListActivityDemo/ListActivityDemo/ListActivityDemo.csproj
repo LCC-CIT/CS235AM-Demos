@@ -16,11 +16,7 @@
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AssemblyName>ListActivityDemo</AssemblyName>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
-<<<<<<< HEAD:ListActivityDemo/ListActivityDemo/ListActivityDemo.csproj
-    <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
-=======
     <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
->>>>>>> cff36bd6fbe1915ad956c613e5fc40c80c9118bb:ListActivityDemo-VocabParseSecIndex/ListActivityDemo/ListActivityDemo.csproj
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

@@ -1,5 +1,3 @@
-<<<<<<< HEAD:ListActivityDemo/ListActivityDemo.sln
-﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2036
@@ -58,64 +56,3 @@ Global
 		StartupItem = ListAndParser\ListAndParser.csproj
 	EndGlobalSection
 EndGlobal
-=======
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2041
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListActivityDemo", "ListActivityDemo\ListActivityDemo.csproj", "{B6676040-34A9-44BF-A868-79AB0064964C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomAdapterDemo", "CustomAdapterDemo\CustomAdapterDemo.csproj", "{21CD2427-320C-4145-A04B-257B84E840C8}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListAndParser", "ListAndParser\ListAndParser.csproj", "{4F5762BB-FB3B-43CA-B4C2-299C9568C715}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleAdapter+XmlFile", "ListActivity+SimpleAdapter+XmlFile\SimpleAdapter+XmlFile.csproj", "{6766BD5D-2BFD-4342-89DA-BE28B64DB0B9}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{99AA6BE3-3BA6-4445-ACED-27422FCDD526}"
-	ProjectSection(SolutionItems) = preProject
-		README.md = README.md
-	EndProjectSection
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B6676040-34A9-44BF-A868-79AB0064964C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B6676040-34A9-44BF-A868-79AB0064964C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B6676040-34A9-44BF-A868-79AB0064964C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{B6676040-34A9-44BF-A868-79AB0064964C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B6676040-34A9-44BF-A868-79AB0064964C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B6676040-34A9-44BF-A868-79AB0064964C}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{21CD2427-320C-4145-A04B-257B84E840C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{21CD2427-320C-4145-A04B-257B84E840C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{21CD2427-320C-4145-A04B-257B84E840C8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{21CD2427-320C-4145-A04B-257B84E840C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{21CD2427-320C-4145-A04B-257B84E840C8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{21CD2427-320C-4145-A04B-257B84E840C8}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{4F5762BB-FB3B-43CA-B4C2-299C9568C715}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4F5762BB-FB3B-43CA-B4C2-299C9568C715}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4F5762BB-FB3B-43CA-B4C2-299C9568C715}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{4F5762BB-FB3B-43CA-B4C2-299C9568C715}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4F5762BB-FB3B-43CA-B4C2-299C9568C715}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4F5762BB-FB3B-43CA-B4C2-299C9568C715}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{6766BD5D-2BFD-4342-89DA-BE28B64DB0B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6766BD5D-2BFD-4342-89DA-BE28B64DB0B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6766BD5D-2BFD-4342-89DA-BE28B64DB0B9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{6766BD5D-2BFD-4342-89DA-BE28B64DB0B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6766BD5D-2BFD-4342-89DA-BE28B64DB0B9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6766BD5D-2BFD-4342-89DA-BE28B64DB0B9}.Release|Any CPU.Deploy.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {E0AA0692-4ACA-4167-B73E-90F9D957A0B2}
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = ListAndParser\ListAndParser.csproj
-	EndGlobalSection
-EndGlobal
->>>>>>> cff36bd6fbe1915ad956c613e5fc40c80c9118bb:ListActivityDemo-VocabParseSecIndex/ListActivityDemo.sln
