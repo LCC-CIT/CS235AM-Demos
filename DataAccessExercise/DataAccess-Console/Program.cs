@@ -9,7 +9,7 @@ using System.IO;
 using System.Collections.Generic;
 using DataAccess_Library;
 
-namespace DataAccess.DOS
+namespace DataAccess_Console
 {
     class MainClass
     {
