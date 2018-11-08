@@ -8,7 +8,7 @@ using Android.Widget;
 using Android.OS;
 using System.IO;
 using SQLite;
-using DataAccess.DAL;
+using DataAccess_Library;
 using System.Linq;
 
 // Note: the namespace DataAccess.Android caused resolve problems, so I cahnged it
