@@ -13,17 +13,17 @@ namespace DataAccess_Console
 {
     class MainClass
     {
-        static string projectDir;
+        static string solutionDir;
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello SQLite-net Data!");
+            Console.WriteLine("Hello SQLite-net data exercise!");
 
             // We're using a db file in the Android project's Assets folder
             string currentDir = Directory.GetCurrentDirectory ();
             // Truncate the path so it's the path to the console project
-            projectDir = currentDir.Remove(currentDir.IndexOf("bin"));
+            solutionDir = currentDir.Remove(currentDir.IndexOf("/DataAccess-Console", StringComparison.CurrentCulture));
             // Console.WriteLine(currentDir);
-            string dbPath = projectDir + @"/../DataAccess-Android/Assets/stocks.db3";
+            string dbPath = solutionDir + @"/DataAccess-Android/Assets/stocks.db3";
             var db = new SQLiteConnection(dbPath);
 
             // Create a Stocks table
@@ -45,7 +45,7 @@ namespace DataAccess_Console
             const int NUMBER_OF_FIELDS = 7;    // The text file will have 7 fields, The first is the date, the last is the adjusted closing price
             TextParser parser = new TextParser(",", NUMBER_OF_FIELDS);     // instantiate our general purpose text file parser object.
             List<string[]> stringArrays;    // The parser generates a List of string arrays. Each array represents one line of the text file.
-            stringArrays = parser.ParseText(File.Open(projectDir + @"/CsvFiles/" + file, FileMode.Open));     // Open the file as a stream and parse all the text
+            stringArrays = parser.ParseText(File.Open(solutionDir + @"/DataAccess-Console/CsvFiles/" + file, FileMode.Open));     // Open the file as a stream and parse all the text
 
             // Don't use the first array, it's a header
             stringArrays.RemoveAt(0);
