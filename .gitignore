@@ -27,7 +27,6 @@ UserPrefs.xml
 
 #Mac OS
 .DS_Store
-*.db3-wal
 
 #SQLite Database
 *-shm
