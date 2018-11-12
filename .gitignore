@@ -33,3 +33,5 @@ UserPrefs.xml
 *-shm
 *-wal
 DataAccessExercise/DataAccess-Android/Assets/stocks.db3-wal
+*.db3-shm
+*.db3-wal
