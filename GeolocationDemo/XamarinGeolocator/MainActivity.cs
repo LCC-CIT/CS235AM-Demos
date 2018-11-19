@@ -31,8 +31,8 @@ namespace XamarinGeolocationDemo
 			TextView textView = FindViewById<TextView> (Resource.Id.positionTextView);
 
 			button.Click += delegate {
-				// GetPositionAsynch will either get position information or timeout
-				locator.GetPositionAsync (timeoutMilliseconds: 10000)
+                // GetPositionAsynch will either get position information or timeout
+                locator.GetPositionAsync(timeout: TimeSpan.FromMilliseconds(5000))
 				// After getting position info or timing out, execution will continue here
 				// t represents a Task object (GetPositionAsync returns a Task object)
 				.ContinueWith (t =>  
