@@ -27,11 +27,9 @@ UserPrefs.xml
 
 #Mac OS
 .DS_Store
-*.db3-wal
 
 #SQLite Database
 *-shm
 *-wal
-DataAccessExercise/DataAccess-Android/Assets/stocks.db3-wal
 *.db3-shm
 *.db3-wal

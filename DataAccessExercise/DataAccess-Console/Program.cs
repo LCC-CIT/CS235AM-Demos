@@ -1,7 +1,6 @@
-﻿// Demo of using SQLite-net ORM
-// Brian Bird, 5/20/13
-// Converted to an exercise starter and completed
-// By Brian Bird 5/12/16
+﻿// Demo of using SQLite-net ORM by Brian Bird, 5/20/13
+// Converted to an exercise starter and completed by Brian Bird 5/12/16
+// Updated to use the SQLite-net Nuget package and better path determination by Brian Bird 11/11/18
 
 using System;
 using SQLite;
